@@ -537,13 +537,26 @@
       "source_location": "L53"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller",
+      "label": "TicketController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "ticketcontroller",
+      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
+      "source_location": "L29"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_ticketlistresponse_ticketlistresponse",
       "label": "TicketListResponse",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": "ticketlistresponse",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketListResponse.java",
@@ -706,26 +719,13 @@
       "source_location": "L10"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller",
-      "label": "TicketController",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketcontroller",
-      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
-      "source_location": "L29"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_changestatusrequest_changestatusrequest",
       "label": "ChangeStatusRequest",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "changestatusrequest",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/ChangeStatusRequest.java",
@@ -738,7 +738,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "createticketrequest",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/CreateTicketRequest.java",
@@ -751,7 +751,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "ticketresponse",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketResponse.java",
@@ -764,7 +764,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "updateticketrequest",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java",
@@ -777,11 +777,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "ticketservice",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getstatus",
@@ -1967,7 +1967,7 @@
       "file_type": "code",
       "norm_label": ".ticketservice()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L32"
+      "source_location": "L34"
     },
     {
       "id": "frontend_src_app_layout_rootlayout",
@@ -2182,16 +2182,40 @@
       "source_location": "L43"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_addcomment",
+      "label": ".addComment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": ".addcomment()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
+      "source_location": "L76"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_list",
       "label": ".list()",
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": ".list()",
       "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
       "source_location": "L50"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_ticketcontroller",
+      "label": ".TicketController()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": ".ticketcontroller()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
+      "source_location": "L35"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_list",
@@ -2199,11 +2223,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": ".list()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L54"
+      "source_location": "L60"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_normalizekeyword",
@@ -2211,11 +2235,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": ".normalizekeyword()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L148"
+      "source_location": "L178"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_getbyid",
@@ -2287,7 +2311,7 @@
       "file_type": "code",
       "norm_label": ".addcomment()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L114"
+      "source_location": "L127"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_findticketorthrow",
@@ -2299,7 +2323,7 @@
       "file_type": "code",
       "norm_label": ".findticketorthrow()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L128"
+      "source_location": "L141"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_getbyid",
@@ -2311,7 +2335,7 @@
       "file_type": "code",
       "norm_label": ".getbyid()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L63"
+      "source_location": "L69"
     },
     {
       "id": "frontend_src_components_comments_commentssection_commentssection",
@@ -2411,13 +2435,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L185"
+            "line": "L217"
           }
         ]
       },
       "norm_label": ".addcomment_blanktext_returns400()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L181"
+      "source_location": "L213"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_addcomment_missingticket_returns404",
@@ -2433,13 +2457,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L196"
+            "line": "L228"
           }
         ]
       },
       "norm_label": ".addcomment_missingticket_returns404()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L194"
+      "source_location": "L226"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_addcomment_updatesticketupdatedat",
@@ -2455,31 +2479,31 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L153"
+            "line": "L185"
           },
           {
             "callee": "readTree",
             "receiver_type": "ObjectMapper",
             "lang": "java",
-            "line": "L156"
+            "line": "L188"
           },
           {
             "callee": "getResponse",
             "receiver_type": "MvcResult",
             "lang": "java",
-            "line": "L156"
+            "line": "L188"
           },
           {
             "callee": "sleep",
             "receiver_type": "Thread",
             "lang": "java",
-            "line": "L160"
+            "line": "L192"
           }
         ]
       },
       "norm_label": ".addcomment_updatesticketupdatedat()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L149"
+      "source_location": "L181"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
@@ -2495,13 +2519,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L360"
+            "line": "L392"
           }
         ]
       },
       "norm_label": ".changestatus()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L359"
+      "source_location": "L391"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_comments_addandappearondetailinorder",
@@ -2517,13 +2541,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L127"
+            "line": "L159"
           }
         ]
       },
       "norm_label": ".comments_addandappearondetailinorder()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L123"
+      "source_location": "L155"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
@@ -2539,31 +2563,53 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L344"
+            "line": "L376"
           },
           {
             "callee": "readTree",
             "receiver_type": "ObjectMapper",
             "lang": "java",
-            "line": "L355"
+            "line": "L387"
           },
           {
             "callee": "getResponse",
             "receiver_type": "MvcResult",
             "lang": "java",
-            "line": "L355"
+            "line": "L387"
           },
           {
             "callee": "get",
             "receiver_type": "JsonNode",
             "lang": "java",
-            "line": "L356"
+            "line": "L388"
           }
         ]
       },
       "norm_label": ".createticket()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L343"
+      "source_location": "L375"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket_digitsonlytitleanddescription_returns400",
+      "label": ".createTicket_digitsOnlyTitleAndDescription_returns400()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "TicketApiIntegrationTest",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L113"
+          }
+        ]
+      },
+      "norm_label": ".createticket_digitsonlytitleanddescription_returns400()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L111"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket_missingtitle_returns400",
@@ -2645,13 +2691,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L234"
+            "line": "L266"
           }
         ]
       },
       "norm_label": ".list_invalidstatus_returns400()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L232"
+      "source_location": "L264"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_list_searchandfilter_worktogether",
@@ -2667,13 +2713,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L212"
+            "line": "L244"
           }
         ]
       },
       "norm_label": ".list_searchandfilter_worktogether()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L205"
+      "source_location": "L237"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_cancelfrominprogress_succeeds",
@@ -2689,13 +2735,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L270"
+            "line": "L302"
           }
         ]
       },
       "norm_label": ".statemachine_cancelfrominprogress_succeeds()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L266"
+      "source_location": "L298"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_cancelfromopen_succeeds",
@@ -2711,13 +2757,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L257"
+            "line": "L289"
           }
         ]
       },
       "norm_label": ".statemachine_cancelfromopen_succeeds()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L254"
+      "source_location": "L286"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_cancelledtoopen_returns409",
@@ -2733,13 +2779,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L331"
+            "line": "L363"
           }
         ]
       },
       "norm_label": ".statemachine_cancelledtoopen_returns409()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L326"
+      "source_location": "L358"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_closedtoopen_returns409andkeepsclosed",
@@ -2755,13 +2801,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L286"
+            "line": "L318"
           }
         ]
       },
       "norm_label": ".statemachine_closedtoopen_returns409andkeepsclosed()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L279"
+      "source_location": "L311"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_happypath_succeeds",
@@ -2777,13 +2823,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L245"
+            "line": "L277"
           }
         ]
       },
       "norm_label": ".statemachine_happypath_succeeds()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L239"
+      "source_location": "L271"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_inprogresstoclosed_returns409",
@@ -2799,13 +2845,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L317"
+            "line": "L349"
           }
         ]
       },
       "norm_label": ".statemachine_inprogresstoclosed_returns409()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L312"
+      "source_location": "L344"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_opentoresolved_returns409",
@@ -2821,13 +2867,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L303"
+            "line": "L335"
           }
         ]
       },
       "norm_label": ".statemachine_opentoresolved_returns409()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L299"
+      "source_location": "L331"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_blanktitle_returns400",
@@ -2874,6 +2920,28 @@
       "source_location": "L77"
     },
     {
+      "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_digitsonlydescription_returns400",
+      "label": ".updateFields_digitsOnlyDescription_returns400()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "TicketApiIntegrationTest",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "perform",
+            "receiver_type": "MockMvc",
+            "lang": "java",
+            "line": "L132"
+          }
+        ]
+      },
+      "norm_label": ".updatefields_digitsonlydescription_returns400()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L128"
+    },
+    {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_withstatus_returns400",
       "label": ".updateFields_withStatus_returns400()",
       "_callable": true,
@@ -2887,13 +2955,13 @@
             "callee": "perform",
             "receiver_type": "MockMvc",
             "lang": "java",
-            "line": "L114"
+            "line": "L146"
           }
         ]
       },
       "norm_label": ".updatefields_withstatus_returns400()",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L110"
+      "source_location": "L142"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_dto_errorresponse_errorresponse_of",
@@ -3176,24 +3244,12 @@
       "source_location": "L14"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_addcomment",
-      "label": ".addComment()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": ".addcomment()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
-      "source_location": "L76"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_changestatus",
       "label": ".changeStatus()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".changestatus()",
       "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
@@ -3205,7 +3261,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3228,24 +3284,12 @@
       "source_location": "L39"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_ticketcontroller",
-      "label": ".TicketController()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": ".ticketcontroller()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
-      "source_location": "L35"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_updatefields",
       "label": ".updateFields()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".updatefields()",
       "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
@@ -3257,11 +3301,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".toresponse()",
       "source_file": "backend/src/main/java/com/ticketmanagement/mapper/TicketMapper.java",
       "source_location": "L15"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_asserttitleanddescriptioncontent",
+      "label": ".assertTitleAndDescriptionContent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "TicketService",
+      "file_type": "code",
+      "norm_label": ".asserttitleanddescriptioncontent()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L146"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_changestatus",
@@ -3269,11 +3325,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".changestatus()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L106"
+      "source_location": "L119"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_create",
@@ -3281,11 +3337,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".create()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L41"
+      "source_location": "L43"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_hasanyfieldupdate",
@@ -3293,11 +3349,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".hasanyfieldupdate()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L133"
+      "source_location": "L163"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_isdigitsonly",
+      "label": ".isDigitsOnly()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "TicketService",
+      "file_type": "code",
+      "norm_label": ".isdigitsonly()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L159"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_normalizeassignee",
@@ -3305,11 +3373,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".normalizeassignee()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L140"
+      "source_location": "L170"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_updatefields",
@@ -3317,11 +3385,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": ".updatefields()",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L70"
+      "source_location": "L76"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status",
@@ -8313,11 +8381,22 @@
       "source_location": "L15"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller",
+      "label": "TicketController.java",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "ticketcontroller.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
+      "source_location": "L1"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_ticketlistresponse",
       "label": "TicketListResponse.java",
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": "ticketlistresponse.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketListResponse.java",
@@ -8328,9 +8407,53 @@
       "label": "org.springframework.web.bind.annotation.GetMapping",
       "_origin": "ast",
       "community": 39,
-      "community_name": ".list",
+      "community_name": "TicketController.java",
       "file_type": "code",
       "norm_label": "org.springframework.web.bind.annotation.getmapping",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_postmapping",
+      "label": "org.springframework.web.bind.annotation.PostMapping",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.postmapping",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_requestmapping",
+      "label": "org.springframework.web.bind.annotation.RequestMapping",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.requestmapping",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_responsestatus",
+      "label": "org.springframework.web.bind.annotation.ResponseStatus",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.responsestatus",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_web_bind_annotation_restcontroller",
+      "label": "org.springframework.web.bind.annotation.RestController",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "org.springframework.web.bind.annotation.restcontroller",
       "source_file": "",
       "source_location": ""
     },
@@ -9772,22 +9895,11 @@
       "source_location": ""
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller",
-      "label": "TicketController.java",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketcontroller.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
-      "source_location": "L1"
-    },
-    {
       "id": "org_springframework_stereotype_service",
       "label": "org.springframework.stereotype.Service",
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "org.springframework.stereotype.service",
       "source_file": "",
@@ -9798,53 +9910,9 @@
       "label": "org.springframework.web.bind.annotation.PatchMapping",
       "_origin": "ast",
       "community": 8,
-      "community_name": "TicketController.java",
+      "community_name": "TicketService",
       "file_type": "code",
       "norm_label": "org.springframework.web.bind.annotation.patchmapping",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "org_springframework_web_bind_annotation_postmapping",
-      "label": "org.springframework.web.bind.annotation.PostMapping",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "org.springframework.web.bind.annotation.postmapping",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "org_springframework_web_bind_annotation_requestmapping",
-      "label": "org.springframework.web.bind.annotation.RequestMapping",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "org.springframework.web.bind.annotation.requestmapping",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "org_springframework_web_bind_annotation_responsestatus",
-      "label": "org.springframework.web.bind.annotation.ResponseStatus",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "org.springframework.web.bind.annotation.responsestatus",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "org_springframework_web_bind_annotation_restcontroller",
-      "label": "org.springframework.web.bind.annotation.RestController",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "org.springframework.web.bind.annotation.restcontroller",
       "source_file": "",
       "source_location": ""
     },
@@ -10725,6 +10793,78 @@
       "type": "external"
     },
     {
+      "id": "pathvariable",
+      "label": "pathvariable",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "pathvariable",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "requestbody",
+      "label": "requestbody",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "requestbody",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "requestparam",
+      "label": "requestparam",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "requestparam",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "servleturicomponentsbuilder",
+      "label": "servleturicomponentsbuilder",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "servleturicomponentsbuilder",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "uri",
+      "label": "uri",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "uri",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "valid",
+      "label": "valid",
+      "_origin": "semantic",
+      "community": 39,
+      "community_name": "TicketController.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "valid",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "frontend_src_app_tickets_page_module",
       "label": "frontend_src_app_tickets_page_module",
       "_origin": "semantic",
@@ -11057,78 +11197,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "map",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "pathvariable",
-      "label": "pathvariable",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "pathvariable",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "requestbody",
-      "label": "requestbody",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "requestbody",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "requestparam",
-      "label": "requestparam",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "requestparam",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "servleturicomponentsbuilder",
-      "label": "servleturicomponentsbuilder",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "servleturicomponentsbuilder",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "uri",
-      "label": "uri",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "uri",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "valid",
-      "label": "valid",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "valid",
       "source_file": "",
       "type": "external"
     }
@@ -11563,7 +11631,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -11575,7 +11643,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L114",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -11587,7 +11655,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L106",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -11599,7 +11667,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -11611,7 +11679,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L63",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -11623,7 +11691,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L54",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -11635,7 +11703,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L70",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -11803,7 +11871,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L181",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
@@ -11815,7 +11883,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L194",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -11827,7 +11895,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L149",
+      "source_location": "L181",
       "weight": 1.0
     },
     {
@@ -11839,7 +11907,19 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L123",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket_digitsonlytitleanddescription_returns400",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -11887,7 +11967,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L232",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -11899,7 +11979,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L205",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -11911,7 +11991,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L266",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -11923,7 +12003,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L254",
+      "source_location": "L286",
       "weight": 1.0
     },
     {
@@ -11935,7 +12015,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L326",
+      "source_location": "L358",
       "weight": 1.0
     },
     {
@@ -11947,7 +12027,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L279",
+      "source_location": "L311",
       "weight": 1.0
     },
     {
@@ -11959,7 +12039,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L239",
+      "source_location": "L271",
       "weight": 1.0
     },
     {
@@ -11971,7 +12051,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L312",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
@@ -11983,7 +12063,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L299",
+      "source_location": "L331",
       "weight": 1.0
     },
     {
@@ -12011,6 +12091,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_digitsonlydescription_returns400",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_withstatus_returns400",
       "target": "org_junit_jupiter_api_test",
       "relation": "references",
@@ -12019,7 +12111,7 @@
       "confidence_score": 1.0,
       "context": "attribute",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L110",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -12175,7 +12267,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L116",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -12187,7 +12279,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L125",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_asserttitleanddescriptioncontent",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_isdigitsonly",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_asserttitleanddescriptioncontent",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_validationexception_validationexception",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -12199,7 +12315,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L108",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
@@ -12211,12 +12327,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L111",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_create",
-      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_normalizeassignee",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_asserttitleanddescriptioncontent",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12228,6 +12344,18 @@
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_create",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_normalizeassignee",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_create",
       "target": "backend_src_main_java_com_ticketmanagement_mapper_ticketmapper_ticketmapper_toresponse",
       "relation": "calls",
       "_origin": "ast",
@@ -12235,7 +12363,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L51",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -12247,7 +12375,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L130",
+      "source_location": "L143",
       "weight": 1.0
     },
     {
@@ -12259,7 +12387,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L65",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -12271,7 +12399,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L67",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -12283,7 +12411,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L56",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -12295,7 +12423,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L100",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -12307,7 +12435,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L103",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -12319,7 +12447,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L76",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -12331,7 +12459,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L80",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -12343,7 +12471,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L85",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_updatefields",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_isdigitsonly",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -12379,7 +12519,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L183",
+      "source_location": "L215",
       "weight": 1.0
     },
     {
@@ -12391,7 +12531,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L151",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -12403,7 +12543,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L125",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -12415,7 +12555,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L207",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
@@ -12427,7 +12567,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L210",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -12439,7 +12579,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L268",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -12451,7 +12591,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L269",
+      "source_location": "L301",
       "weight": 1.0
     },
     {
@@ -12463,7 +12603,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L256",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -12475,7 +12615,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L328",
+      "source_location": "L360",
       "weight": 1.0
     },
     {
@@ -12487,7 +12627,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L329",
+      "source_location": "L361",
       "weight": 1.0
     },
     {
@@ -12499,48 +12639,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L281",
+      "source_location": "L313",
       "weight": 1.0
     },
     {
       "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_closedtoopen_returns409andkeepsclosed",
       "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L282",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_happypath_succeeds",
-      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L241",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_happypath_succeeds",
-      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L243",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_inprogresstoclosed_returns409",
-      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12551,6 +12655,42 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_happypath_succeeds",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_happypath_succeeds",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L275",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_inprogresstoclosed_returns409",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L346",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_statemachine_inprogresstoclosed_returns409",
       "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
       "relation": "calls",
@@ -12559,7 +12699,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L315",
+      "source_location": "L347",
       "weight": 1.0
     },
     {
@@ -12571,7 +12711,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L301",
+      "source_location": "L333",
       "weight": 1.0
     },
     {
@@ -12599,6 +12739,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_digitsonlydescription_returns400",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_withstatus_returns400",
       "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
       "relation": "calls",
@@ -12607,7 +12759,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L112",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -13435,7 +13587,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L28",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -13447,7 +13599,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -13459,7 +13611,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -15300,7 +15452,7 @@
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
-      "target": "list",
+      "target": "linkedhashmap",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15312,7 +15464,7 @@
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
-      "target": "uuid",
+      "target": "list",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15324,7 +15476,7 @@
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
-      "target": "org_springframework_stereotype_service",
+      "target": "map",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15336,7 +15488,7 @@
     },
     {
       "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
-      "target": "org_springframework_transaction_annotation_transactional",
+      "target": "uuid",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15344,6 +15496,30 @@
       "context": "import",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
       "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
+      "target": "org_springframework_stereotype_service",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice",
+      "target": "org_springframework_transaction_annotation_transactional",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -18356,7 +18532,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L114",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -18368,7 +18544,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L106",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -18380,7 +18556,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -18392,7 +18568,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L133",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -18404,7 +18580,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L54",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -18416,7 +18592,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -18428,7 +18604,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -18440,7 +18616,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -18452,7 +18628,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L70",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -19028,7 +19204,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L114",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -19040,7 +19216,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L106",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -19052,7 +19228,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -19064,7 +19240,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L128",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -19076,7 +19252,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L63",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -19088,7 +19264,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L54",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -19100,7 +19276,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L70",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -19452,7 +19628,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -26107,7 +26283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L106",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -26118,7 +26294,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L114",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -26129,7 +26305,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L128",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_asserttitleanddescriptioncontent",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice",
+      "target": "backend_src_main_java_com_ticketmanagement_service_ticketservice_ticketservice_isdigitsonly",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -26140,7 +26338,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L133",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -26151,7 +26349,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L140",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -26162,7 +26360,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L148",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -26173,7 +26371,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -26184,7 +26382,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -26195,7 +26393,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L54",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -26206,7 +26404,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L63",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -26217,7 +26415,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L70",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -26354,13 +26552,35 @@
     },
     {
       "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket_digitsonlytitleanddescription_returns400",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_digitsonlydescription_returns400",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
       "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_updatefields_withstatus_returns400",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L110",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -26371,7 +26591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L123",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -26382,7 +26602,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L149",
+      "source_location": "L181",
       "weight": 1.0
     },
     {
@@ -26393,7 +26613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L181",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
@@ -26404,7 +26624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L194",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -26415,7 +26635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L205",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -26426,7 +26646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L232",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -26437,7 +26657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L239",
+      "source_location": "L271",
       "weight": 1.0
     },
     {
@@ -26448,7 +26668,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L254",
+      "source_location": "L286",
       "weight": 1.0
     },
     {
@@ -26459,7 +26679,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L266",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -26470,7 +26690,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L279",
+      "source_location": "L311",
       "weight": 1.0
     },
     {
@@ -26481,7 +26701,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L299",
+      "source_location": "L331",
       "weight": 1.0
     },
     {
@@ -26492,7 +26712,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L312",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
@@ -26503,29 +26723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L326",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
-      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L343",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
-      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
-      "source_location": "L359",
+      "source_location": "L358",
       "weight": 1.0
     },
     {
@@ -26537,6 +26735,28 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
       "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_createticket",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L375",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest",
+      "target": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_changestatus",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java",
+      "source_location": "L391",
       "weight": 1.0
     },
     {
@@ -26720,7 +26940,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L109",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -26732,7 +26952,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L66",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -26744,7 +26964,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L57",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -26828,7 +27048,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "backend/src/main/java/com/ticketmanagement/service/TicketService.java",
-      "source_location": "L118",
+      "source_location": "L131",
       "weight": 1.0
     },
     {

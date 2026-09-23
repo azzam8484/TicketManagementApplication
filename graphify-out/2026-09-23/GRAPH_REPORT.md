@@ -1,12 +1,12 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 84 files · ~51,923 words
+- 84 files · ~52,097 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 36 file(s) not represented in the graph (top: .css 16, (none) 6, .mdc 5)
 
 ## Summary
-- 886 nodes · 1374 edges · 47 communities (36 shown, 11 thin omitted)
+- 890 nodes · 1387 edges · 47 communities (37 shown, 10 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 27 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
@@ -24,7 +24,7 @@
 - TicketApiIntegrationTest
 - 5. Out of scope for MVP API
 - GlobalExceptionHandler.java
-- TicketController.java
+- TicketService
 - UI Flow
 - gradlew
 - TicketStatus
@@ -50,7 +50,7 @@
 - AppShell.tsx
 - Comment.java
 - ticket.ts
-- .list
+- TicketController.java
 - frontend_src_app_tickets_page_module
 - CreateCommentRequest
 - TicketService.java
@@ -63,10 +63,10 @@
 1. `5. Out of scope for MVP API` - 55 edges
 2. `TicketStatus` - 38 edges
 3. `Ticket` - 35 edges
-4. `TicketApiIntegrationTest` - 28 edges
+4. `TicketApiIntegrationTest` - 30 edges
 5. `2026-09-22 19:37:04Z` - 23 edges
-6. `Comment` - 20 edges
-7. `TicketService` - 19 edges
+6. `TicketService` - 21 edges
+7. `Comment` - 20 edges
 8. `TicketResponse` - 18 edges
 9. `compilerOptions` - 16 edges
 10. `TicketPriority` - 15 edges
@@ -86,7 +86,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (47 total, 11 thin omitted)
+## Communities (47 total, 10 thin omitted)
 
 ### Community 0 - "API Contract"
 Cohesion: 0.05
@@ -120,9 +120,9 @@ Nodes (53): 5. Out of scope for MVP API, Build order (from your architecture / M
 Cohesion: 0.14
 Nodes (18): ErrorResponse, GlobalExceptionHandler, ValidationException, collections, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror, httpstatus (+10 more)
 
-### Community 8 - "TicketController.java"
-Cohesion: 0.14
-Nodes (18): TicketController, ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service, org.springframework.web.bind.annotation.PatchMapping (+10 more)
+### Community 8 - "TicketService"
+Cohesion: 0.24
+Nodes (7): ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service, org.springframework.web.bind.annotation.PatchMapping
 
 ### Community 9 - "UI Flow"
 Cohesion: 0.06
@@ -216,6 +216,10 @@ Nodes (14): column, enumerated, enumtype, fetchtype, generatedvalue, generationt
 Cohesion: 0.11
 Nodes (21): formatPriorityLabel(), PRIORITY_LABELS, STATUS_LABELS, frontend_src_components_common_prioritybadge_module, PRIORITY_CLASS, PriorityBadge(), PriorityBadgeProps, CreateTicketPage() (+13 more)
 
+### Community 39 - "TicketController.java"
+Cohesion: 0.14
+Nodes (13): TicketController, TicketListResponse, org.springframework.web.bind.annotation.GetMapping, org.springframework.web.bind.annotation.PostMapping, org.springframework.web.bind.annotation.RequestMapping, org.springframework.web.bind.annotation.ResponseStatus, org.springframework.web.bind.annotation.RestController, pathvariable (+5 more)
+
 ### Community 42 - "CreateCommentRequest"
 Cohesion: 0.29
 Nodes (4): CreateCommentRequest, notblank, notnull, size
@@ -235,17 +239,17 @@ Nodes (6): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_
 ## Knowledge Gaps
 - **397 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+392 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 507 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `API Contract`, `Comment`, `2026-09-22 19:37:04Z`?**
-  _High betweenness centrality (0.104) - this node is a cross-community bridge._
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
 - **Why does `Backend parts (in order)` connect `Comment` to `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+  _High betweenness centrality (0.082) - this node is a cross-community bridge._
 - **Why does `API Contract` connect `API Contract` to `API Contract`, `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.073) - this node is a cross-community bridge._
+  _High betweenness centrality (0.074) - this node is a cross-community bridge._
 - **What connects `LOW`, `MEDIUM`, `HIGH` to the rest of the system?**
   _397 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Contract` be split into smaller, more focused modules?**

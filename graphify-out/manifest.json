@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "spec/api-contract.md": {
-    "mtime": 1790174406.5608256,
-    "seen": 1790174408.3587666,
-    "ast_hash": "370e987ca1c69380705c0f5c23d11ad8",
+    "mtime": 1790175084.3153338,
+    "seen": 1790175107.9721832,
+    "ast_hash": "9d982ad7cced57b0715f54e8fec6d6df",
     "semantic_hash": ""
   },
   "spec/architecture.md": {
@@ -60,15 +60,15 @@
     "semantic_hash": ""
   },
   "spec/data-model.md": {
-    "mtime": 1790174779.6712503,
-    "seen": 1790174781.809163,
-    "ast_hash": "371ac189c89a80cd1fc4df54ee1d4ffb",
+    "mtime": 1790175069.504231,
+    "seen": 1790175107.9722626,
+    "ast_hash": "d4553fd0e9020f8b94c8a1c1015cb7e8",
     "semantic_hash": ""
   },
   "spec/requirements.md": {
-    "mtime": 1790155404.2514098,
-    "seen": 1790155655.747561,
-    "ast_hash": "956aafc9d9d9dce51882fa0a6fa5def2",
+    "mtime": 1790175059.9701648,
+    "seen": 1790175107.972265,
+    "ast_hash": "ad8b40df910215c8a25da7166594272c",
     "semantic_hash": ""
   },
   "spec/state-machine.md": {
@@ -78,15 +78,15 @@
     "semantic_hash": ""
   },
   "spec/test-strategy.md": {
-    "mtime": 1790155410.6737947,
-    "seen": 1790155655.7476034,
-    "ast_hash": "efac2e7ba9fd40b19b740c914a7e72e6",
+    "mtime": 1790175103.418467,
+    "seen": 1790175107.9723396,
+    "ast_hash": "1b57954b4567bb1508c92fbb5933a2fd",
     "semantic_hash": ""
   },
   "spec/ui-flow.md": {
-    "mtime": 1790149428.0131114,
-    "seen": 1790149432.1370392,
-    "ast_hash": "959e2d4a3ea828bbc5ac332d45acef8f",
+    "mtime": 1790175059.7878773,
+    "seen": 1790175107.9723423,
+    "ast_hash": "4570eb2eded991b7420a5411b44ce199",
     "semantic_hash": ""
   },
   "backend/build.gradle": {
@@ -528,9 +528,9 @@
     "semantic_hash": ""
   },
   "frontend/MANUAL_CHECKLIST.md": {
-    "mtime": 1790168088.6087692,
-    "seen": 1790168094.2679195,
-    "ast_hash": "acaa6700bb454bfd4f926ec5dc83b1d0",
+    "mtime": 1790175096.4474185,
+    "seen": 1790175107.9721048,
+    "ast_hash": "37e308a1a2b82b9033e627bd282bfcb3",
     "semantic_hash": ""
   },
   "frontend/src/components/common/FormWorkspace.tsx": {

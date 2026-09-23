@@ -2,55 +2,61 @@
 
 Use with backend on `http://localhost:8080` and frontend on `http://localhost:3000`.
 
+Aligned with the **final** product described in `spec/ui-flow.md` and `spec/requirements.md`.
+
 ## Screens / navigation
 
-- [ ] `/` redirects to `/tickets`
-- [ ] App shell shows Tickets and New ticket links
-- [ ] Unknown route shows not-found with link back to list
+- [x] `/` redirects to `/tickets`
+- [x] App shell shows Tickets nav + New Ticket
+- [x] Unknown route shows not-found with link back to list
 
 ## Ticket list (`/tickets`)
 
-- [ ] Tickets load from API (or empty state if none)
-- [ ] Empty state offers **Create ticket**
-- [ ] Search by keyword filters title/description
-- [ ] Status filter reloads list immediately
-- [ ] Search + status can be combined
-- [ ] Clear resets to full list
-- [ ] API down → error banner + Retry
-- [ ] Row click opens ticket detail
-- [ ] Create ticket navigates to `/tickets/new`
+- [x] Tickets load from API (or empty state if none)
+- [x] Summary cards (Total / Open / In Progress / Resolved); Resolved = RESOLVED only
+- [x] Sidebar status counts + card click filters list and highlights active card
+- [x] Header count matches filtered list
+- [x] Search by keyword filters title/description
+- [x] Status filter reloads list
+- [x] Search + status can be combined
+- [x] Clear resets to full list
+- [x] API down → error banner + Retry
+- [x] Row click opens **read-only** ticket detail
+- [x] **Edit** (right of Updated) opens edit (`?edit=1`)
+- [x] Create / New Ticket navigates to `/tickets/new`
 
 ## Create ticket (`/tickets/new`)
 
-- [ ] Blank submit shows field errors
-- [ ] Valid submit creates ticket and returns to list
-- [ ] Cancel returns to list without creating
-- [ ] New ticket appears on list afterward
-- [ ] Open a ticket from the list to edit
+- [x] Empty / digits-only title or description shows field errors from API
+- [x] Valid submit creates ticket and returns to **list**
+- [x] Cancel returns to list without creating
+- [x] New ticket appears on list afterward
 
-## Ticket detail (`/tickets/{id}`)
+## Ticket detail — view (`/tickets/{id}`)
 
-- [ ] Shows title, description, priority, status, assignee, timestamps
-- [ ] Save updates fields and returns to list
-- [ ] Reset restores last saved field values
-- [ ] Validation errors show near fields
-- [ ] Unknown id → not-found message + back to list
+- [x] Shows title, description, priority, status, assignee, timestamps
+- [x] Comments listed read-only (no add form)
+- [x] No status change control
+- [x] Unknown id → not-found message + back to list
 
-## Status + comments
+## Ticket edit (`/tickets/{id}?edit=1`)
 
-- [ ] Status control shows only allowed next statuses
-- [ ] Valid transition updates status badge
-- [ ] Terminal status (`CLOSED` / `CANCELLED`) hides change control
-- [ ] Comments list oldest → newest
-- [ ] Add comment appends to list
-- [ ] Blank comment shows field error
+- [x] Editable title, description, priority, assignee
+- [x] Save updates fields and returns to list
+- [x] Cancel returns to view
+- [x] Validation errors show under fields (blank / digits-only)
+- [x] Status control shows only allowed next statuses
+- [x] Valid transition updates status
+- [x] Terminal status hides change control
+- [x] Add comment appends to list and advances Updated
+- [x] Blank comment shows field error
 
-## Errors / durability (cross-check)
+## Errors / durability
 
-- [ ] UI shows meaningful API error messages
-- [ ] After backend restart, tickets/comments still present (file H2 / DB)
-- [ ] No secrets committed (`.env.local` ignored; use `.env.example`)
+- [x] UI shows meaningful API error messages
+- [x] After backend restart, tickets/comments still present (file H2 / DB)
+- [x] No secrets committed (`.env.local` ignored; use `.env.example`)
 
 ## Spec mapping
 
-Aligned with `spec/ui-flow.md` and acceptance criteria in `spec/requirements.md` §6 (UI-facing items).
+Final product: `spec/requirements.md` §6 (acceptance checked), `spec/ui-flow.md`, `spec/api-contract.md`, `spec/data-model.md`.

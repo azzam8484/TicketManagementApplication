@@ -2,8 +2,9 @@
 
 ## 1. Purpose
 
-Build a Ticket Management System with **backend and frontend** that fulfills the MVP capabilities below.  
-**Do not implement additional features until these requirements and acceptance criteria are met.**
+Build a Ticket Management System (**Tickr**) with **backend and frontend** that fulfills the MVP capabilities below.
+
+**Status:** MVP is **complete**. Treat this document as the product baseline. Do not add features beyond this scope unless requirements are explicitly extended.
 
 ## 2. Scope
 
@@ -13,7 +14,7 @@ Build a Ticket Management System with **backend and frontend** that fulfills the
 - Backend REST API with validation and state-machine enforcement
 - Database persistence
 
-### Out of scope (until MVP is done)
+### Out of scope (until requirements are extended)
 
 - Authentication / authorization / roles
 - Notifications, attachments, tags, SLA, analytics
@@ -24,13 +25,14 @@ Build a Ticket Management System with **backend and frontend** that fulfills the
 
 ### 3.1 Create ticket
 
-- A user can create a ticket from the UI.
+- A user can create a ticket from the UI (`/tickets/new`).
 - Backend must validate create input and reject invalid payloads.
+- On success, UI returns to the ticket list.
 
 **MVP create fields**
 
-- `title` (required)
-- `description` (required)
+- `title` (required; not blank; not digits-only)
+- `description` (required; not blank; not digits-only)
 - `priority` (required; allowed values: `LOW`, `MEDIUM`, `HIGH`)
 - `assignee` (optional; free-text for MVP)
 
@@ -39,33 +41,40 @@ Build a Ticket Management System with **backend and frontend** that fulfills the
 ### 3.2 List tickets
 
 - A user can list tickets from the UI.
-- List shows at least: title, status, priority, assignee (if set).
+- List shows: title, status, priority, assignee (if set), relative updated time, and an **Edit** action.
+- Summary cards and sidebar support filtering by status; **Resolved** card counts `RESOLVED` only.
+- Clicking a row opens **read-only** ticket details.
+- Clicking **Edit** opens the edit experience (`?edit=1`).
 
 ### 3.3 View ticket details
 
 - A user can open a ticket and view its details from the UI.
-- Details include: title, description, priority, status, assignee, timestamps (created/updated as available), and comments.
+- Details include: title, description, priority, status, assignee, timestamps, and comments (read-only list).
+- View mode does **not** allow status change or adding comments.
 
 ### 3.4 Update ticket fields
 
-- A user can update from the UI:
+- From **Edit**, a user can update:
   - title
   - description
   - priority
   - assignee
-- Backend must validate update input and reject invalid payloads.
+- Backend must validate update input and reject invalid payloads (including blank and digits-only title/description).
+- On successful save, UI returns to the ticket list.
+- Field validation errors appear under the relevant inputs.
 
 ### 3.5 Change ticket status
 
-- A user can request a status change from the UI.
+- From **Edit**, a user can request a status change.
 - Backend must enforce the state machine in section 4.
 - Valid transitions must succeed.
 - Invalid transitions must be rejected by the backend with a clear error.
 
 ### 3.6 Add comments
 
-- A user can add a comment to a ticket from the UI.
+- From **Edit**, a user can add a comment to a ticket.
 - Comment includes comment text; backend stores it with the ticket and a created timestamp.
+- Adding a comment also updates the ticket’s `updatedAt` (list **Updated** column reflects activity).
 - Backend must validate comment input (e.g. non-empty text).
 
 ### 3.7 Search tickets
@@ -75,7 +84,7 @@ Build a Ticket Management System with **backend and frontend** that fulfills the
 
 ### 3.8 Filter tickets by status
 
-- A user can filter the ticket list by status from the UI.
+- A user can filter the ticket list by status from the UI (sidebar, summary cards, and filter dropdown).
 - Filter supports each status value defined in the state machine.
 
 ### 3.9 Persist data
@@ -88,11 +97,11 @@ Build a Ticket Management System with **backend and frontend** that fulfills the
 ### 3.10 Backend validation
 
 - Backend validates all write operations (create, update fields, status change, add comment).
-- Invalid input is rejected with meaningful error responses (not generic failures only).
+- Invalid input is rejected with meaningful error responses, including per-field messages where applicable.
 
 ### 3.11 UI error display
 
-- UI displays meaningful errors for failed API calls (validation errors, invalid transitions, not found, and other client-visible failures).
+- UI displays meaningful errors for failed API calls (validation field errors, invalid transitions, not found, and other client-visible failures).
 
 ## 4. Status state machine (backend-enforced)
 
@@ -131,24 +140,24 @@ Terminal statuses for MVP: `CLOSED`, `CANCELLED` (no outgoing transitions).
 
 ## 6. Acceptance criteria
 
-- [ ] Ticket can be created from UI
-- [ ] Tickets can be listed
-- [ ] Ticket details can be viewed
-- [ ] Ticket fields can be updated (title, description, priority)
-- [ ] Assignee can be changed
-- [ ] Ticket status can be changed for valid transitions
-- [ ] Comments can be added
-- [ ] Search works (title and description)
-- [ ] Status filter works
-- [ ] Valid status transitions work
-- [ ] Invalid status transitions are rejected by backend
-- [ ] Data survives application restart
-- [ ] Backend validation works
-- [ ] UI shows meaningful errors
-- [ ] State-machine integration tests pass
-- [ ] No secrets are committed
+- [x] Ticket can be created from UI
+- [x] Tickets can be listed
+- [x] Ticket details can be viewed
+- [x] Ticket fields can be updated (title, description, priority)
+- [x] Assignee can be changed
+- [x] Ticket status can be changed for valid transitions
+- [x] Comments can be added
+- [x] Search works (title and description)
+- [x] Status filter works
+- [x] Valid status transitions work
+- [x] Invalid status transitions are rejected by backend
+- [x] Data survives application restart
+- [x] Backend validation works
+- [x] UI shows meaningful errors
+- [x] State-machine integration tests pass
+- [x] No secrets are committed
 
-## 7. Implementation rule
+## 7. Product freeze
 
-Implement only what is required in this document.  
-Additional features are allowed only after all acceptance criteria above are met.
+MVP requirements above are the final product baseline.  
+Further work should only fix defects against this baseline or follow an explicit new requirements change.

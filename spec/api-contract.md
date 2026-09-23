@@ -20,16 +20,17 @@ Defines the MVP REST API: endpoints, request bodies, query params, HTTP statuses
 ```json
 {
   "code": "VALIDATION_ERROR",
-  "message": "Human-readable summary",
+  "message": "Please fix the highlighted fields.",
   "fields": {
-    "title": "Title is required"
+    "title": "Title is required",
+    "description": "Description cannot be only digits"
   }
 }
 ```
 
 | HTTP | `code` | When |
 |---|---|---|
-| 400 | `VALIDATION_ERROR` | Invalid/missing input |
+| 400 | `VALIDATION_ERROR` | Invalid/missing input (blank, digits-only title/description, bad enum, etc.) |
 | 404 | `NOT_FOUND` | Resource not found |
 | 409 | `INVALID_STATUS_TRANSITION` | Illegal status change |
 | 500 | `INTERNAL_ERROR` | Unexpected failure |
@@ -99,6 +100,19 @@ Optional header: `Location: /api/v1/tickets/3fa85f64-5717-4562-b3fc-2c963f66afa6
   "fields": {
     "title": "Title is required",
     "priority": "must be one of LOW, MEDIUM, HIGH"
+  }
+}
+```
+
+#### Dummy error response — digits-only title/description — `400 Bad Request`
+
+```json
+{
+  "code": "VALIDATION_ERROR",
+  "message": "Please fix the highlighted fields.",
+  "fields": {
+    "title": "Title cannot be only digits",
+    "description": "Description cannot be only digits"
   }
 }
 ```

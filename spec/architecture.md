@@ -1,6 +1,6 @@
 # Architecture (Detailed)
 ## Purpose of this document
-This document defines the **technical architecture** of the Ticket Management System MVP:
+This document defines the **technical architecture** of the Ticket Management System MVP (**Tickr**):
 - system context and boundaries
 - runtime components and how they interact
 - backend and frontend internal structure
@@ -8,6 +8,8 @@ This document defines the **technical architecture** of the Ticket Management Sy
 - where validation and status rules are enforced
 - persistence, configuration, and error-handling approach
 - architectural decisions and MVP constraints
+
+**MVP status:** Complete. Product behavior is frozen in `requirements.md` and `ui-flow.md`.
 
 
 

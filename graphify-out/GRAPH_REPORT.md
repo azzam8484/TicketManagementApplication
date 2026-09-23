@@ -1,17 +1,17 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 84 files · ~52,097 words
+- 84 files · ~52,637 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 36 file(s) not represented in the graph (top: .css 16, (none) 6, .mdc 5)
 
 ## Summary
-- 890 nodes · 1387 edges · 47 communities (37 shown, 10 thin omitted)
+- 894 nodes · 1391 edges · 47 communities (37 shown, 10 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 27 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `470dcacb`
+- Built from commit: `2fbd44ad`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -52,7 +52,7 @@
 - ticket.ts
 - TicketController.java
 - frontend_src_app_tickets_page_module
-- CreateCommentRequest
+- TicketPriority
 - TicketService.java
 - Frontend MVP — manual acceptance checklist (F8)
 - frontend_src_components_tickets_createticketpage_module
@@ -94,7 +94,7 @@ Nodes (40): 1. General conventions, 1. Overview, 2. Shared schemas, 3.1 Create t
 
 ### Community 1 - "3.2 List tickets (search + filter)"
 Cohesion: 0.05
-Nodes (40): 1. General conventions, 2. API list, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment (+32 more)
+Nodes (41): 1. General conventions, 2. API list, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment (+33 more)
 
 ### Community 2 - "Data Model"
 Cohesion: 0.06
@@ -117,16 +117,16 @@ Cohesion: 0.04
 Nodes (53): 5. Out of scope for MVP API, Build order (from your architecture / MVP), Change, Commit these (Part 1), Constraints we’ll keep, Do **not** commit, Flow locally, How data *can* survive restart (+45 more)
 
 ### Community 7 - "GlobalExceptionHandler.java"
-Cohesion: 0.14
-Nodes (18): ErrorResponse, GlobalExceptionHandler, ValidationException, collections, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror, httpstatus (+10 more)
+Cohesion: 0.12
+Nodes (19): ErrorResponse, GlobalExceptionHandler, ResourceNotFoundException, ValidationException, collections, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror (+11 more)
 
 ### Community 8 - "TicketService"
-Cohesion: 0.24
-Nodes (7): ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service, org.springframework.web.bind.annotation.PatchMapping
+Cohesion: 0.20
+Nodes (8): ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service, org.springframework.transaction.annotation.Transactional, org.springframework.web.bind.annotation.PatchMapping
 
 ### Community 9 - "UI Flow"
 Cohesion: 0.06
-Nodes (30): 1. Screens (MVP), 2. Global UI behavior, 3.1 Ticket List, 3.2 Create Ticket, 3.3 Ticket Detail, 3. Screen flows, 4. End-to-end user journeys, 5. Screen → API map (+22 more)
+Nodes (33): 1. Screens (MVP), 2. Global UI behavior, 3.1 Ticket List, 3.2 Create Ticket, 3.3 Ticket Detail (view), 3.4 Ticket Edit, 3. Screen flows, 4. End-to-end user journeys (+25 more)
 
 ### Community 10 - "gradlew"
 Cohesion: 0.83
@@ -137,8 +137,8 @@ Cohesion: 0.09
 Nodes (22): assertequals, assertfalse, assertthrows, asserttrue, TicketStatus, CANCELLED, CLOSED, IN_PROGRESS (+14 more)
 
 ### Community 14 - "Ticket"
-Cohesion: 0.10
-Nodes (6): Ticket, TicketPriority, HIGH, LOW, MEDIUM, jakarta.persistence.PreUpdate
+Cohesion: 0.11
+Nodes (5): Ticket, TicketRepository, jakarta.persistence.PreUpdate, org.springframework.data.jpa.repository.Query, param
 
 ### Community 15 - "TicketDetailPage.tsx"
 Cohesion: 0.16
@@ -201,8 +201,8 @@ Cohesion: 0.33
 Nodes (6): 1. General conventions, 2. API list, 4. Dummy data reference (shared sample IDs), API Contract, Error response shape, Purpose of this document
 
 ### Community 34 - "Comment"
-Cohesion: 0.13
-Nodes (7): Comment, CommentRepository, TicketRepository, org.springframework.data.jpa.repository.JpaRepository, org.springframework.data.jpa.repository.Query, param, Backend parts (in order)
+Cohesion: 0.18
+Nodes (4): Comment, CommentRepository, org.springframework.data.jpa.repository.JpaRepository, Backend parts (in order)
 
 ### Community 36 - "AppShell.tsx"
 Cohesion: 0.09
@@ -217,44 +217,44 @@ Cohesion: 0.11
 Nodes (21): formatPriorityLabel(), PRIORITY_LABELS, STATUS_LABELS, frontend_src_components_common_prioritybadge_module, PRIORITY_CLASS, PriorityBadge(), PriorityBadgeProps, CreateTicketPage() (+13 more)
 
 ### Community 39 - "TicketController.java"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (13): TicketController, TicketListResponse, org.springframework.web.bind.annotation.GetMapping, org.springframework.web.bind.annotation.PostMapping, org.springframework.web.bind.annotation.RequestMapping, org.springframework.web.bind.annotation.ResponseStatus, org.springframework.web.bind.annotation.RestController, pathvariable (+5 more)
 
-### Community 42 - "CreateCommentRequest"
-Cohesion: 0.29
-Nodes (4): CreateCommentRequest, notblank, notnull, size
+### Community 42 - "TicketPriority"
+Cohesion: 0.15
+Nodes (8): TicketPriority, HIGH, LOW, MEDIUM, CreateCommentRequest, notblank, notnull, size
 
 ### Community 43 - "TicketService.java"
-Cohesion: 0.22
-Nodes (6): CommentResponse, TicketDetailResponse, ResourceNotFoundException, TicketMapper, list, org.springframework.transaction.annotation.Transactional
+Cohesion: 0.32
+Nodes (4): CommentResponse, TicketDetailResponse, TicketMapper, list
 
 ### Community 44 - "Frontend MVP — manual acceptance checklist (F8)"
 Cohesion: 0.22
-Nodes (8): Create ticket (`/tickets/new`), Errors / durability (cross-check), Frontend MVP — manual acceptance checklist (F8), Screens / navigation, Spec mapping, Status + comments, Ticket detail (`/tickets/{id}`), Ticket list (`/tickets`)
+Nodes (8): Create ticket (`/tickets/new`), Errors / durability, Frontend MVP — manual acceptance checklist (F8), Screens / navigation, Spec mapping, Ticket detail — view (`/tickets/{id}`), Ticket edit (`/tickets/{id}?edit=1`), Ticket list (`/tickets`)
 
 ### Community 47 - "CommentsSection.tsx"
 Cohesion: 0.18
 Nodes (6): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_src_components_comments_commentssection_module, ApiError, Comment
 
 ## Knowledge Gaps
-- **397 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+392 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 507 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **400 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+395 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 510 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `API Contract`, `Comment`, `2026-09-22 19:37:04Z`?**
-  _High betweenness centrality (0.106) - this node is a cross-community bridge._
-- **Why does `Backend parts (in order)` connect `Comment` to `5. Out of scope for MVP API`?**
+  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+- **Why does `Backend parts (in order)` connect `Comment` to `5. Out of scope for MVP API`, `Ticket`?**
   _High betweenness centrality (0.082) - this node is a cross-community bridge._
 - **Why does `API Contract` connect `API Contract` to `API Contract`, `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
   _High betweenness centrality (0.074) - this node is a cross-community bridge._
 - **What connects `LOW`, `MEDIUM`, `HIGH` to the rest of the system?**
-  _397 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _400 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Contract` be split into smaller, more focused modules?**
   _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
 - **Should `3.2 List tickets (search + filter)` be split into smaller, more focused modules?**
-  _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
 - **Should `Data Model` be split into smaller, more focused modules?**
   _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._

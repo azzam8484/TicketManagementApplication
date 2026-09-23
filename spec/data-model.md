@@ -99,12 +99,14 @@ Rules:
 - Required
 - Trim before save
 - Must not be blank after trim
+- Must not be digits-only (e.g. `12345` is rejected)
 - Max length: 200
 
 **`description`**
 - Required
 - Trim before save
 - Must not be blank after trim
+- Must not be digits-only
 - Stored as TEXT
 - Practical validation max: 10_000 characters
 
@@ -273,15 +275,15 @@ CREATE INDEX idx_comment_ticket_id_created_at
 ## 8. Validation rules tied to data
 
 ### Ticket create
-- `title` non-blank
-- `description` non-blank
+- `title` non-blank; not digits-only
+- `description` non-blank; not digits-only
 - `priority` valid enum
 - `assignee` optional
 - `status` forced to `OPEN`
 
 ### Ticket field update
 - Updatable: `title`, `description`, `priority`, `assignee` only
-- Same non-blank/enum rules for provided fields
+- Same non-blank / not digits-only / enum rules for provided fields
 - `status` is not updated on this path
 
 ### Status change

@@ -75,17 +75,19 @@ Use real HTTP API against the application with a database.
 | Test | Expectation |
 |---|---|
 | Create ticket with valid body | `201`, status `OPEN`, fields persisted |
-| Create with missing title/description/priority | `400 VALIDATION_ERROR` |
+| Create with missing title/description/priority | `400 VALIDATION_ERROR` with field messages |
+| Create with digits-only title/description | `400`, fields e.g. “Title cannot be only digits” |
 | Get ticket by id | `200` with ticket data |
 | Get unknown id | `404 NOT_FOUND` |
 | Update title/description/priority/assignee | `200`, values changed, status unchanged |
-| Update with blank title | `400` |
+| Update with blank title | `400`, `fields.title` = “Title is required” |
+| Update with digits-only description | `400`, `fields.description` = “Description cannot be only digits” |
 
 ### 4.2 Comments
 
 | Test | Expectation |
 |---|---|
-| Add comment to existing ticket | `201`, comment returned |
+| Add comment to existing ticket | `201`, comment returned; ticket `updatedAt` advances |
 | Add blank comment | `400` |
 | Add comment to missing ticket | `404` |
 | Get ticket details includes comments | comments listed in order |
@@ -151,17 +153,17 @@ Run against a live backend.
 
 | # | Check | Pass criteria |
 |---|---|---|
-| 1 | Create ticket from UI | Ticket appears; detail shows `OPEN` |
-| 2 | List tickets | Created tickets visible |
-| 3 | View details | Fields + comments visible |
-| 4 | Update fields | Changes saved and shown |
-| 5 | Change assignee | Assignee updated |
-| 6 | Add comment | Comment appears on detail |
+| 1 | Create ticket from UI | Ticket appears on list as `OPEN` |
+| 2 | List tickets | Created tickets visible; summary cards + sidebar counts |
+| 3 | View details | Row click → read-only fields + comments (no status/add comment) |
+| 4 | Edit via list Edit | Opens edit; field save returns to list |
+| 5 | Change assignee | Assignee updated via edit |
+| 6 | Add comment | On edit; comment appears; list Updated advances |
 | 7 | Search | Keyword narrows list |
-| 8 | Status filter | Filter narrows list |
-| 9 | Valid status changes | Happy path and cancel path work |
+| 8 | Status filter | Sidebar / cards / dropdown narrow list; Resolved = RESOLVED only |
+| 9 | Valid status changes | Happy path and cancel path work on edit |
 | 10 | Invalid status | Error message shown; status unchanged |
-| 11 | Validation errors | Meaningful field/page errors on bad input |
+| 11 | Validation errors | Field messages for blank and digits-only title/description |
 | 12 | Not found / API failure | Meaningful error shown |
 
 Automated E2E is optional after MVP manual pass.
