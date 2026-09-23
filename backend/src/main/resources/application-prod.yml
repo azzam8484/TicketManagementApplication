@@ -1,0 +1,19 @@
+# Production profile — PostgreSQL
+# Activate with: --spring.profiles.active=prod
+# Provide secrets via environment variables (never commit real credentials).
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/ticketdb}
+    username: ${DB_USERNAME:ticket}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  flyway:
+    enabled: false
+  h2:
+    console:
+      enabled: false
