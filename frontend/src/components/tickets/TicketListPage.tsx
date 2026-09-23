@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { listTickets } from "@/lib/api";
 import type { Ticket, TicketStatus } from "@/types/ticket";
-import { ErrorBanner, LoadingState } from "@/components/common";
+import { EmptyState, ErrorBanner, LoadingState } from "@/components/common";
 import {
   TicketListControls,
   type TicketListFilters,
@@ -71,6 +71,9 @@ export function TicketListPage() {
           onSubmit={() => {
             void load(filters);
           }}
+          onStatusFilterChange={(next) => {
+            void load(next);
+          }}
           onClear={() => {
             setFilters(EMPTY_FILTERS);
             void load(EMPTY_FILTERS);
@@ -91,11 +94,16 @@ export function TicketListPage() {
       {loading ? <LoadingState label="Loading tickets…" /> : null}
 
       {!loading && !error && tickets.length === 0 ? (
-        <p className={styles.empty}>
-          {hasActiveFilters
-            ? "No tickets found for the current search/filter."
-            : "No tickets found."}
-        </p>
+        <EmptyState
+          title="No tickets found"
+          description={
+            hasActiveFilters
+              ? "Try clearing search/filter, or create a new ticket."
+              : "Create your first ticket to get started."
+          }
+          actionHref="/tickets/new"
+          actionLabel="Create ticket"
+        />
       ) : null}
 
       {!loading && !error && tickets.length > 0 ? (

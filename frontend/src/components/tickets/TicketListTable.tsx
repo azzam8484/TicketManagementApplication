@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Ticket } from "@/types/ticket";
 import { PriorityBadge, StatusBadge } from "@/components/common";
 import styles from "./TicketListTable.module.css";
@@ -10,6 +10,8 @@ type TicketListTableProps = {
 };
 
 export function TicketListTable({ tickets }: TicketListTableProps) {
+  const router = useRouter();
+
   return (
     <div className={styles.wrap}>
       <table className={styles.table}>
@@ -23,12 +25,21 @@ export function TicketListTable({ tickets }: TicketListTableProps) {
         </thead>
         <tbody>
           {tickets.map((ticket) => (
-            <tr key={ticket.id}>
-              <td>
-                <Link href={`/tickets/${ticket.id}`} className={styles.titleLink}>
-                  {ticket.title}
-                </Link>
-              </td>
+            <tr
+              key={ticket.id}
+              className={styles.row}
+              tabIndex={0}
+              role="link"
+              aria-label={`Open ticket ${ticket.title}`}
+              onClick={() => router.push(`/tickets/${ticket.id}`)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  router.push(`/tickets/${ticket.id}`);
+                }
+              }}
+            >
+              <td className={styles.titleCell}>{ticket.title}</td>
               <td>
                 <StatusBadge status={ticket.status} />
               </td>

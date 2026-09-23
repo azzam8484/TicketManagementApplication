@@ -14,6 +14,8 @@ type TicketListControlsProps = {
   onFiltersChange: (next: TicketListFilters) => void;
   onSubmit: () => void;
   onClear: () => void;
+  /** Called when status filter changes (ui-flow: reload on filter). */
+  onStatusFilterChange?: (next: TicketListFilters) => void;
   disabled?: boolean;
 };
 
@@ -22,6 +24,7 @@ export function TicketListControls({
   onFiltersChange,
   onSubmit,
   onClear,
+  onStatusFilterChange,
   disabled = false,
 }: TicketListControlsProps) {
   return (
@@ -55,7 +58,9 @@ export function TicketListControls({
           disabled={disabled}
           onChange={(event) => {
             const value = event.target.value as TicketStatus | "";
-            onFiltersChange({ ...filters, status: value });
+            const next = { ...filters, status: value };
+            onFiltersChange(next);
+            onStatusFilterChange?.(next);
           }}
           className={styles.select}
         >

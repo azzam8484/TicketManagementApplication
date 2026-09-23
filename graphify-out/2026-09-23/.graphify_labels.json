@@ -26,7 +26,7 @@
   "24": "State Machine",
   "25": "Test Strategy",
   "26": "CorsConfig.java",
-  "27": "TicketListControls.tsx",
+  "27": "StatusControl.tsx",
   "28": "package.json",
   "29": "compilerOptions",
   "30": "layout.tsx",
@@ -34,10 +34,11 @@
   "32": "README.md",
   "33": "API Contract",
   "34": "TicketListPage.tsx",
-  "36": "common/index.ts",
-  "37": "TicketDetailPlaceholder.tsx",
+  "35": "frontend_src_components_tickets_ticketdetailplaceholder_module",
+  "36": "ApiError",
+  "37": "CommentsSection.tsx",
   "38": "ticket.ts",
-  "39": "labels.ts",
+  "39": "common/index.ts",
   "40": "CreateTicketPage.tsx",
   "41": "frontend_src_app_tickets_page_module"
 }

@@ -491,16 +491,28 @@
     "ast_hash": "17254698e8a9518646e0e1c2da6c4ec4",
     "semantic_hash": ""
   },
-  "frontend/src/components/tickets/TicketDetailPlaceholder.tsx": {
-    "mtime": 1790166324.2191937,
-    "seen": 1790166391.6163545,
-    "ast_hash": "1dfed60840b63c774e497fdf88124f19",
+  "frontend/src/components/tickets/TicketDetailPage.tsx": {
+    "mtime": 1790167014.7436547,
+    "seen": 1790167080.8688643,
+    "ast_hash": "903efeb5629317e7cdfa0e9c23dc6ef9",
     "semantic_hash": ""
   },
-  "frontend/src/components/tickets/TicketDetailPage.tsx": {
-    "mtime": 1790166663.1022246,
-    "seen": 1790166751.0518036,
-    "ast_hash": "4f515cd8e04ff548c8d1d641ca5a35bc",
+  "frontend/src/components/comments/CommentsSection.tsx": {
+    "mtime": 1790167002.4180014,
+    "seen": 1790167080.86773,
+    "ast_hash": "6ec2b78b4b74d524e716ea7997bb9cba",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/tickets/StatusControl.tsx": {
+    "mtime": 1790166988.9202816,
+    "seen": 1790167080.8688586,
+    "ast_hash": "647b6fbb161a5c7436f2e5e8ab085b90",
+    "semantic_hash": ""
+  },
+  "frontend/src/lib/ticketStatusTransitions.ts": {
+    "mtime": 1790166984.1855247,
+    "seen": 1790167080.8696015,
+    "ast_hash": "eb48df2d508be1e24d0feb1efaad9586",
     "semantic_hash": ""
   }
 }

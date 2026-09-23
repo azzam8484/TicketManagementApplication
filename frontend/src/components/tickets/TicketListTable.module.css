@@ -36,16 +36,20 @@
   background: #f8fafc;
 }
 
-.titleLink {
+.titleCell {
   color: var(--accent);
   font-weight: 600;
 }
 
-.titleLink:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
 .assignee {
   color: #243447;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.row:focus-visible {
+  outline: 2px solid rgba(31, 78, 121, 0.35);
+  outline-offset: -2px;
 }

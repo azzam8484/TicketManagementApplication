@@ -444,9 +444,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/common/index.ts": {
-    "mtime": 1790165567.1198123,
-    "seen": 1790165634.9092777,
-    "ast_hash": "1483032f95e30d73816958a410ea4e47",
+    "mtime": 1790167334.1799922,
+    "seen": 1790167447.9983196,
+    "ast_hash": "99da861c5d056b5bd0b2dbfe86b7c733",
     "semantic_hash": ""
   },
   "frontend/src/components/common/labels.ts": {
@@ -456,21 +456,21 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListControls.tsx": {
-    "mtime": 1790166259.0238285,
-    "seen": 1790166391.6163578,
-    "ast_hash": "7514ae10712e94792ce15eaa03ec62fa",
+    "mtime": 1790167348.4515655,
+    "seen": 1790167447.9985065,
+    "ast_hash": "c44b5902b228bf18a4198f4e8af19f51",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListPage.tsx": {
-    "mtime": 1790166259.20641,
-    "seen": 1790166391.616361,
-    "ast_hash": "5c38e4aaca86462bc70b61cf735c1194",
+    "mtime": 1790167360.0144126,
+    "seen": 1790167447.9985082,
+    "ast_hash": "77f21dfc7a28c292cb866708bfbbc638",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListTable.tsx": {
-    "mtime": 1790166259.108409,
-    "seen": 1790166391.6163638,
-    "ast_hash": "3170e5f2e0a0d582e5f237d002f4a8fd",
+    "mtime": 1790167350.3013804,
+    "seen": 1790167447.9985094,
+    "ast_hash": "096ba359df0bd53ef97f72737d82cfd0",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/[id]/page.tsx": {
@@ -513,6 +513,24 @@
     "mtime": 1790166984.1855247,
     "seen": 1790167080.8696015,
     "ast_hash": "eb48df2d508be1e24d0feb1efaad9586",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/not-found.tsx": {
+    "mtime": 1790167380.046944,
+    "seen": 1790167447.997747,
+    "ast_hash": "24ab514c3b9a1b6c6f41f49d9ca0eab4",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/EmptyState.tsx": {
+    "mtime": 1790167330.8338952,
+    "seen": 1790167447.9980311,
+    "ast_hash": "63ccde00cf5843488899a993e31fe7c9",
+    "semantic_hash": ""
+  },
+  "frontend/MANUAL_CHECKLIST.md": {
+    "mtime": 1790167380.969959,
+    "seen": 1790167447.9992843,
+    "ast_hash": "a1e341d16f08b68558f962273dba4b5d",
     "semantic_hash": ""
   }
 }
