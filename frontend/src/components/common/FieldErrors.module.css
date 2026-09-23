@@ -1,0 +1,14 @@
+.error {
+  margin-top: 0.35rem;
+  color: #9b1c1c;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.list {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  color: #9b1c1c;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,36 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.open {
+  background: #e8f1fb;
+  color: #1f4e79;
+}
+
+.inProgress {
+  background: #eef6e8;
+  color: #3b6d11;
+}
+
+.resolved {
+  background: #e8f7f2;
+  color: #0f6b52;
+}
+
+.closed {
+  background: #eef1f5;
+  color: #4a5568;
+}
+
+.cancelled {
+  background: #f7ecec;
+  color: #8a2f2f;
+}

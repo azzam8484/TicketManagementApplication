@@ -37,3 +37,22 @@
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
 }
+
+.preview {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.preview h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

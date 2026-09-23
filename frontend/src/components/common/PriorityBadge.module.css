@@ -1,0 +1,26 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.low {
+  background: #eef2f7;
+  color: #4a5d73;
+}
+
+.medium {
+  background: #fff4df;
+  color: #8a5a00;
+}
+
+.high {
+  background: #fde8e8;
+  color: #9b1c1c;
+}

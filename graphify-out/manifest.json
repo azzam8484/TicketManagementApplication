@@ -318,9 +318,9 @@
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/page.tsx": {
-    "mtime": 1790165103.55292,
-    "seen": 1790165162.788921,
-    "ast_hash": "4f4a0c710e299fbe2ab4b38698006117",
+    "mtime": 1790165569.1564462,
+    "seen": 1790165634.9091697,
+    "ast_hash": "c2adc39bb71f0e36a7fd0d058a5efb71",
     "semantic_hash": ""
   },
   "frontend/src/components/AppShell.tsx": {
@@ -405,6 +405,54 @@
     "mtime": 1790165090.8668158,
     "seen": 1790165162.7889707,
     "ast_hash": "ab498b1c18d148814a95c0d5ae0597c5",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/ErrorBanner.tsx": {
+    "mtime": 1790165549.6472363,
+    "seen": 1790165634.9092634,
+    "ast_hash": "78721c4c68cd3b2b3ac493bb85493357",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/FieldErrors.tsx": {
+    "mtime": 1790165553.6380498,
+    "seen": 1790165634.9092667,
+    "ast_hash": "9262ce1260b6e07fe57dddaf04953d06",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/LoadingState.tsx": {
+    "mtime": 1790165539.1951246,
+    "seen": 1790165634.9092681,
+    "ast_hash": "d3ccccbab0d366e5eee8e3d1ced5c869",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/PriorityBadge.tsx": {
+    "mtime": 1790165562.1203704,
+    "seen": 1790165634.9092705,
+    "ast_hash": "31d2613431c7bdbf672084b22c876a09",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/StatusBadge.tsx": {
+    "mtime": 1790165559.0658176,
+    "seen": 1790165634.9092731,
+    "ast_hash": "0aa34cfff8b9b8672a6bcb594dbe427b",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/errorMessage.ts": {
+    "mtime": 1790165545.5089624,
+    "seen": 1790165634.9092755,
+    "ast_hash": "65f79379f7f2e9b7cff938f510cde19a",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/index.ts": {
+    "mtime": 1790165567.1198123,
+    "seen": 1790165634.9092777,
+    "ast_hash": "1483032f95e30d73816958a410ea4e47",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/labels.ts": {
+    "mtime": 1790165557.1483169,
+    "seen": 1790165634.90928,
+    "ast_hash": "80e30933e38319436ff03a4ee5b873a7",
     "semantic_hash": ""
   }
 }
