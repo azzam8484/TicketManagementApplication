@@ -474,9 +474,9 @@
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/[id]/page.tsx": {
-    "mtime": 1790166324.7662003,
-    "seen": 1790166391.6152227,
-    "ast_hash": "550bda333694c5c10a61b2d33ff2c471",
+    "mtime": 1790166665.435351,
+    "seen": 1790166751.047599,
+    "ast_hash": "69ea82dd192bffc9b101144ccac10e96",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/new/page.tsx": {
@@ -495,6 +495,12 @@
     "mtime": 1790166324.2191937,
     "seen": 1790166391.6163545,
     "ast_hash": "1dfed60840b63c774e497fdf88124f19",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/tickets/TicketDetailPage.tsx": {
+    "mtime": 1790166663.1022246,
+    "seen": 1790166751.0518036,
+    "ast_hash": "4f515cd8e04ff548c8d1d641ca5a35bc",
     "semantic_hash": ""
   }
 }

@@ -1,4 +1,4 @@
-import { TicketDetailPlaceholder } from "@/components/tickets/TicketDetailPlaceholder";
+import { TicketDetailPage } from "@/components/tickets/TicketDetailPage";
 
 type TicketDetailRouteProps = {
   params: Promise<{ id: string }>;
@@ -8,5 +8,5 @@ export default async function TicketDetailRoute({
   params,
 }: TicketDetailRouteProps) {
   const { id } = await params;
-  return <TicketDetailPlaceholder ticketId={id} />;
+  return <TicketDetailPage ticketId={id} />;
 }

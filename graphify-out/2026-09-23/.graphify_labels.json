@@ -36,9 +36,10 @@
   "34": "TicketListPage.tsx",
   "35": "TicketService.java",
   "36": "common/index.ts",
-  "37": "TicketListControls.tsx",
+  "37": "TicketDetailPlaceholder.tsx",
   "38": "ticket.ts",
   "39": "labels.ts",
-  "40": "API Contract",
-  "41": "frontend_src_app_tickets_page_module"
+  "40": "CreateTicketPage.tsx",
+  "41": "frontend_src_app_tickets_page_module",
+  "42": "next"
 }

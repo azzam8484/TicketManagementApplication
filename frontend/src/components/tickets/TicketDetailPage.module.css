@@ -1,0 +1,171 @@
+.page {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 44rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.35rem;
+}
+
+.lead {
+  color: var(--muted);
+  line-height: 1.45;
+  max-width: 34rem;
+}
+
+.back {
+  color: var(--accent);
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timestamps {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.timestamps dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.timestamps dd code {
+  font-size: 0.85rem;
+  background: #eef3f9;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.success {
+  color: #0f6b52;
+  background: #e8f7f2;
+  border: 1px solid rgba(15, 107, 82, 0.2);
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.92rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.15rem;
+  box-shadow: 0 8px 24px rgba(20, 32, 51, 0.04);
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--foreground);
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 8rem;
+  line-height: 1.45;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: 2px solid rgba(31, 78, 121, 0.25);
+  outline-offset: 1px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.primary,
+.secondary {
+  appearance: none;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.55rem 0.95rem;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary:hover:not(:disabled) {
+  background: #183a5c;
+}
+
+.secondary {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #243447;
+}
+
+.secondary:hover:not(:disabled) {
+  background: #f3f6fa;
+}
+
+.primary:disabled,
+.secondary:disabled,
+.input:disabled,
+.select:disabled,
+.textarea:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
