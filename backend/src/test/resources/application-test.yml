@@ -1,0 +1,18 @@
+# Isolated in-memory H2 for automated integration tests (fast, clean per run).
+# Restart-survival checks use the local file-based profile manually (see test-strategy.md).
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:ticket_it;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  flyway:
+    enabled: true

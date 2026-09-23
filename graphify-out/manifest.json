@@ -234,9 +234,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java": {
-    "mtime": 1790156229.1088538,
-    "seen": 1790156257.2179482,
-    "ast_hash": "eb3c8f315200d4dc07fb5607f333805d",
+    "mtime": 1790159159.0227933,
+    "seen": 1790159188.1943665,
+    "ast_hash": "48acbd622a037a230c2b71b94c730c41",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/exception/GlobalExceptionHandler.java": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/service/TicketService.java": {
-    "mtime": 1790158158.3918705,
-    "seen": 1790158181.6753948,
-    "ast_hash": "2e148563fdc94bae8ef826aa792b788c",
+    "mtime": 1790159124.6139593,
+    "seen": 1790159188.1951303,
+    "ast_hash": "c08c45edadaed78e5f0cf1aa8319032f",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/config/CorsConfig.java": {
@@ -273,6 +273,18 @@
     "mtime": 1790158515.982393,
     "seen": 1790158624.4702537,
     "ast_hash": "b9b45526b84225a03fa1ff64e0e2fd57",
+    "semantic_hash": ""
+  },
+  "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java": {
+    "mtime": 1790159159.2417986,
+    "seen": 1790159188.1952424,
+    "ast_hash": "e35e4eed6e2450175df903e594eecdb2",
+    "semantic_hash": ""
+  },
+  "backend/src/test/resources/application-test.yml": {
+    "mtime": 1790159124.6145191,
+    "seen": 1790159188.1976576,
+    "ast_hash": "020725c98f0624cb59e0d04b03ad1da8",
     "semantic_hash": ""
   }
 }

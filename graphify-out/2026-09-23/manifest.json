@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/resources/application.yml": {
-    "mtime": 1790154531.0798686,
-    "seen": 1790154673.578346,
-    "ast_hash": "e19a2e1e854231a788bce8e80622c982",
+    "mtime": 1790158525.403186,
+    "seen": 1790158624.4716253,
+    "ast_hash": "09088b06666b1c4406868c8dd5513687",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/domain/Comment.java": {
@@ -261,6 +261,18 @@
     "mtime": 1790158158.3918705,
     "seen": 1790158181.6753948,
     "ast_hash": "2e148563fdc94bae8ef826aa792b788c",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/config/CorsConfig.java": {
+    "mtime": 1790158516.9026074,
+    "seen": 1790158624.470252,
+    "ast_hash": "1fae66784e2c8dd01acff24cc45b64bd",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/controller/TicketController.java": {
+    "mtime": 1790158515.982393,
+    "seen": 1790158624.4702537,
+    "ast_hash": "b9b45526b84225a03fa1ff64e0e2fd57",
     "semantic_hash": ""
   }
 }

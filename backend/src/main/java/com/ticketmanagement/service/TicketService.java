@@ -68,6 +68,10 @@ public class TicketService {
 
     @Transactional
     public TicketResponse updateFields(UUID id, UpdateTicketRequest request) {
+        if (request.status() != null) {
+            throw new IllegalArgumentException(
+                    "status cannot be updated through this endpoint; use PATCH /api/v1/tickets/{id}/status");
+        }
         if (!hasAnyFieldUpdate(request)) {
             throw new IllegalArgumentException("At least one field must be provided for update");
         }
