@@ -82,6 +82,19 @@
       "source_location": "L16"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
+      "label": "TicketPriority",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "ticketpriority",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L3"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
       "label": "CommentRepository",
       "_callable": true,
@@ -131,7 +144,7 @@
       "file_type": "code",
       "norm_label": "formstate",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L21"
+      "source_location": "L29"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpageprops",
@@ -144,7 +157,7 @@
       "file_type": "code",
       "norm_label": "ticketdetailpageprops",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L28"
+      "source_location": "L36"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_config_corsconfig_corsconfig",
@@ -166,37 +179,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
       "norm_label": "statusbadgeprops",
       "source_file": "frontend/src/components/common/StatusBadge.tsx",
       "source_location": "L13"
     },
     {
-      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistcontrolsprops",
-      "label": "TicketListControlsProps",
+      "id": "frontend_src_components_tickets_statuscontrol_statuscontrolprops",
+      "label": "StatusControlProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
-      "norm_label": "ticketlistcontrolsprops",
-      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistfilters",
-      "label": "TicketListFilters",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "TicketListControls.tsx",
-      "file_type": "code",
-      "norm_label": "ticketlistfilters",
-      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
-      "source_location": "L7"
+      "norm_label": "statuscontrolprops",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L16"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
@@ -238,19 +238,6 @@
       "source_location": "L4"
     },
     {
-      "id": "frontend_src_lib_api_errors_apierror",
-      "label": "ApiError",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "api/index.ts",
-      "file_type": "code",
-      "norm_label": "apierror",
-      "source_file": "frontend/src/lib/api/errors.ts",
-      "source_location": "L7"
-    },
-    {
       "id": "frontend_src_types_ticket_apierrorbody",
       "label": "ApiErrorBody",
       "_callable": true,
@@ -262,6 +249,32 @@
       "norm_label": "apierrorbody",
       "source_file": "frontend/src/types/ticket.ts",
       "source_location": "L73"
+    },
+    {
+      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistcontrolsprops",
+      "label": "TicketListControlsProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "file_type": "code",
+      "norm_label": "ticketlistcontrolsprops",
+      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistfilters",
+      "label": "TicketListFilters",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "file_type": "code",
+      "norm_label": "ticketlistfilters",
+      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
+      "source_location": "L7"
     },
     {
       "id": "frontend_src_components_tickets_ticketlisttable_ticketlisttableprops",
@@ -296,50 +309,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "errorbannerprops",
       "source_file": "frontend/src/components/common/ErrorBanner.tsx",
       "source_location": "L9"
     },
     {
-      "id": "frontend_src_components_common_fielderrors_fielderrorsprops",
-      "label": "FieldErrorsProps",
+      "id": "frontend_src_lib_api_errors_apierror",
+      "label": "ApiError",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
-      "norm_label": "fielderrorsprops",
-      "source_file": "frontend/src/components/common/FieldErrors.tsx",
-      "source_location": "L3"
+      "norm_label": "apierror",
+      "source_file": "frontend/src/lib/api/errors.ts",
+      "source_location": "L7"
     },
     {
-      "id": "frontend_src_components_common_loadingstate_loadingstateprops",
-      "label": "LoadingStateProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "common/index.ts",
-      "file_type": "code",
-      "norm_label": "loadingstateprops",
-      "source_file": "frontend/src/components/common/LoadingState.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholderprops",
-      "label": "TicketDetailPlaceholderProps",
+      "id": "frontend_src_components_comments_commentssection_commentssectionprops",
+      "label": "CommentsSectionProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
+      "community_name": "CommentsSection.tsx",
       "file_type": "code",
-      "norm_label": "ticketdetailplaceholderprops",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L15"
+      "norm_label": "commentssectionprops",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L9"
     },
     {
       "id": "frontend_src_types_ticket_changestatusrequest",
@@ -459,13 +459,39 @@
       "source_location": "L53"
     },
     {
+      "id": "frontend_src_components_common_fielderrors_fielderrorsprops",
+      "label": "FieldErrorsProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "fielderrorsprops",
+      "source_file": "frontend/src/components/common/FieldErrors.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "frontend_src_components_common_loadingstate_loadingstateprops",
+      "label": "LoadingStateProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "loadingstateprops",
+      "source_file": "frontend/src/components/common/LoadingState.tsx",
+      "source_location": "L3"
+    },
+    {
       "id": "frontend_src_components_common_prioritybadge_prioritybadgeprops",
       "label": "PriorityBadgeProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "prioritybadgeprops",
       "source_file": "frontend/src/components/common/PriorityBadge.tsx",
@@ -478,7 +504,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "ticketpriority",
       "source_file": "frontend/src/types/ticket.ts",
@@ -537,19 +563,6 @@
       "source_location": "L18"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception_resourcenotfoundexception",
-      "label": "ResourceNotFoundException",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "GlobalExceptionHandler.java",
-      "file_type": "code",
-      "norm_label": "resourcenotfoundexception",
-      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
-      "source_location": "L3"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller",
       "label": "TicketController",
       "_callable": true,
@@ -561,19 +574,6 @@
       "norm_label": "ticketcontroller",
       "source_file": "backend/src/main/java/com/ticketmanagement/controller/TicketController.java",
       "source_location": "L29"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
-      "label": "TicketPriority",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketpriority",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L3"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_dto_changestatusrequest_changestatusrequest",
@@ -678,6 +678,19 @@
       "norm_label": "updateticketrequest",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java",
       "source_location": "L11"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception_resourcenotfoundexception",
+      "label": "ResourceNotFoundException",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "resourcenotfoundexception",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
+      "source_location": "L3"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_mapper_ticketmapper_ticketmapper",
@@ -1130,6 +1143,18 @@
       "source_location": "L62"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getpriority",
+      "label": ".getPriority()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getpriority()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L94"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getstatus",
       "label": ".getStatus()",
       "_callable": true,
@@ -1246,6 +1271,18 @@
       "source_location": "L66"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setpriority",
+      "label": ".setPriority()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".setpriority()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L98"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setstatus",
       "label": ".setStatus()",
       "_callable": true,
@@ -1351,7 +1388,7 @@
       "file_type": "code",
       "norm_label": "clientvalidate()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L41"
+      "source_location": "L49"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_formattimestamp",
@@ -1363,7 +1400,7 @@
       "file_type": "code",
       "norm_label": "formattimestamp()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L52"
+      "source_location": "L60"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
@@ -1375,7 +1412,19 @@
       "file_type": "code",
       "norm_label": "ticketdetailpage()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L60"
+      "source_location": "L68"
+    },
+    {
+      "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handleaddcomment",
+      "label": "handleAddComment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketDetailPage.tsx",
+      "file_type": "code",
+      "norm_label": "handleaddcomment()",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L170"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlereset",
@@ -1387,7 +1436,7 @@
       "file_type": "code",
       "norm_label": "handlereset()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L143"
+      "source_location": "L151"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlesave",
@@ -1399,7 +1448,19 @@
       "file_type": "code",
       "norm_label": "handlesave()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L92"
+      "source_location": "L100"
+    },
+    {
+      "id": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlestatuschange",
+      "label": "handleStatusChange()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketDetailPage.tsx",
+      "file_type": "code",
+      "norm_label": "handlestatuschange()",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L161"
     },
     {
       "id": "frontend_src_components_tickets_ticketdetailpage_toform",
@@ -1411,7 +1472,31 @@
       "file_type": "code",
       "norm_label": "toform()",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L32"
+      "source_location": "L40"
+    },
+    {
+      "id": "frontend_src_lib_api_tickets_addcomment",
+      "label": "addComment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketDetailPage.tsx",
+      "file_type": "code",
+      "norm_label": "addcomment()",
+      "source_file": "frontend/src/lib/api/tickets.ts",
+      "source_location": "L78"
+    },
+    {
+      "id": "frontend_src_lib_api_tickets_changeticketstatus",
+      "label": "changeTicketStatus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketDetailPage.tsx",
+      "file_type": "code",
+      "norm_label": "changeticketstatus()",
+      "source_file": "frontend/src/lib/api/tickets.ts",
+      "source_location": "L66"
     },
     {
       "id": "frontend_src_lib_api_tickets_updateticket",
@@ -1489,7 +1574,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
       "norm_label": "formatstatuslabel()",
       "source_file": "frontend/src/components/common/labels.ts",
@@ -1501,23 +1586,59 @@
       "_callable": true,
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
       "norm_label": "statusbadge()",
       "source_file": "frontend/src/components/common/StatusBadge.tsx",
       "source_location": "L17"
     },
     {
-      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistcontrols",
-      "label": "TicketListControls()",
+      "id": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "label": "StatusControl()",
       "_callable": true,
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
-      "norm_label": "ticketlistcontrols()",
-      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
-      "source_location": "L20"
+      "norm_label": "statuscontrol()",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "frontend_src_components_tickets_statuscontrol_statuscontrol_handlesubmit",
+      "label": "handleSubmit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "StatusControl.tsx",
+      "file_type": "code",
+      "norm_label": "handlesubmit()",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L40"
+    },
+    {
+      "id": "frontend_src_lib_ticketstatustransitions_allowednextstatuses",
+      "label": "allowedNextStatuses()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "StatusControl.tsx",
+      "file_type": "code",
+      "norm_label": "allowednextstatuses()",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "frontend_src_lib_ticketstatustransitions_isterminalstatus",
+      "label": "isTerminalStatus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "StatusControl.tsx",
+      "file_type": "code",
+      "norm_label": "isterminalstatus()",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L19"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication_main",
@@ -1578,54 +1699,6 @@
       "source_location": "L11"
     },
     {
-      "id": "frontend_src_lib_api_errors_apierror_constructor",
-      "label": ".constructor()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "api/index.ts",
-      "file_type": "code",
-      "norm_label": ".constructor()",
-      "source_file": "frontend/src/lib/api/errors.ts",
-      "source_location": "L12"
-    },
-    {
-      "id": "frontend_src_lib_api_errors_apierror_isconflict",
-      "label": ".isConflict()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "api/index.ts",
-      "file_type": "code",
-      "norm_label": ".isconflict()",
-      "source_file": "frontend/src/lib/api/errors.ts",
-      "source_location": "L33"
-    },
-    {
-      "id": "frontend_src_lib_api_errors_apierror_isnotfound",
-      "label": ".isNotFound()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "api/index.ts",
-      "file_type": "code",
-      "norm_label": ".isnotfound()",
-      "source_file": "frontend/src/lib/api/errors.ts",
-      "source_location": "L29"
-    },
-    {
-      "id": "frontend_src_lib_api_errors_apierror_isvalidation",
-      "label": ".isValidation()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 31,
-      "community_name": "api/index.ts",
-      "file_type": "code",
-      "norm_label": ".isvalidation()",
-      "source_file": "frontend/src/lib/api/errors.ts",
-      "source_location": "L25"
-    },
-    {
       "id": "frontend_src_lib_api_errors_toapierror",
       "label": "toApiError()",
       "_callable": true,
@@ -1638,28 +1711,28 @@
       "source_location": "L38"
     },
     {
-      "id": "frontend_src_lib_api_tickets_addcomment",
-      "label": "addComment()",
+      "id": "frontend_src_lib_api_tickets_createticket",
+      "label": "createTicket()",
       "_callable": true,
       "_origin": "ast",
       "community": 31,
       "community_name": "api/index.ts",
       "file_type": "code",
-      "norm_label": "addcomment()",
+      "norm_label": "createticket()",
       "source_file": "frontend/src/lib/api/tickets.ts",
-      "source_location": "L78"
+      "source_location": "L47"
     },
     {
-      "id": "frontend_src_lib_api_tickets_changeticketstatus",
-      "label": "changeTicketStatus()",
+      "id": "frontend_src_lib_api_tickets_getticket",
+      "label": "getTicket()",
       "_callable": true,
       "_origin": "ast",
       "community": 31,
       "community_name": "api/index.ts",
       "file_type": "code",
-      "norm_label": "changeticketstatus()",
+      "norm_label": "getticket()",
       "source_file": "frontend/src/lib/api/tickets.ts",
-      "source_location": "L66"
+      "source_location": "L39"
     },
     {
       "id": "frontend_src_lib_api_tickets_listtickets",
@@ -1710,6 +1783,18 @@
       "source_location": "L3"
     },
     {
+      "id": "frontend_src_components_tickets_ticketlistcontrols_ticketlistcontrols",
+      "label": "TicketListControls()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "file_type": "code",
+      "norm_label": "ticketlistcontrols()",
+      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
+      "source_location": "L20"
+    },
+    {
       "id": "frontend_src_components_tickets_ticketlistpage_ticketlistpage",
       "label": "TicketListPage()",
       "_callable": true,
@@ -1739,7 +1824,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "errorbanner()",
       "source_file": "frontend/src/components/common/ErrorBanner.tsx",
@@ -1751,7 +1836,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "resolveerrorfields()",
       "source_file": "frontend/src/components/common/errorMessage.ts",
@@ -1763,18 +1848,102 @@
       "_callable": true,
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "resolveerrormessage()",
       "source_file": "frontend/src/components/common/errorMessage.ts",
       "source_location": "L6"
     },
     {
+      "id": "frontend_src_lib_api_errors_apierror_constructor",
+      "label": ".constructor()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "ApiError",
+      "file_type": "code",
+      "norm_label": ".constructor()",
+      "source_file": "frontend/src/lib/api/errors.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "frontend_src_lib_api_errors_apierror_isconflict",
+      "label": ".isConflict()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "ApiError",
+      "file_type": "code",
+      "norm_label": ".isconflict()",
+      "source_file": "frontend/src/lib/api/errors.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "frontend_src_lib_api_errors_apierror_isnotfound",
+      "label": ".isNotFound()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "ApiError",
+      "file_type": "code",
+      "norm_label": ".isnotfound()",
+      "source_file": "frontend/src/lib/api/errors.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "frontend_src_lib_api_errors_apierror_isvalidation",
+      "label": ".isValidation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "ApiError",
+      "file_type": "code",
+      "norm_label": ".isvalidation()",
+      "source_file": "frontend/src/lib/api/errors.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "frontend_src_components_comments_commentssection_commentssection",
+      "label": "CommentsSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "CommentsSection.tsx",
+      "file_type": "code",
+      "norm_label": "commentssection()",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L23"
+    },
+    {
+      "id": "frontend_src_components_comments_commentssection_commentssection_handlesubmit",
+      "label": "handleSubmit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "CommentsSection.tsx",
+      "file_type": "code",
+      "norm_label": "handlesubmit()",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L42"
+    },
+    {
+      "id": "frontend_src_components_comments_commentssection_formattimestamp",
+      "label": "formatTimestamp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "CommentsSection.tsx",
+      "file_type": "code",
+      "norm_label": "formattimestamp()",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L15"
+    },
+    {
       "id": "frontend_src_components_common_fielderrors_fielderrors",
       "label": "FieldErrors()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 39,
       "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "fielderrors()",
@@ -1782,11 +1951,23 @@
       "source_location": "L15"
     },
     {
+      "id": "frontend_src_components_common_labels_formatprioritylabel",
+      "label": "formatPriorityLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "formatprioritylabel()",
+      "source_file": "frontend/src/components/common/labels.ts",
+      "source_location": "L21"
+    },
+    {
       "id": "frontend_src_components_common_loadingstate_loadingstate",
       "label": "LoadingState()",
       "_callable": true,
       "_origin": "ast",
-      "community": 36,
+      "community": 39,
       "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "loadingstate()",
@@ -1794,60 +1975,12 @@
       "source_location": "L8"
     },
     {
-      "id": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder",
-      "label": "TicketDetailPlaceholder()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
-      "file_type": "code",
-      "norm_label": "ticketdetailplaceholder()",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L23"
-    },
-    {
-      "id": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder_load",
-      "label": "load()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
-      "file_type": "code",
-      "norm_label": "load()",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L33"
-    },
-    {
-      "id": "frontend_src_lib_api_tickets_getticket",
-      "label": "getTicket()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
-      "file_type": "code",
-      "norm_label": "getticket()",
-      "source_file": "frontend/src/lib/api/tickets.ts",
-      "source_location": "L39"
-    },
-    {
-      "id": "frontend_src_components_common_labels_formatprioritylabel",
-      "label": "formatPriorityLabel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 39,
-      "community_name": "labels.ts",
-      "file_type": "code",
-      "norm_label": "formatprioritylabel()",
-      "source_file": "frontend/src/components/common/labels.ts",
-      "source_location": "L21"
-    },
-    {
       "id": "frontend_src_components_common_prioritybadge_prioritybadge",
       "label": "PriorityBadge()",
       "_callable": true,
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "prioritybadge()",
       "source_file": "frontend/src/components/common/PriorityBadge.tsx",
@@ -1900,18 +2033,6 @@
       "norm_label": "handlesubmit()",
       "source_file": "frontend/src/components/tickets/CreateTicketPage.tsx",
       "source_location": "L51"
-    },
-    {
-      "id": "frontend_src_lib_api_tickets_createticket",
-      "label": "createTicket()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "CreateTicketPage.tsx",
-      "file_type": "code",
-      "norm_label": "createticket()",
-      "source_file": "frontend/src/lib/api/tickets.ts",
-      "source_location": "L47"
     },
     {
       "id": "backend_src_test_java_com_ticketmanagement_ticketapiintegrationtest_ticketapiintegrationtest_addcomment_blanktext_returns400",
@@ -2568,18 +2689,6 @@
       "source_location": "L23"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception_resourcenotfoundexception_resourcenotfoundexception",
-      "label": ".ResourceNotFoundException()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "GlobalExceptionHandler.java",
-      "file_type": "code",
-      "norm_label": ".resourcenotfoundexception()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
-      "source_location": "L5"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_controller_ticketcontroller_ticketcontroller_addcomment",
       "label": ".addComment()",
       "_callable": true,
@@ -2680,28 +2789,16 @@
       "source_location": "L62"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getpriority",
-      "label": ".getPriority()",
+      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception_resourcenotfoundexception_resourcenotfoundexception",
+      "label": ".ResourceNotFoundException()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
       "community_name": "TicketController.java",
       "file_type": "code",
-      "norm_label": ".getpriority()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L94"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setpriority",
-      "label": ".setPriority()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": ".setpriority()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L98"
+      "norm_label": ".resourcenotfoundexception()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
+      "source_location": "L5"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_mapper_ticketmapper_ticketmapper_ticketmapper",
@@ -4111,6 +4208,83 @@
       "file_type": "code",
       "norm_label": "ticket.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority",
+      "label": "TicketPriority.java",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "ticketpriority.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_high",
+      "label": "HIGH",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "high",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_low",
+      "label": "LOW",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "low",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L4"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_medium",
+      "label": "MEDIUM",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "medium",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_dto_commentresponse",
+      "label": "CommentResponse.java",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "commentresponse.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/dto/CommentResponse.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_dto_ticketdetailresponse",
+      "label": "TicketDetailResponse.java",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "ticketdetailresponse.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketDetailResponse.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_dto_ticketresponse",
+      "label": "TicketResponse.java",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": "ticketresponse.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketResponse.java",
       "source_location": "L1"
     },
     {
@@ -6125,7 +6299,7 @@
       "label": "StatusBadge.tsx",
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
       "norm_label": "statusbadge.tsx",
       "source_file": "frontend/src/components/common/StatusBadge.tsx",
@@ -6136,33 +6310,44 @@
       "label": "STATUS_CLASS",
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
       "norm_label": "status_class",
       "source_file": "frontend/src/components/common/StatusBadge.tsx",
       "source_location": "L5"
     },
     {
-      "id": "frontend_src_components_tickets_ticketlistcontrols",
-      "label": "TicketListControls.tsx",
+      "id": "frontend_src_components_tickets_statuscontrol",
+      "label": "StatusControl.tsx",
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
-      "norm_label": "ticketlistcontrols.tsx",
-      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
+      "norm_label": "statuscontrol.tsx",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_types_ticket_ticket_statuses",
-      "label": "TICKET_STATUSES",
+      "id": "frontend_src_lib_ticketstatustransitions",
+      "label": "ticketStatusTransitions.ts",
       "_origin": "ast",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "file_type": "code",
-      "norm_label": "ticket_statuses",
-      "source_file": "frontend/src/types/ticket.ts",
-      "source_location": "L5"
+      "norm_label": "ticketstatustransitions.ts",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_lib_ticketstatustransitions_allowed_next",
+      "label": "ALLOWED_NEXT",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "StatusControl.tsx",
+      "file_type": "code",
+      "norm_label": "allowed_next",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L7"
     },
     {
       "id": "frontend_eslint_config",
@@ -7476,6 +7661,17 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_tickets_ticketlistcontrols",
+      "label": "TicketListControls.tsx",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "file_type": "code",
+      "norm_label": "ticketlistcontrols.tsx",
+      "source_file": "frontend/src/components/tickets/TicketListControls.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_tickets_ticketlistpage",
       "label": "TicketListPage.tsx",
       "_origin": "ast",
@@ -7509,6 +7705,17 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_types_ticket_ticket_statuses",
+      "label": "TICKET_STATUSES",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "file_type": "code",
+      "norm_label": "ticket_statuses",
+      "source_file": "frontend/src/types/ticket.ts",
+      "source_location": "L5"
+    },
+    {
       "id": "ref_next",
       "label": "next",
       "_origin": "ast",
@@ -7524,7 +7731,7 @@
       "label": "ErrorBanner.tsx",
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "errorbanner.tsx",
       "source_file": "frontend/src/components/common/ErrorBanner.tsx",
@@ -7535,54 +7742,21 @@
       "label": "errorMessage.ts",
       "_origin": "ast",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "file_type": "code",
       "norm_label": "errormessage.ts",
       "source_file": "frontend/src/components/common/errorMessage.ts",
       "source_location": "L1"
     },
     {
-      "id": "frontend_src_components_common_fielderrors",
-      "label": "FieldErrors.tsx",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "common/index.ts",
-      "file_type": "code",
-      "norm_label": "fielderrors.tsx",
-      "source_file": "frontend/src/components/common/FieldErrors.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_common_index",
-      "label": "common/index.ts",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "common/index.ts",
-      "file_type": "code",
-      "norm_label": "common/index.ts",
-      "source_file": "frontend/src/components/common/index.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_common_loadingstate",
-      "label": "LoadingState.tsx",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "common/index.ts",
-      "file_type": "code",
-      "norm_label": "loadingstate.tsx",
-      "source_file": "frontend/src/components/common/LoadingState.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "label": "TicketDetailPlaceholder.tsx",
+      "id": "frontend_src_components_comments_commentssection",
+      "label": "CommentsSection.tsx",
       "_origin": "ast",
       "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
+      "community_name": "CommentsSection.tsx",
       "file_type": "code",
-      "norm_label": "ticketdetailplaceholder.tsx",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
+      "norm_label": "commentssection.tsx",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
       "source_location": "L1"
     },
     {
@@ -7590,7 +7764,7 @@
       "label": "react",
       "_origin": "ast",
       "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
+      "community_name": "CommentsSection.tsx",
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "frontend/package.json",
@@ -7619,11 +7793,33 @@
       "source_location": "L1"
     },
     {
+      "id": "frontend_src_components_common_fielderrors",
+      "label": "FieldErrors.tsx",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "fielderrors.tsx",
+      "source_file": "frontend/src/components/common/FieldErrors.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "frontend_src_components_common_index",
+      "label": "common/index.ts",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "common/index.ts",
+      "source_file": "frontend/src/components/common/index.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_common_labels",
       "label": "labels.ts",
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "labels.ts",
       "source_file": "frontend/src/components/common/labels.ts",
@@ -7634,7 +7830,7 @@
       "label": "PRIORITY_LABELS",
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "priority_labels",
       "source_file": "frontend/src/components/common/labels.ts",
@@ -7645,18 +7841,29 @@
       "label": "STATUS_LABELS",
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "status_labels",
       "source_file": "frontend/src/components/common/labels.ts",
       "source_location": "L3"
     },
     {
+      "id": "frontend_src_components_common_loadingstate",
+      "label": "LoadingState.tsx",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "common/index.ts",
+      "file_type": "code",
+      "norm_label": "loadingstate.tsx",
+      "source_file": "frontend/src/components/common/LoadingState.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "frontend_src_components_common_prioritybadge",
       "label": "PriorityBadge.tsx",
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "prioritybadge.tsx",
       "source_file": "frontend/src/components/common/PriorityBadge.tsx",
@@ -7667,7 +7874,7 @@
       "label": "PRIORITY_CLASS",
       "_origin": "ast",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "file_type": "code",
       "norm_label": "priority_class",
       "source_file": "frontend/src/components/common/PriorityBadge.tsx",
@@ -8849,17 +9056,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception",
-      "label": "ResourceNotFoundException.java",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "GlobalExceptionHandler.java",
-      "file_type": "code",
-      "norm_label": "resourcenotfoundexception.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
-      "source_location": "L1"
-    },
-    {
       "id": "com_fasterxml_jackson_annotation_jsoninclude",
       "label": "com.fasterxml.jackson.annotation.JsonInclude",
       "_origin": "ast",
@@ -8959,50 +9155,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority",
-      "label": "TicketPriority.java",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketpriority.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_high",
-      "label": "HIGH",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "high",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L6"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_low",
-      "label": "LOW",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "low",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L4"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_medium",
-      "label": "MEDIUM",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "medium",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L5"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_changestatusrequest",
       "label": "ChangeStatusRequest.java",
       "_origin": "ast",
@@ -9011,17 +9163,6 @@
       "file_type": "code",
       "norm_label": "changestatusrequest.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/ChangeStatusRequest.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_dto_commentresponse",
-      "label": "CommentResponse.java",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "commentresponse.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/dto/CommentResponse.java",
       "source_location": "L1"
     },
     {
@@ -9047,17 +9188,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_dto_ticketdetailresponse",
-      "label": "TicketDetailResponse.java",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketdetailresponse.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketDetailResponse.java",
-      "source_location": "L1"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_ticketlistresponse",
       "label": "TicketListResponse.java",
       "_origin": "ast",
@@ -9069,17 +9199,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_dto_ticketresponse",
-      "label": "TicketResponse.java",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "file_type": "code",
-      "norm_label": "ticketresponse.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/dto/TicketResponse.java",
-      "source_location": "L1"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_dto_updateticketrequest",
       "label": "UpdateTicketRequest.java",
       "_origin": "ast",
@@ -9088,6 +9207,17 @@
       "file_type": "code",
       "norm_label": "updateticketrequest.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_exception_resourcenotfoundexception",
+      "label": "ResourceNotFoundException.java",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "TicketController.java",
+      "file_type": "code",
+      "norm_label": "resourcenotfoundexception.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java",
       "source_location": "L1"
     },
     {
@@ -9765,6 +9895,18 @@
       "type": "external"
     },
     {
+      "id": "instant",
+      "label": "instant",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "Ticket",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "instant",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "joincolumn",
       "label": "joincolumn",
       "_origin": "semantic",
@@ -9797,6 +9939,30 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "param",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "uuid",
+      "label": "uuid",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "Ticket",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "uuid",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "frontend_src_components_tickets_ticketdetailpage_module",
+      "label": "frontend_src_components_tickets_ticketdetailpage_module",
+      "_origin": "semantic",
+      "community": 15,
+      "community_name": "TicketDetailPage.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "frontend_src_components_tickets_ticketdetailpage_module",
       "source_file": "",
       "type": "external"
     },
@@ -9853,22 +10019,10 @@
       "label": "frontend_src_components_common_statusbadge_module",
       "_origin": "semantic",
       "community": 27,
-      "community_name": "TicketListControls.tsx",
+      "community_name": "StatusControl.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "frontend_src_components_common_statusbadge_module",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "frontend_src_components_tickets_ticketlistcontrols_module",
-      "label": "frontend_src_components_tickets_ticketlistcontrols_module",
-      "_origin": "semantic",
-      "community": 27,
-      "community_name": "TicketListControls.tsx",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "frontend_src_components_tickets_ticketlistcontrols_module",
       "source_file": "",
       "type": "external"
     },
@@ -9933,6 +10087,18 @@
       "type": "external"
     },
     {
+      "id": "frontend_src_components_tickets_ticketlistcontrols_module",
+      "label": "frontend_src_components_tickets_ticketlistcontrols_module",
+      "_origin": "semantic",
+      "community": 34,
+      "community_name": "TicketListPage.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "frontend_src_components_tickets_ticketlistcontrols_module",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "frontend_src_components_tickets_ticketlistpage_module",
       "label": "frontend_src_components_tickets_ticketlistpage_module",
       "_origin": "semantic",
@@ -9957,11 +10123,23 @@
       "type": "external"
     },
     {
+      "id": "frontend_src_components_tickets_ticketdetailplaceholder_module",
+      "label": "frontend_src_components_tickets_ticketdetailplaceholder_module",
+      "_origin": "semantic",
+      "community": 35,
+      "community_name": "frontend_src_components_tickets_ticketdetailplaceholder_module",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "frontend_src_components_tickets_ticketdetailplaceholder_module",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "frontend_src_components_common_errorbanner_module",
       "label": "frontend_src_components_common_errorbanner_module",
       "_origin": "semantic",
       "community": 36,
-      "community_name": "common/index.ts",
+      "community_name": "ApiError",
       "external": true,
       "file_type": "concept",
       "norm_label": "frontend_src_components_common_errorbanner_module",
@@ -9972,7 +10150,7 @@
       "id": "frontend_src_components_common_fielderrors_module",
       "label": "frontend_src_components_common_fielderrors_module",
       "_origin": "semantic",
-      "community": 36,
+      "community": 39,
       "community_name": "common/index.ts",
       "external": true,
       "file_type": "concept",
@@ -9984,7 +10162,7 @@
       "id": "frontend_src_components_common_loadingstate_module",
       "label": "frontend_src_components_common_loadingstate_module",
       "_origin": "semantic",
-      "community": 36,
+      "community": 39,
       "community_name": "common/index.ts",
       "external": true,
       "file_type": "concept",
@@ -9993,23 +10171,11 @@
       "type": "external"
     },
     {
-      "id": "frontend_src_components_tickets_ticketdetailplaceholder_module",
-      "label": "frontend_src_components_tickets_ticketdetailplaceholder_module",
-      "_origin": "semantic",
-      "community": 37,
-      "community_name": "TicketDetailPlaceholder.tsx",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "frontend_src_components_tickets_ticketdetailplaceholder_module",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "frontend_src_components_common_prioritybadge_module",
       "label": "frontend_src_components_common_prioritybadge_module",
       "_origin": "semantic",
       "community": 39,
-      "community_name": "labels.ts",
+      "community_name": "common/index.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "frontend_src_components_common_prioritybadge_module",
@@ -10269,18 +10435,6 @@
       "type": "external"
     },
     {
-      "id": "instant",
-      "label": "instant",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "instant",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "list",
       "label": "list",
       "_origin": "semantic",
@@ -10389,18 +10543,6 @@
       "type": "external"
     },
     {
-      "id": "uuid",
-      "label": "uuid",
-      "_origin": "semantic",
-      "community": 8,
-      "community_name": "TicketController.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "uuid",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "valid",
       "label": "valid",
       "_origin": "semantic",
@@ -10413,13 +10555,24 @@
       "type": "external"
     },
     {
-      "id": "frontend_src_components_tickets_ticketdetailpage_module",
-      "label": "frontend_src_components_tickets_ticketdetailpage_module",
-      "community": 15,
-      "community_name": "TicketDetailPage.tsx",
+      "id": "frontend_src_components_tickets_statuscontrol_module",
+      "label": "frontend_src_components_tickets_statuscontrol_module",
+      "community": 27,
+      "community_name": "StatusControl.tsx",
       "external": true,
       "file_type": "concept",
-      "norm_label": "frontend_src_components_tickets_ticketdetailpage_module",
+      "norm_label": "frontend_src_components_tickets_statuscontrol_module",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "frontend_src_components_comments_commentssection_module",
+      "label": "frontend_src_components_comments_commentssection_module",
+      "community": 37,
+      "community_name": "CommentsSection.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "frontend_src_components_comments_commentssection_module",
       "source_file": "",
       "type": "external"
     }
@@ -11818,6 +11971,18 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_comments_commentssection_commentssection",
+      "target": "frontend_src_components_comments_commentssection_formattimestamp",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_common_errorbanner_errorbanner",
       "target": "frontend_src_components_common_errormessage_resolveerrormessage",
       "relation": "calls",
@@ -11914,6 +12079,42 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "target": "frontend_src_lib_ticketstatustransitions_allowednextstatuses",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "target": "frontend_src_lib_ticketstatustransitions_isterminalstatus",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "target": "frontend_src_components_common_labels_formatstatuslabel",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
       "target": "frontend_src_lib_api_tickets_updateticket",
       "relation": "calls",
@@ -11922,7 +12123,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L118",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
+      "target": "frontend_src_lib_api_tickets_changeticketstatus",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
+      "target": "frontend_src_lib_api_tickets_addcomment",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -11934,7 +12159,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L182",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -11946,7 +12171,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L256",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -11958,7 +12183,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L76",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -11970,7 +12195,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L78",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handleaddcomment",
+      "target": "frontend_src_lib_api_tickets_addcomment",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -11982,7 +12219,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L147",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -11994,7 +12231,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L101",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -12006,7 +12243,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L118",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -12018,31 +12255,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L131",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder",
-      "target": "frontend_src_lib_api_tickets_getticket",
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlestatuschange",
+      "target": "frontend_src_lib_api_tickets_changeticketstatus",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L37",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder_load",
-      "target": "frontend_src_lib_api_tickets_getticket",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L37",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -12175,18 +12400,6 @@
       "context": "call",
       "source_file": "frontend/src/lib/api/tickets.ts",
       "source_location": "L59",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder",
-      "target": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder_load",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -15106,6 +15319,54 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_types_ticket_comment",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_lib_api_errors_apierror",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_common_errorbanner_errorbanner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_common_fielderrors_fielderrors",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_common_errorbanner",
       "target": "frontend_src_lib_api_errors_apierror",
       "relation": "imports",
@@ -15322,6 +15583,150 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_lib_ticketstatustransitions_allowednextstatuses",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_lib_ticketstatustransitions_isterminalstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_types_ticket_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_common_errorbanner_errorbanner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_common_labels_formatstatuslabel",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_common_statusbadge_statusbadge",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_common_errorbanner_errorbanner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_common_fielderrors_fielderrors",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_common_labels_formatprioritylabel",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_common_loadingstate_loadingstate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_comments_commentssection_commentssection",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_tickets_ticketdetailpage",
       "target": "frontend_src_types_ticket_ticket_priorities",
       "relation": "imports",
@@ -15330,7 +15735,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -15342,7 +15747,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -15354,7 +15759,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_types_ticket_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -15366,12 +15783,36 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
       "source": "frontend_src_components_tickets_ticketdetailpage",
       "target": "frontend_src_lib_api_errors_apierror",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_lib_api_tickets_addcomment",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_lib_api_tickets_changeticketstatus",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -15403,138 +15844,6 @@
       "context": "import",
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
       "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_errorbanner_errorbanner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_fielderrors_fielderrors",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_labels_formatprioritylabel",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_loadingstate_loadingstate",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_statusbadge_statusbadge",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_lib_api_tickets_getticket",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_types_ticket_ticketdetail",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_common_errorbanner_errorbanner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_common_loadingstate_loadingstate",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_common_prioritybadge_prioritybadge",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_common_statusbadge_statusbadge",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -15874,6 +16183,18 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_lib_ticketstatustransitions",
+      "target": "frontend_src_types_ticket_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_eslint_config",
       "target": "ref_path",
       "relation": "imports_from",
@@ -16029,6 +16350,67 @@
       "context": "import",
       "source_file": "frontend/src/components/AppShell.tsx",
       "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_types_ticket",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_lib_api_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_common_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_comments_commentssection_module",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -16275,20 +16657,93 @@
       "weight": 1.0
     },
     {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_lib_ticketstatustransitions",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_tickets_statuscontrol_module",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
       "target": "frontend_src_types_ticket",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L13",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_common_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
       "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_tickets_ticketdetailpage_module",
+      "target": "frontend_src_components_common_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_comments_commentssection",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_tickets_statuscontrol",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16300,123 +16755,62 @@
     },
     {
       "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "ref_next",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_lib_api_index",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage",
-      "target": "frontend_src_components_common_index",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_tickets_ticketdetailplaceholder_module",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "ref_next",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_lib_api_index",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
       "target": "frontend_src_types_ticket",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L6",
-      "type_only": true,
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_common_index",
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_components_tickets_ticketdetailpage_module",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L7",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage",
+      "target": "frontend_src_lib_api_index",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -16660,6 +17054,19 @@
       "context": "import",
       "source_file": "frontend/src/lib/api/tickets.ts",
       "source_location": "L2",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_ticketstatustransitions",
+      "target": "frontend_src_types_ticket",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L1",
       "type_only": true,
       "weight": 1.0
     },
@@ -18422,6 +18829,50 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_comments_commentssection_formattimestamp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_comments_commentssection_commentssection",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection",
+      "target": "frontend_src_components_comments_commentssection_commentssectionprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_comments_commentssection_commentssection",
+      "target": "frontend_src_components_comments_commentssection_commentssection_handlesubmit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/comments/CommentsSection.tsx",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_common_errorbanner",
       "target": "frontend_src_components_common_errorbanner_errorbanner",
       "relation": "contains",
@@ -18675,6 +19126,39 @@
       "weight": 1.0
     },
     {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_tickets_statuscontrol_statuscontrolprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol",
+      "target": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_statuscontrol_statuscontrol",
+      "target": "frontend_src_components_tickets_statuscontrol_statuscontrol_handlesubmit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/tickets/StatusControl.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
       "source": "frontend_src_components_tickets_ticketdetailpage",
       "target": "frontend_src_components_tickets_ticketdetailpage_formstate",
       "relation": "contains",
@@ -18682,7 +19166,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L21",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -18693,7 +19177,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L28",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -18704,7 +19188,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L32",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -18715,7 +19199,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L41",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -18726,7 +19210,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L52",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -18737,18 +19221,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L60",
-      "weight": 1.0
-    },
-    {
-      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
-      "target": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlereset",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L143",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -18759,29 +19232,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
-      "source_location": "L92",
+      "source_location": "L100",
       "weight": 1.0
     },
     {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholderprops",
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
+      "target": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlereset",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L15",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
-      "source": "frontend_src_components_tickets_ticketdetailplaceholder",
-      "target": "frontend_src_components_tickets_ticketdetailplaceholder_ticketdetailplaceholder",
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
+      "target": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handlestatuschange",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "frontend/src/components/tickets/TicketDetailPlaceholder.tsx",
-      "source_location": "L23",
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage",
+      "target": "frontend_src_components_tickets_ticketdetailpage_ticketdetailpage_handleaddcomment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/components/tickets/TicketDetailPage.tsx",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -18991,6 +19475,39 @@
       "confidence_score": 1.0,
       "source_file": "frontend/src/lib/config.ts",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_ticketstatustransitions",
+      "target": "frontend_src_lib_ticketstatustransitions_allowednextstatuses",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_ticketstatustransitions",
+      "target": "frontend_src_lib_ticketstatustransitions_isterminalstatus",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_lib_ticketstatustransitions",
+      "target": "frontend_src_lib_ticketstatustransitions_allowed_next",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/lib/ticketStatusTransitions.ts",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -24961,5 +25478,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "147bc4a08a2a0c450a7560a23023b8b6b49c7f02"
+  "built_at_commit": "33943d6416f4994f080927bdea2a48ed73e04697"
 }

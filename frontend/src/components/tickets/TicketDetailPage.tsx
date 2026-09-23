@@ -2,18 +2,26 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { ApiError, getTicket, updateTicket } from "@/lib/api";
+import {
+  ApiError,
+  addComment,
+  changeTicketStatus,
+  getTicket,
+  updateTicket,
+} from "@/lib/api";
 import {
   ErrorBanner,
   FieldErrors,
   LoadingState,
-  StatusBadge,
   formatPriorityLabel,
 } from "@/components/common";
+import { CommentsSection } from "@/components/comments/CommentsSection";
+import { StatusControl } from "@/components/tickets/StatusControl";
 import {
   TICKET_PRIORITIES,
   type TicketDetail,
   type TicketPriority,
+  type TicketStatus,
   type UpdateTicketRequest,
 } from "@/types/ticket";
 import styles from "./TicketDetailPage.module.css";
@@ -150,13 +158,32 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
     setSaveMessage(null);
   }
 
+  async function handleStatusChange(next: TicketStatus) {
+    const updated = await changeTicketStatus(ticketId, next);
+    setTicket((prev) =>
+      prev
+        ? { ...prev, ...updated, comments: prev.comments }
+        : { ...updated, comments: [] },
+    );
+  }
+
+  async function handleAddComment(text: string) {
+    const created = await addComment(ticketId, { text });
+    setTicket((prev) =>
+      prev
+        ? { ...prev, comments: [...prev.comments, created] }
+        : prev,
+    );
+  }
+
   return (
     <section className={styles.page}>
       <header className={styles.header}>
         <div>
           <h1>Ticket detail</h1>
           <p className={styles.lead}>
-            View and edit ticket fields. Status changes and comments come next.
+            Edit fields, change status along allowed transitions, and add
+            comments.
           </p>
         </div>
         <Link href="/tickets" className={styles.back}>
@@ -173,9 +200,6 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
       {!loading && ticket && form ? (
         <>
           <div className={styles.summary}>
-            <div className={styles.meta}>
-              <StatusBadge status={ticket.status} />
-            </div>
             <dl className={styles.timestamps}>
               <div>
                 <dt>Created</dt>
@@ -193,6 +217,16 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
               </div>
             </dl>
           </div>
+
+          <StatusControl
+            currentStatus={ticket.status}
+            onChangeStatus={handleStatusChange}
+          />
+
+          <CommentsSection
+            comments={ticket.comments}
+            onAddComment={handleAddComment}
+          />
 
           {saveError ? <ErrorBanner error={saveError} showFields={false} /> : null}
           {saveMessage ? <p className={styles.success}>{saveMessage}</p> : null}
