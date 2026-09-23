@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md": {
-    "mtime": 1790149676.3298266,
-    "seen": 1790149710.5486572,
-    "ast_hash": "3450c1b87d3fb0d03703c41a9ee0cce9",
+    "mtime": 1790150344.2060483,
+    "seen": 1790150698.966077,
+    "ast_hash": "c4d916d39c934519cfbeae31faa530a7",
     "semantic_hash": ""
   },
   "spec/api-contract.md": {
@@ -87,6 +87,48 @@
     "mtime": 1790149428.0131114,
     "seen": 1790149432.1370392,
     "ast_hash": "959e2d4a3ea828bbc5ac332d45acef8f",
+    "semantic_hash": ""
+  },
+  "backend/build.gradle": {
+    "mtime": 1790150442.2743359,
+    "seen": 1790150698.9660587,
+    "ast_hash": "3b4e51676ab257bc61d1a19287b48c8b",
+    "semantic_hash": ""
+  },
+  "backend/gradlew": {
+    "mtime": 1790150525.9395006,
+    "seen": 1790150698.966061,
+    "ast_hash": "a43be8432bac3ffd05b3769aa42fe996",
+    "semantic_hash": ""
+  },
+  "backend/settings.gradle": {
+    "mtime": 1790150441.6218472,
+    "seen": 1790150698.9660628,
+    "ast_hash": "950d2baf1871938617331b7c9dc4bb15",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java": {
+    "mtime": 1790150469.2159224,
+    "seen": 1790150698.9660647,
+    "ast_hash": "5c2b2a1134c69215f7796ec3583697f0",
+    "semantic_hash": ""
+  },
+  "backend/src/main/resources/application-local.yml": {
+    "mtime": 1790150472.8826706,
+    "seen": 1790150698.9660788,
+    "ast_hash": "75497bc36c05b83842a4306c4d7ba499",
+    "semantic_hash": ""
+  },
+  "backend/src/main/resources/application-prod.yml": {
+    "mtime": 1790150473.5997007,
+    "seen": 1790150698.9660802,
+    "ast_hash": "4f547d7d83e407f7754986a254bb3640",
+    "semantic_hash": ""
+  },
+  "backend/src/main/resources/application.yml": {
+    "mtime": 1790150470.9747744,
+    "seen": 1790150698.9660819,
+    "ast_hash": "edbad71fa7a83c969d6b54aee0ac5029",
     "semantic_hash": ""
   }
 }

@@ -1,0 +1,46 @@
+---
+description: Java 21 and Spring Boot backend implementation conventions
+globs: "**/*.{java,xml,yml,yaml,properties,gradle*,kts}"
+alwaysApply: false
+---
+# Java Spring Boot Guidelines
+Stack: Java 21, Spring Boot, PostgreSQL (prod), file-based H2 (local; survives restart).
+## Package layout
+com..ticketmanagement/ config/ controller/ dto/ domain/ repository/ service/ exception/ mapper/
+
+
+## Layer responsibilities
+
+- Controllers: map HTTP to service calls only; no business logic; no repository injection
+- Services: business logic; `@Transactional` on writes; `@Transactional(readOnly = true)` on reads
+- Repositories: Spring Data JPA only; derived queries or `@Query` with named parameters; native SQL only when required and justified in a short comment
+- Domain: JPA entities only; do not return entities from controllers
+- DTOs: Java records for request/response payloads
+- Mapping: entity ↔ DTO in `mapper` (MapStruct or manual)
+
+## Java 21
+
+- Use records for DTOs and immutable value types
+- Use sealed types for closed hierarchies when the set of variants is fixed
+- Use pattern matching for `switch` / `instanceof` when it simplifies branching
+- Use text blocks for multi-line strings
+- Use `var` only when the type is obvious from the initializer
+
+## Spring practices
+
+- Constructor injection only
+- `@Valid` / `@Validated` on controller inputs
+- `@Enumerated(EnumType.STRING)` for persisted enums
+- Prefer unidirectional JPA relations; add bidirectional only when required
+- Prefer Flyway migrations for schema changes; do not use `ddl-auto=update` outside local experiments
+- Profiles: `local` uses **file-based H2** (`./data/ticketdb`, not in-memory); `prod` uses PostgreSQL
+- Do not switch local to `jdbc:h2:mem:...` — it breaks restart persistence acceptance
+- Externalize secrets and environment-specific values; never hardcode credentials
+- Log with SLF4J; never log secrets or PII
+- Prefer `Optional.orElseThrow` / `map` / `ifPresent`; do not call `Optional.get()` unsafely
+
+## Agent behavior
+
+- Match existing package names and patterns once code exists
+- Prefer small, reviewable changes
+- New feature path: DTO → service → repository → migration when schema changes

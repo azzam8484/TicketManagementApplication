@@ -33,7 +33,10 @@ Ticket (1) ────────< (N) Comment
 |---|---|---|
 | Primary keys | UUID | Matches API contract (`id` as UUID string) |
 | Enum storage | String (`VARCHAR`) | Readable; safer than ordinal integers |
-| Timestamps | UTC (`TIMESTAMPTZ`) | Consistent across environments |
+| Timestamps | UTC (`TIMESTAMP WITH TIME ZONE`) | Consistent across environments; portable for H2 + PostgreSQL |
+| Local database | File-based H2 (`./data/ticketdb`) | Survives app restart; in-memory H2 is not used for MVP local |
+| Production database | PostgreSQL | Durable shared/prod storage |
+| Schema management | Flyway migrations | Versioned schema; `ddl-auto=none` |
 | Assignee | Nullable string | Auth/users out of MVP scope |
 | Comment author | Not stored | No auth in MVP |
 | Soft delete | Not used | Terminal statuses cover end states |
@@ -82,8 +85,8 @@ Rules:
 | `status` | `status` | VARCHAR(32) | yes | `OPEN` | Current status |
 | `priority` | `priority` | VARCHAR(16) | yes | — | Priority level |
 | `assignee` | `assignee` | VARCHAR(100) | no | `NULL` | Free-text assignee |
-| `createdAt` | `created_at` | TIMESTAMPTZ | yes | now (UTC) | Creation time |
-| `updatedAt` | `updated_at` | TIMESTAMPTZ | yes | now (UTC) | Last ticket modification time |
+| `createdAt` | `created_at` | TIMESTAMP WITH TIME ZONE | yes | now (UTC) | Creation time |
+| `updatedAt` | `updated_at` | TIMESTAMP WITH TIME ZONE | yes | now (UTC) | Last ticket modification time |
 
 ### 4.2 Field rules
 
@@ -164,8 +167,8 @@ CREATE TABLE tickets (
   status        VARCHAR(32)   NOT NULL,
   priority      VARCHAR(16)   NOT NULL,
   assignee      VARCHAR(100)  NULL,
-  created_at    TIMESTAMPTZ   NOT NULL,
-  updated_at    TIMESTAMPTZ   NOT NULL,
+  created_at    TIMESTAMP WITH TIME ZONE NOT NULL,
+  updated_at    TIMESTAMP WITH TIME ZONE NOT NULL,
   CONSTRAINT chk_ticket_status
     CHECK (status IN ('OPEN', 'IN_PROGRESS', 'RESOLVED', 'CLOSED', 'CANCELLED')),
   CONSTRAINT chk_ticket_priority
@@ -185,7 +188,7 @@ CREATE INDEX idx_ticket_created_at ON tickets(created_at DESC);
 | `id` | `id` | UUID | yes | generated | Primary key |
 | `ticketId` | `ticket_id` | UUID | yes | — | FK → `tickets.id` |
 | `text` | `text` | TEXT | yes | — | Comment body |
-| `createdAt` | `created_at` | TIMESTAMPTZ | yes | now (UTC) | Creation time |
+| `createdAt` | `created_at` | TIMESTAMP WITH TIME ZONE | yes | now (UTC) | Creation time |
 
 ### 5.2 Field rules
 
@@ -238,7 +241,7 @@ CREATE TABLE comments (
   id          UUID PRIMARY KEY,
   ticket_id   UUID          NOT NULL,
   text        TEXT          NOT NULL,
-  created_at  TIMESTAMPTZ   NOT NULL,
+  created_at  TIMESTAMP WITH TIME ZONE NOT NULL,
   CONSTRAINT fk_comment_ticket
     FOREIGN KEY (ticket_id) REFERENCES tickets(id) ON DELETE CASCADE
 );
@@ -330,8 +333,8 @@ CREATE INDEX idx_comment_ticket_id_created_at
 │ status        VARCHAR(32)  NOT NULL  │
 │ priority      VARCHAR(16)  NOT NULL  │
 │ assignee      VARCHAR(100) NULL      │
-│ created_at    TIMESTAMPTZ  NOT NULL  │
-│ updated_at    TIMESTAMPTZ  NOT NULL  │
+│ created_at    TIMESTAMP WITH TIME ZONE NOT NULL │
+│ updated_at    TIMESTAMP WITH TIME ZONE NOT NULL │
 └──────────────────┬───────────────────┘
                    │ 1
                    │
@@ -342,11 +345,19 @@ CREATE INDEX idx_comment_ticket_id_created_at
 │ id            UUID        PK         │
 │ ticket_id     UUID        FK NOT NULL│
 │ text          TEXT        NOT NULL   │
-│ created_at    TIMESTAMPTZ NOT NULL   │
+│ created_at    TIMESTAMP WITH TIME ZONE NOT NULL │
 └──────────────────────────────────────┘
 ```
 
-## 11. Out of model for MVP
+## 11. Persistence notes
+
+- Local (`application-local.yml`): file-based H2 at `jdbc:h2:file:./data/ticketdb` — data remains after restart.
+- Prod (`application-prod.yml`): PostgreSQL via `DB_URL` / `DB_USERNAME` / `DB_PASSWORD`.
+- Flyway script `V1__create_tickets_and_comments.sql` creates `tickets` and `comments`.
+- Migration SQL uses `TIMESTAMP WITH TIME ZONE` (not the short alias `TIMESTAMPTZ`) so the same script works on H2 and PostgreSQL.
+- Do not use `jdbc:h2:mem:...` for the local MVP profile.
+
+## 12. Out of model for MVP
 
 Do not add unless requirements change:
 

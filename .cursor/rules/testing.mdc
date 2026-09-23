@@ -1,0 +1,30 @@
+---
+description: Backend and API testing conventions
+globs: "**/*{Test,IT,Tests}.java,**/src/test/**"
+alwaysApply: false
+---
+
+# Testing Guidelines
+
+## Scope
+
+- Unit tests: services and pure logic (JUnit 5 + Mockito)
+- Web slice tests: controllers with `@WebMvcTest`
+- Persistence slice tests: `@DataJpaTest` when testing repositories only
+- Integration tests: `@SpringBootTest` for cross-layer flows; prefer Testcontainers PostgreSQL over H2 for DB behavior that must match production
+- Restart-persistence checks: use file-based H2 or PostgreSQL — never in-memory H2 (`jdbc:h2:mem:...`)
+
+## Rules
+
+- Name tests: `methodOrBehavior_condition_expectedResult`
+- Test behavior and contracts, not private implementation details
+- Cover happy path, validation failures, not-found, and conflict cases for each endpoint or use case touched
+- Do not hit real external services; mock or stub boundaries
+- Keep tests deterministic; no time-flaky or order-dependent tests
+- Put test data setup close to the test; prefer builders/fixtures over duplicated literals
+- Do not assert on log output unless logging is the feature under test
+
+## Agent behavior
+
+- When implementation changes, update or add tests in the same change set
+- Follow this rule only for test design; do not redefine production layering or API contracts here

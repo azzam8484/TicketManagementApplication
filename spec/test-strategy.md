@@ -131,7 +131,19 @@ Use real HTTP API against the application with a database.
 |---|---|
 | Create ticket (+ optional comment), restart app (or new connection / new context with same DB), fetch again | data still present |
 
-For automated CI, prefer PostgreSQL (Testcontainers) or a file-based DB that outlives the process. In-memory H2 alone is **not** enough to prove restart survival.
+How to run this check locally:
+
+1. Start backend with profile `local` (file-based H2 under `backend/data/`)
+2. Create a ticket (and optional comment) via API
+3. Stop the app completely
+4. Start again from `backend/`
+5. Fetch the same ticket by id — data must still be present
+
+Notes:
+
+- Local MVP uses **file-based H2** (`jdbc:h2:file:./data/ticketdb`), which survives restart.
+- In-memory H2 (`jdbc:h2:mem:...`) is **not** used for MVP local and is **not** enough to prove restart survival.
+- For automated CI, prefer PostgreSQL (Testcontainers) or the same file-based H2 path.
 
 ## 5. Frontend / UI verification (MVP minimum = manual)
 
