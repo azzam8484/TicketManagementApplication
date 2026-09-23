@@ -184,5 +184,83 @@
     "seen": 1790155955.318878,
     "ast_hash": "8c9d197177e35157f0f2f65975c1daf9",
     "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/ChangeStatusRequest.java": {
+    "mtime": 1790156230.1498995,
+    "seen": 1790156257.217938,
+    "ast_hash": "b37c9b2a6586ba359d1a4336d5a1ce0a",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/CommentResponse.java": {
+    "mtime": 1790156233.659052,
+    "seen": 1790156257.2179403,
+    "ast_hash": "2e8931529ac0a6beeb6593e6e7c5b943",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/CreateCommentRequest.java": {
+    "mtime": 1790156231.397954,
+    "seen": 1790156257.2179415,
+    "ast_hash": "d4ba1f2ed0a26725891816acb57021ae",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/CreateTicketRequest.java": {
+    "mtime": 1790156228.2498982,
+    "seen": 1790156257.2179425,
+    "ast_hash": "99243a70c2f74cc54f49ff484cbbc198",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/ErrorResponse.java": {
+    "mtime": 1790156227.410779,
+    "seen": 1790156257.217944,
+    "ast_hash": "00392ca95f17d51d40c6b47fc49d838d",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/TicketDetailResponse.java": {
+    "mtime": 1790156234.290576,
+    "seen": 1790156257.2179449,
+    "ast_hash": "9093bf9503dbe708135682afc7ec8c1c",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/TicketListResponse.java": {
+    "mtime": 1790156234.7660995,
+    "seen": 1790156257.217946,
+    "ast_hash": "9c13971d4029a49bbdc0cf8f963e0163",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/TicketResponse.java": {
+    "mtime": 1790156231.925977,
+    "seen": 1790156257.2179472,
+    "ast_hash": "b784ecb2055521b95d400634958f00a0",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java": {
+    "mtime": 1790156229.1088538,
+    "seen": 1790156257.2179482,
+    "ast_hash": "eb3c8f315200d4dc07fb5607f333805d",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/exception/GlobalExceptionHandler.java": {
+    "mtime": 1790156245.9008822,
+    "seen": 1790156257.2179492,
+    "ast_hash": "4c8dad3a85c57605046929f81bbf615d",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java": {
+    "mtime": 1790156242.61743,
+    "seen": 1790156257.2180855,
+    "ast_hash": "37f8feb5211e9593338c087b222f5e6f",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/mapper/TicketMapper.java": {
+    "mtime": 1790156246.711787,
+    "seen": 1790156257.218087,
+    "ast_hash": "5a7a976ab975d6ed7f1a033642ac2da6",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/service/TicketService.java": {
+    "mtime": 1790158158.3918705,
+    "seen": 1790158181.6753948,
+    "ast_hash": "2e148563fdc94bae8ef826aa792b788c",
+    "semantic_hash": ""
   }
 }

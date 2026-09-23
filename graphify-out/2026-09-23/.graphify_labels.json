@@ -6,14 +6,14 @@
   "4": "3.2 List tickets (search + filter)",
   "5": "API Contract",
   "6": "5. Out of scope for MVP API",
-  "7": "Comment.java",
+  "7": "GlobalExceptionHandler.java",
   "8": "Ticket",
   "9": "UI Flow",
   "10": "gradlew",
   "11": "build.gradle",
   "12": "settings.gradle",
   "13": "TicketStatus",
-  "14": "Comment",
+  "14": "Comment.java",
   "15": "TicketPriority",
   "16": "2026-09-22_19-37-04Z-hi-is-the-spec.md",
   "17": "generate-tests.md",
@@ -24,7 +24,5 @@
   "22": "Data Model",
   "23": "3. Functional requirements",
   "24": "State Machine",
-  "25": "Test Strategy",
-  "26": "TicketRepository.java",
-  "27": ".onUpdate"
+  "25": "Test Strategy"
 }
