@@ -104,7 +104,39 @@ class TicketApiIntegrationTest {
                                 { "title": "   " }
                                 """))
                 .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("$.code", is("VALIDATION_ERROR")));
+                .andExpect(jsonPath("$.code", is("VALIDATION_ERROR")))
+                .andExpect(jsonPath("$.fields.title", is("Title is required")));
+    }
+
+    @Test
+    void createTicket_digitsOnlyTitleAndDescription_returns400() throws Exception {
+        mockMvc.perform(post("/api/v1/tickets")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {
+                                  "title": "12345",
+                                  "description": "67890",
+                                  "priority": "MEDIUM"
+                                }
+                                """))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.code", is("VALIDATION_ERROR")))
+                .andExpect(jsonPath("$.fields.title", is("Title cannot be only digits")))
+                .andExpect(jsonPath("$.fields.description", is("Description cannot be only digits")));
+    }
+
+    @Test
+    void updateFields_digitsOnlyDescription_returns400() throws Exception {
+        String id = createTicket("Title", "Desc", "LOW");
+
+        mockMvc.perform(patch("/api/v1/tickets/" + id)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                { "description": "999" }
+                                """))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.code", is("VALIDATION_ERROR")))
+                .andExpect(jsonPath("$.fields.description", is("Description cannot be only digits")));
     }
 
     @Test

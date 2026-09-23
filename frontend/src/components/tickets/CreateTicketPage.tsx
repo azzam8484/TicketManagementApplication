@@ -33,17 +33,6 @@ const INITIAL: FormState = {
 
 const FORM_ID = "create-ticket-form";
 
-function clientValidate(form: FormState): Record<string, string> {
-  const fields: Record<string, string> = {};
-  if (!form.title.trim()) {
-    fields.title = "must not be blank";
-  }
-  if (!form.description.trim()) {
-    fields.description = "must not be blank";
-  }
-  return fields;
-}
-
 export function CreateTicketPage() {
   const router = useRouter();
   const [form, setForm] = useState<FormState>(INITIAL);
@@ -51,19 +40,9 @@ export function CreateTicketPage() {
   const [error, setError] = useState<unknown>(null);
   const [submitting, setSubmitting] = useState(false);
 
-  const canSubmit =
-    form.title.trim().length > 0 && form.description.trim().length > 0;
-
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setError(null);
-
-    const localErrors = clientValidate(form);
-    if (Object.keys(localErrors).length > 0) {
-      setFieldErrors(localErrors);
-      return;
-    }
-
     setFieldErrors({});
     setSubmitting(true);
 
@@ -92,9 +71,16 @@ export function CreateTicketPage() {
       title="New Ticket"
       actionLabel={submitting ? "Creating…" : "+ Create Ticket"}
       actionFormId={FORM_ID}
-      actionDisabled={submitting || !canSubmit}
+      actionDisabled={submitting}
     >
-      {error ? <ErrorBanner error={error} showFields={false} /> : null}
+      {error &&
+      !(
+        error instanceof ApiError &&
+        error.fields &&
+        Object.keys(error.fields).length > 0
+      ) ? (
+        <ErrorBanner error={error} showFields={false} />
+      ) : null}
 
       <div className={styles.card}>
         <div className={styles.cardHeader}>
@@ -123,9 +109,15 @@ export function CreateTicketPage() {
               value={form.title}
               disabled={submitting}
               maxLength={200}
-              onChange={(event) =>
-                setForm((prev) => ({ ...prev, title: event.target.value }))
-              }
+              onChange={(event) => {
+                setForm((prev) => ({ ...prev, title: event.target.value }));
+                setFieldErrors((prev) => {
+                  if (!prev.title) return prev;
+                  const next = { ...prev };
+                  delete next.title;
+                  return next;
+                });
+              }}
             />
             <FieldErrors name="title" fields={fieldErrors} />
           </label>
@@ -139,12 +131,18 @@ export function CreateTicketPage() {
               value={form.description}
               disabled={submitting}
               maxLength={10_000}
-              onChange={(event) =>
+              onChange={(event) => {
                 setForm((prev) => ({
                   ...prev,
                   description: event.target.value,
-                }))
-              }
+                }));
+                setFieldErrors((prev) => {
+                  if (!prev.description) return prev;
+                  const next = { ...prev };
+                  delete next.description;
+                  return next;
+                });
+              }}
             />
             <FieldErrors name="description" fields={fieldErrors} />
           </label>
@@ -191,7 +189,7 @@ export function CreateTicketPage() {
             <button
               type="submit"
               className={styles.primary}
-              disabled={submitting || !canSubmit}
+              disabled={submitting}
             >
               {submitting ? "Creating…" : "Create"}
             </button>

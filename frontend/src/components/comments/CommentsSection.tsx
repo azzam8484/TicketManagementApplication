@@ -49,7 +49,7 @@ export function CommentsSection({
     setError(null);
 
     if (!text.trim()) {
-      setFieldErrors({ text: "must not be blank" });
+      setFieldErrors({ text: "Comment is required" });
       return;
     }
 

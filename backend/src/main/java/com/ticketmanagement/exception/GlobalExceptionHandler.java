@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
                         (a, b) -> a,
                         LinkedHashMap::new));
         return ResponseEntity.badRequest()
-                .body(ErrorResponse.of("VALIDATION_ERROR", "Request validation failed", fields));
+                .body(ErrorResponse.of("VALIDATION_ERROR", "Please fix the highlighted fields.", fields));
     }
 
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
@@ -50,6 +50,13 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleUnreadable(HttpMessageNotReadableException ex) {
         return ResponseEntity.badRequest()
                 .body(ErrorResponse.of("VALIDATION_ERROR", "Malformed JSON request body"));
+    }
+
+    @ExceptionHandler(ValidationException.class)
+    public ResponseEntity<ErrorResponse> handleValidationException(ValidationException ex) {
+        Map<String, String> fields = ex.getFields().isEmpty() ? null : ex.getFields();
+        return ResponseEntity.badRequest()
+                .body(ErrorResponse.of("VALIDATION_ERROR", ex.getMessage(), fields));
     }
 
     @ExceptionHandler(IllegalArgumentException.class)

@@ -10,6 +10,17 @@ export function resolveErrorMessage(error: unknown): string {
         ? `Something went wrong. ${error.message}`
         : "Something went wrong";
     }
+    if (error.isValidation) {
+      if (error.fields && Object.keys(error.fields).length > 0) {
+        return "Please fix the highlighted fields.";
+      }
+      if (
+        error.message === "Request validation failed" ||
+        error.message === "Please fix the highlighted fields."
+      ) {
+        return "Please check your input and try again.";
+      }
+    }
     return error.message;
   }
 

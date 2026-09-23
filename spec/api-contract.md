@@ -22,7 +22,7 @@ Defines the MVP REST API: endpoints, request bodies, query params, HTTP statuses
   "code": "VALIDATION_ERROR",
   "message": "Human-readable summary",
   "fields": {
-    "title": "must not be blank"
+    "title": "Title is required"
   }
 }
 ```
@@ -95,9 +95,9 @@ Optional header: `Location: /api/v1/tickets/3fa85f64-5717-4562-b3fc-2c963f66afa6
 ```json
 {
   "code": "VALIDATION_ERROR",
-  "message": "Request validation failed",
+  "message": "Please fix the highlighted fields.",
   "fields": {
-    "title": "must not be blank",
+    "title": "Title is required",
     "priority": "must be one of LOW, MEDIUM, HIGH"
   }
 }
@@ -289,9 +289,9 @@ Content-Type: application/json
 ```json
 {
   "code": "VALIDATION_ERROR",
-  "message": "Request validation failed",
+  "message": "Please fix the highlighted fields.",
   "fields": {
-    "title": "must not be blank"
+    "title": "Title is required"
   }
 }
 ```
@@ -355,7 +355,7 @@ Content-Type: application/json
 ```json
 {
   "code": "VALIDATION_ERROR",
-  "message": "Request validation failed",
+  "message": "Please fix the highlighted fields.",
   "fields": {
     "status": "must be one of OPEN, IN_PROGRESS, RESOLVED, CLOSED, CANCELLED"
   }
@@ -408,9 +408,9 @@ Content-Type: application/json
 ```json
 {
   "code": "VALIDATION_ERROR",
-  "message": "Request validation failed",
+  "message": "Please fix the highlighted fields.",
   "fields": {
-    "text": "must not be blank"
+    "text": "Comment is required"
   }
 }
 ```

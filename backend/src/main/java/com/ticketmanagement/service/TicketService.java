@@ -12,11 +12,14 @@ import com.ticketmanagement.dto.TicketListResponse;
 import com.ticketmanagement.dto.TicketResponse;
 import com.ticketmanagement.dto.UpdateTicketRequest;
 import com.ticketmanagement.exception.ResourceNotFoundException;
+import com.ticketmanagement.exception.ValidationException;
 import com.ticketmanagement.mapper.TicketMapper;
 import com.ticketmanagement.repository.CommentRepository;
 import com.ticketmanagement.repository.TicketRepository;
 import com.ticketmanagement.statemachine.TicketStatusTransitionPolicy;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,9 +42,13 @@ public class TicketService {
 
     @Transactional
     public TicketResponse create(CreateTicketRequest request) {
+        String title = request.title().trim();
+        String description = request.description().trim();
+        assertTitleAndDescriptionContent(title, description);
+
         Ticket ticket = new Ticket();
-        ticket.setTitle(request.title().trim());
-        ticket.setDescription(request.description().trim());
+        ticket.setTitle(title);
+        ticket.setDescription(description);
         ticket.setPriority(request.priority());
         ticket.setAssignee(normalizeAssignee(request.assignee()));
         ticket.setStatus(TicketStatus.OPEN);
@@ -81,14 +88,21 @@ public class TicketService {
         if (request.title() != null) {
             String title = request.title().trim();
             if (title.isEmpty()) {
-                throw new IllegalArgumentException("title must not be blank");
+                throw ValidationException.forField("title", "Title is required");
+            }
+            if (isDigitsOnly(title)) {
+                throw ValidationException.forField("title", "Title cannot be only digits");
             }
             ticket.setTitle(title);
         }
         if (request.description() != null) {
             String description = request.description().trim();
             if (description.isEmpty()) {
-                throw new IllegalArgumentException("description must not be blank");
+                throw ValidationException.forField("description", "Description is required");
+            }
+            if (isDigitsOnly(description)) {
+                throw ValidationException.forField(
+                        "description", "Description cannot be only digits");
             }
             ticket.setDescription(description);
         }
@@ -127,6 +141,23 @@ public class TicketService {
     private Ticket findTicketOrThrow(UUID id) {
         return ticketRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Ticket not found: " + id));
+    }
+
+    private static void assertTitleAndDescriptionContent(String title, String description) {
+        Map<String, String> fields = new LinkedHashMap<>();
+        if (isDigitsOnly(title)) {
+            fields.put("title", "Title cannot be only digits");
+        }
+        if (isDigitsOnly(description)) {
+            fields.put("description", "Description cannot be only digits");
+        }
+        if (!fields.isEmpty()) {
+            throw new ValidationException("Please fix the highlighted fields.", fields);
+        }
+    }
+
+    private static boolean isDigitsOnly(String value) {
+        return !value.isEmpty() && value.chars().allMatch(Character::isDigit);
     }
 
     private static boolean hasAnyFieldUpdate(UpdateTicketRequest request) {

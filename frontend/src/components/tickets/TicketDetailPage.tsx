@@ -53,17 +53,6 @@ function toForm(ticket: TicketDetail): FormState {
   };
 }
 
-function clientValidate(form: FormState): Record<string, string> {
-  const fields: Record<string, string> = {};
-  if (!form.title.trim()) {
-    fields.title = "must not be blank";
-  }
-  if (!form.description.trim()) {
-    fields.description = "must not be blank";
-  }
-  return fields;
-}
-
 function formatTimestamp(value: string): string {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) {
@@ -111,9 +100,6 @@ export function TicketDetailPage({
     setEditing(initialEditing);
   }, [initialEditing]);
 
-  const canSave =
-    Boolean(form?.title.trim()) && Boolean(form?.description.trim());
-
   function cancelEdit() {
     if (!ticket) {
       return;
@@ -132,13 +118,6 @@ export function TicketDetailPage({
     }
 
     setSaveError(null);
-
-    const localErrors = clientValidate(form);
-    if (Object.keys(localErrors).length > 0) {
-      setFieldErrors(localErrors);
-      return;
-    }
-
     setFieldErrors({});
     setSaving(true);
 
@@ -223,7 +202,7 @@ export function TicketDetailPage({
         title="Edit Ticket"
         actionLabel={saving ? "Saving…" : "Save changes"}
         actionFormId={FORM_ID}
-        actionDisabled={saving || !canSave}
+        actionDisabled={saving}
         headerExtra={
           <button
             type="button"
@@ -235,7 +214,14 @@ export function TicketDetailPage({
           </button>
         }
       >
-        {saveError ? <ErrorBanner error={saveError} showFields={false} /> : null}
+        {saveError &&
+        !(
+          saveError instanceof ApiError &&
+          saveError.fields &&
+          Object.keys(saveError.fields).length > 0
+        ) ? (
+          <ErrorBanner error={saveError} showFields={false} />
+        ) : null}
 
         <div className={styles.metaCard}>
           <dl className={styles.timestamps}>
@@ -286,11 +272,17 @@ export function TicketDetailPage({
                 value={form.title}
                 disabled={saving}
                 maxLength={200}
-                onChange={(event) =>
+                onChange={(event) => {
                   setForm((prev) =>
                     prev ? { ...prev, title: event.target.value } : prev,
-                  )
-                }
+                  );
+                  setFieldErrors((prev) => {
+                    if (!prev.title) return prev;
+                    const next = { ...prev };
+                    delete next.title;
+                    return next;
+                  });
+                }}
               />
               <FieldErrors name="title" fields={fieldErrors} />
             </label>
@@ -304,11 +296,17 @@ export function TicketDetailPage({
                 value={form.description}
                 disabled={saving}
                 maxLength={10_000}
-                onChange={(event) =>
+                onChange={(event) => {
                   setForm((prev) =>
                     prev ? { ...prev, description: event.target.value } : prev,
-                  )
-                }
+                  );
+                  setFieldErrors((prev) => {
+                    if (!prev.description) return prev;
+                    const next = { ...prev };
+                    delete next.description;
+                    return next;
+                  });
+                }}
               />
               <FieldErrors name="description" fields={fieldErrors} />
             </label>
@@ -361,7 +359,7 @@ export function TicketDetailPage({
               <button
                 type="submit"
                 className={styles.primary}
-                disabled={saving || !canSave}
+                disabled={saving}
               >
                 {saving ? "Saving…" : "Save changes"}
               </button>

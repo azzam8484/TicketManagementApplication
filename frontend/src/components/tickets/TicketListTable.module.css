@@ -79,20 +79,31 @@
 
 .editButton {
   appearance: none;
-  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid #d7DEE8;
   background: #fff;
-  color: #243447;
-  border-radius: 8px;
+  color: #3d4f66;
+  border-radius: 999px;
   font: inherit;
   font-size: 0.82rem;
   font-weight: 500;
-  padding: 0.35rem 0.75rem;
+  padding: 0.4rem 0.9rem 0.4rem 0.7rem;
   cursor: pointer;
+  line-height: 1;
 }
 
 .editButton:hover {
-  background: #f3f6fa;
+  background: #f7f9fc;
   border-color: #c5ceda;
+  color: #243447;
+}
+
+.editIcon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex-shrink: 0;
 }
 
 .srOnly {

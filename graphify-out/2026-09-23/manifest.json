@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "spec/api-contract.md": {
-    "mtime": 1790149232.108663,
-    "seen": 1790149236.7004833,
-    "ast_hash": "32be4256a0c2af5ea5c170d300acd9c1",
+    "mtime": 1790174406.5608256,
+    "seen": 1790174408.3587666,
+    "ast_hash": "370e987ca1c69380705c0f5c23d11ad8",
     "semantic_hash": ""
   },
   "spec/architecture.md": {
@@ -198,15 +198,15 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/dto/CreateCommentRequest.java": {
-    "mtime": 1790156231.397954,
-    "seen": 1790156257.2179415,
-    "ast_hash": "d4ba1f2ed0a26725891816acb57021ae",
+    "mtime": 1790174387.2597427,
+    "seen": 1790174408.356526,
+    "ast_hash": "bbe037312ba3e7c7a5d3261243538b8c",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/dto/CreateTicketRequest.java": {
-    "mtime": 1790156228.2498982,
-    "seen": 1790156257.2179425,
-    "ast_hash": "99243a70c2f74cc54f49ff484cbbc198",
+    "mtime": 1790174386.148736,
+    "seen": 1790174408.3565283,
+    "ast_hash": "22fa7900585b5949298819f80807a8ab",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/dto/ErrorResponse.java": {
@@ -234,15 +234,15 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/dto/UpdateTicketRequest.java": {
-    "mtime": 1790159159.0227933,
-    "seen": 1790159188.1943665,
-    "ast_hash": "48acbd622a037a230c2b71b94c730c41",
+    "mtime": 1790174388.2347486,
+    "seen": 1790174408.356757,
+    "ast_hash": "967b05e4bb4f11378eebf678fc5a6f28",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/exception/GlobalExceptionHandler.java": {
-    "mtime": 1790156245.9008822,
-    "seen": 1790156257.2179492,
-    "ast_hash": "4c8dad3a85c57605046929f81bbf615d",
+    "mtime": 1790174667.82951,
+    "seen": 1790174682.932422,
+    "ast_hash": "f4b512d02a33ead0c511906bfb27d658",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/exception/ResourceNotFoundException.java": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/service/TicketService.java": {
-    "mtime": 1790172480.1172564,
-    "seen": 1790172515.8208783,
-    "ast_hash": "c7839c4bf6afc71fc1e1b6b8c93c40ff",
+    "mtime": 1790174677.0685704,
+    "seen": 1790174682.9328415,
+    "ast_hash": "2c99bd195c0ea73d7a93ab069b8c455b",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/config/CorsConfig.java": {
@@ -438,9 +438,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/common/errorMessage.ts": {
-    "mtime": 1790165545.5089624,
-    "seen": 1790165634.9092755,
-    "ast_hash": "65f79379f7f2e9b7cff938f510cde19a",
+    "mtime": 1790174393.5209892,
+    "seen": 1790174408.3577838,
+    "ast_hash": "9e1af380fad6fce6ab831aa727a2e891",
     "semantic_hash": ""
   },
   "frontend/src/components/common/index.ts": {
@@ -468,9 +468,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListTable.tsx": {
-    "mtime": 1790173184.3858802,
-    "seen": 1790173218.2645462,
-    "ast_hash": "d854c63c6e2053853d33701ead125825",
+    "mtime": 1790173907.6772704,
+    "seen": 1790173915.2694852,
+    "ast_hash": "274e5cf313681a89121a3d44f1e6b780",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/[id]/page.tsx": {
@@ -486,21 +486,21 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/CreateTicketPage.tsx": {
-    "mtime": 1790170757.5258904,
-    "seen": 1790170831.5423183,
-    "ast_hash": "c8d63f0d33915d2d4512a5c79586bfb2",
+    "mtime": 1790174400.592016,
+    "seen": 1790174408.3578591,
+    "ast_hash": "1305984401a46804fbd20200b6285db0",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketDetailPage.tsx": {
-    "mtime": 1790173211.487031,
-    "seen": 1790173218.26433,
-    "ast_hash": "f636e4e8e14c8015e3412956889685fb",
+    "mtime": 1790174681.0349402,
+    "seen": 1790174682.934086,
+    "ast_hash": "2be394e48fa1f359462ff679818f22f4",
     "semantic_hash": ""
   },
   "frontend/src/components/comments/CommentsSection.tsx": {
-    "mtime": 1790167002.4180014,
-    "seen": 1790167080.86773,
-    "ast_hash": "6ec2b78b4b74d524e716ea7997bb9cba",
+    "mtime": 1790174400.1887069,
+    "seen": 1790174408.3575177,
+    "ast_hash": "3b0ae27ddc79aa1d1382501bf8d0a9ca",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/StatusControl.tsx": {
@@ -543,6 +543,12 @@
     "mtime": 1790171673.0476153,
     "seen": 1790172189.0419567,
     "ast_hash": "84c4b55be3599743d019fbf2d3d8bb76",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/exception/ValidationException.java": {
+    "mtime": 1790174665.4064941,
+    "seen": 1790174682.9325972,
+    "ast_hash": "e514bce58e77d47f846e8d91a26c8819",
     "semantic_hash": ""
   }
 }
