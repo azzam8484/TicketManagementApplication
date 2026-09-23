@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   ".cursor/skills/documentation/SKILL.md": {
-    "mtime": 1790146035.8428452,
-    "seen": 1790149236.7004797,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "mtime": 1790155442.585742,
+    "seen": 1790155655.7473578,
+    "ast_hash": "d124f1717238aa8a3eb39e4910a43a54",
     "semantic_hash": ""
   },
   ".specstory/history/2026-09-22_19-37-04Z-hi-is-the-spec.md": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md": {
-    "mtime": 1790154495.269948,
-    "seen": 1790154673.5783422,
-    "ast_hash": "4bdb7c683ede901d8017f71a7d736b18",
+    "mtime": 1790155605.0647395,
+    "seen": 1790155655.747407,
+    "ast_hash": "0d9596d379c5eecb6ded8914f92fc13c",
     "semantic_hash": ""
   },
   "spec/api-contract.md": {
@@ -54,21 +54,21 @@
     "semantic_hash": ""
   },
   "spec/architecture.md": {
-    "mtime": 1790147698.4016166,
-    "seen": 1790149236.7004845,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "mtime": 1790155401.3967142,
+    "seen": 1790155655.7475584,
+    "ast_hash": "c3ef300c5ac183912ce8ac18072ae7fc",
     "semantic_hash": ""
   },
   "spec/data-model.md": {
-    "mtime": 1790149706.0240443,
-    "seen": 1790149710.5486617,
-    "ast_hash": "b84de8d254efe9d23b3319d49ea1a26e",
+    "mtime": 1790155445.5214796,
+    "seen": 1790155655.7475598,
+    "ast_hash": "a4d07494c65c2b1806b4be075c2ec44e",
     "semantic_hash": ""
   },
   "spec/requirements.md": {
-    "mtime": 1790147698.4016166,
-    "seen": 1790149236.7004874,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "mtime": 1790155404.2514098,
+    "seen": 1790155655.747561,
+    "ast_hash": "956aafc9d9d9dce51882fa0a6fa5def2",
     "semantic_hash": ""
   },
   "spec/state-machine.md": {
@@ -78,9 +78,9 @@
     "semantic_hash": ""
   },
   "spec/test-strategy.md": {
-    "mtime": 1790149585.756898,
-    "seen": 1790149589.703131,
-    "ast_hash": "f6916e5837e544f76ca50d6d4456362b",
+    "mtime": 1790155410.6737947,
+    "seen": 1790155655.7476034,
+    "ast_hash": "efac2e7ba9fd40b19b740c914a7e72e6",
     "semantic_hash": ""
   },
   "spec/ui-flow.md": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/resources/application-local.yml": {
-    "mtime": 1790154531.2118666,
-    "seen": 1790154673.5783436,
-    "ast_hash": "5529e7c71502f89d4d02695c7e5f7342",
+    "mtime": 1790155328.919548,
+    "seen": 1790155655.7474084,
+    "ast_hash": "a0e45e31bbbe8a7f5cb61cf32e6d49b1",
     "semantic_hash": ""
   },
   "backend/src/main/resources/application-prod.yml": {
@@ -153,6 +153,18 @@
     "mtime": 1790154514.2897437,
     "seen": 1790154673.5780582,
     "ast_hash": "96cf5c52c70fb7e29a2f12fd2698697d",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java": {
+    "mtime": 1790155640.2066388,
+    "seen": 1790155655.7472117,
+    "ast_hash": "4b210766eab759a72bf182a466ed7735",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java": {
+    "mtime": 1790155640.2049134,
+    "seen": 1790155655.7472138,
+    "ast_hash": "f11f2151fc67539608ddb791f2c1963e",
     "semantic_hash": ""
   }
 }

@@ -4,19 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
-      "label": "TicketPriority",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": "ticketpriority",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L3"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
       "label": "TicketStatus",
       "_callable": true,
@@ -30,30 +17,56 @@
       "source_location": "L3"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
-      "label": "TicketManagementApplication",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
-      "file_type": "code",
-      "norm_label": "ticketmanagementapplication",
-      "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
-      "source_location": "L6"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
       "label": "Comment",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
+      "community": 14,
+      "community_name": "Comment",
       "file_type": "code",
       "norm_label": "comment",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
       "source_location": "L16"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
+      "label": "TicketPriority",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": "ticketpriority",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L3"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "label": "CommentRepository",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "file_type": "code",
+      "norm_label": "commentrepository",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L8"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
+      "label": "TicketManagementApplication",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
+      "file_type": "code",
+      "norm_label": "ticketmanagementapplication",
+      "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
+      "source_location": "L6"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
@@ -61,7 +74,7 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "code",
       "norm_label": "ticket",
@@ -69,16 +82,17 @@
       "source_location": "L16"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getpriority",
-      "label": ".getPriority()",
+      "id": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "label": "TicketRepository",
       "_callable": true,
+      "_callable_class": true,
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 8,
+      "community_name": "Ticket",
       "file_type": "code",
-      "norm_label": ".getpriority()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L94"
+      "norm_label": "ticketrepository",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L11"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getstatus",
@@ -93,18 +107,6 @@
       "source_location": "L86"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setpriority",
-      "label": ".setPriority()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": ".setpriority()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L98"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setstatus",
       "label": ".setStatus()",
       "_callable": true,
@@ -117,12 +119,132 @@
       "source_location": "L90"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getcreatedat",
+      "label": ".getCreatedAt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".getcreatedat()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L63"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getid",
+      "label": ".getId()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".getid()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L39"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_gettext",
+      "label": ".getText()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".gettext()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L55"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getticket",
+      "label": ".getTicket()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".getticket()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L47"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_setid",
+      "label": ".setId()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".setid()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L43"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_settext",
+      "label": ".setText()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".settext()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L59"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_setticket",
+      "label": ".setTicket()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Comment",
+      "file_type": "code",
+      "norm_label": ".setticket()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
+      "source_location": "L51"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getpriority",
+      "label": ".getPriority()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": ".getpriority()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L94"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setpriority",
+      "label": ".setPriority()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": ".setpriority()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L98"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository_findbyticket_idorderbycreatedatasc",
+      "label": ".findByTicket_IdOrderByCreatedAtAsc()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "file_type": "code",
+      "norm_label": ".findbyticket_idorderbycreatedatasc()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L10"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication_main",
       "label": ".main()",
       "_callable": true,
       "_origin": "ast",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -139,60 +261,12 @@
       "source_location": "L9"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getcreatedat",
-      "label": ".getCreatedAt()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getcreatedat()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L63"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getid",
-      "label": ".getId()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getid()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L39"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_gettext",
-      "label": ".getText()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".gettext()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L55"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getticket",
-      "label": ".getTicket()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getticket()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L47"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_oncreate",
       "label": ".onCreate()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -209,120 +283,12 @@
       "source_location": "L34"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_setid",
-      "label": ".setId()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".setid()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L43"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_settext",
-      "label": ".setText()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".settext()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L59"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_setticket",
-      "label": ".setTicket()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".setticket()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
-      "source_location": "L51"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getassignee",
-      "label": ".getAssignee()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getassignee()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L102"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getcreatedat",
-      "label": ".getCreatedAt()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getcreatedat()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L110"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getdescription",
-      "label": ".getDescription()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getdescription()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L78"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getid",
-      "label": ".getId()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getid()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L62"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_gettitle",
-      "label": ".getTitle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".gettitle()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L70"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getupdatedat",
-      "label": ".getUpdatedAt()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "code",
-      "norm_label": ".getupdatedat()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L114"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_oncreate",
       "label": ".onCreate()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -344,7 +310,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -361,11 +327,83 @@
       "source_location": "L57"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getassignee",
+      "label": ".getAssignee()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getassignee()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L102"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getcreatedat",
+      "label": ".getCreatedAt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getcreatedat()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L110"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getdescription",
+      "label": ".getDescription()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getdescription()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L78"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getid",
+      "label": ".getId()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getid()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L62"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_gettitle",
+      "label": ".getTitle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".gettitle()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L70"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getupdatedat",
+      "label": ".getUpdatedAt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getupdatedat()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L114"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setassignee",
       "label": ".setAssignee()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "code",
       "norm_label": ".setassignee()",
@@ -377,7 +415,7 @@
       "label": ".setDescription()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "code",
       "norm_label": ".setdescription()",
@@ -389,7 +427,7 @@
       "label": ".setId()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "code",
       "norm_label": ".setid()",
@@ -401,12 +439,48 @@
       "label": ".setTitle()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "code",
       "norm_label": ".settitle()",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L74"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findallbyorderbycreatedatdesc",
+      "label": ".findAllByOrderByCreatedAtDesc()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".findallbyorderbycreatedatdesc()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L13"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findbystatusorderbycreatedatdesc",
+      "label": ".findByStatusOrderByCreatedAtDesc()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".findbystatusorderbycreatedatdesc()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L15"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_search",
+      "label": ".search()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".search()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L21"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_3_1_create_ticket",
@@ -697,6 +771,42 @@
       "source_location": "L3818"
     },
     {
+      "id": "spec_api_contract",
+      "label": "api-contract.md",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "api-contract.md",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "spec_api_contract_1_general_conventions",
+      "label": "1. General conventions",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. general conventions",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "spec_api_contract_2_api_list",
+      "label": "2. API list",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. api list",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L39"
+    },
+    {
       "id": "spec_api_contract_3_1_create_ticket",
       "label": "3.1 Create ticket",
       "_origin": "ast",
@@ -779,6 +889,42 @@
       "norm_label": "3. endpoints with dummy responses",
       "source_file": "spec/api-contract.md",
       "source_location": "L52"
+    },
+    {
+      "id": "spec_api_contract_4_dummy_data_reference_shared_sample_ids",
+      "label": "4. Dummy data reference (shared sample IDs)",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. dummy data reference (shared sample ids)",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L429"
+    },
+    {
+      "id": "spec_api_contract_5_out_of_scope_for_mvp_api",
+      "label": "5. Out of scope for MVP API",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. out of scope for mvp api",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L436"
+    },
+    {
+      "id": "spec_api_contract_api_contract",
+      "label": "API Contract",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "api contract",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L1"
     },
     {
       "id": "spec_api_contract_dummy_error_response_400_bad_request",
@@ -1081,6 +1227,30 @@
       "source_location": "L223"
     },
     {
+      "id": "spec_api_contract_error_response_shape",
+      "label": "Error response shape",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "error response shape",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "spec_api_contract_purpose_of_this_document",
+      "label": "Purpose of this document",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "3.2 List tickets (search + filter)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "purpose of this document",
+      "source_file": "spec/api-contract.md",
+      "source_location": "L3"
+    },
+    {
       "id": "spec_api_contract_query_parameters",
       "label": "Query parameters",
       "_origin": "ast",
@@ -1175,50 +1345,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority",
-      "label": "TicketPriority.java",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": "ticketpriority.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_high",
-      "label": "HIGH",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": "high",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L6"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_low",
-      "label": "LOW",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": "low",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L4"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_medium",
-      "label": "MEDIUM",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "code",
-      "norm_label": "medium",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
-      "source_location": "L5"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus",
       "label": "TicketStatus.java",
       "_origin": "ast",
@@ -1285,194 +1411,108 @@
       "source_location": "L6"
     },
     {
-      "id": "spec_data_model_4_1_fields",
-      "label": "4.1 Fields",
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_1_ticket_comment_one_to_many",
+      "label": "6.1 Ticket \u2192 Comment (one-to-many)",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 14,
+      "community_name": "Comment",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4.1 fields",
-      "source_file": "spec/data-model.md",
-      "source_location": "L75"
-    },
-    {
-      "id": "spec_data_model_4_2_field_rules",
-      "label": "4.2 Field rules",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.2 field rules",
-      "source_file": "spec/data-model.md",
-      "source_location": "L88"
-    },
-    {
-      "id": "spec_data_model_4_3_ticket_constraints",
-      "label": "4.3 Ticket constraints",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.3 ticket constraints",
-      "source_file": "spec/data-model.md",
-      "source_location": "L133"
-    },
-    {
-      "id": "spec_data_model_4_4_indexes_ticket",
-      "label": "4.4 Indexes (Ticket)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.4 indexes (ticket)",
-      "source_file": "spec/data-model.md",
-      "source_location": "L143"
-    },
-    {
-      "id": "spec_data_model_4_5_table_definition_logical_sql",
-      "label": "4.5 Table definition (logical SQL)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.5 table definition (logical sql)",
-      "source_file": "spec/data-model.md",
-      "source_location": "L157"
-    },
-    {
-      "id": "spec_data_model_4_entity_ticket",
-      "label": "4. Entity: Ticket",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. entity: ticket",
-      "source_file": "spec/data-model.md",
-      "source_location": "L73"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_1_fields",
-      "label": "4.1 Fields",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.1 fields",
+      "norm_label": "6.1 ticket \u2192 comment (one-to-many)",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3068"
+      "source_location": "L3246"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_2_field_rules",
-      "label": "4.2 Field rules",
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_2_ownership",
+      "label": "6.2 Ownership",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 14,
+      "community_name": "Comment",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4.2 field rules",
+      "norm_label": "6.2 ownership",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3081"
+      "source_location": "L3254"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_3_ticket_constraints",
-      "label": "4.3 Ticket constraints",
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_relationships_detailed",
+      "label": "6. Relationships (detailed)",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 14,
+      "community_name": "Comment",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4.3 ticket constraints",
+      "norm_label": "6. relationships (detailed)",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3126"
+      "source_location": "L3244"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_4_suggested_indexes_ticket",
-      "label": "4.4 Suggested indexes (Ticket)",
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority",
+      "label": "TicketPriority.java",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.4 suggested indexes (ticket)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3136"
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": "ticketpriority.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L1"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_5_suggested_table_definition_logical_sql",
-      "label": "4.5 Suggested table definition (logical SQL)",
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_high",
+      "label": "HIGH",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.5 suggested table definition (logical sql)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3151"
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": "high",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L6"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_entity_ticket",
-      "label": "4. Entity: Ticket",
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_low",
+      "label": "LOW",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": "low",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L4"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority_medium",
+      "label": "MEDIUM",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketPriority",
+      "file_type": "code",
+      "norm_label": "medium",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "label": "What changed",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "TicketPriority",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4. entity: ticket",
+      "norm_label": "what changed",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3066"
+      "source_location": "L7055"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_s_in_the_new_file",
       "label": "What\u2019s in the new file",
       "_origin": "ast",
-      "community": 13,
-      "community_name": "TicketStatus",
+      "community": 15,
+      "community_name": "TicketPriority",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what\u2019s in the new file",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L5366"
-    },
-    {
-      "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
-      "label": "TicketManagementApplication.java",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
-      "file_type": "code",
-      "norm_label": "ticketmanagementapplication.java",
-      "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "org_springframework_boot_autoconfigure_springbootapplication",
-      "label": "org.springframework.boot.autoconfigure.SpringBootApplication",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
-      "file_type": "code",
-      "norm_label": "org.springframework.boot.autoconfigure.springbootapplication",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_not_in_part_1_next_parts",
-      "label": "Not in Part 1 (next parts)",
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "not in part 1 (next parts)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L6160"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_hi_is_the_spec",
@@ -1839,24 +1879,173 @@
       "label": "SKILL.md",
       "_origin": "ast",
       "community": 20,
-      "community_name": "SKILL.md",
+      "community_name": "Documentation Skills",
       "file_type": "document",
+      "frontmatter": {
+        "description": "Documentation requirements for backend and API work",
+        "globs": "**/*.{java,md,yml,yaml}",
+        "alwaysApply": "false"
+      },
       "node_kind": "page",
       "norm_label": "skill.md",
       "source_file": ".cursor/skills/documentation/SKILL.md",
       "source_location": "L1"
     },
     {
+      "id": "cursor_skills_documentation_skill_agent_behavior",
+      "label": "Agent behavior",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "Documentation Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "agent behavior",
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "cursor_skills_documentation_skill_documentation_skills",
+      "label": "Documentation Skills",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "Documentation Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "documentation skills",
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "cursor_skills_documentation_skill_how_to_document",
+      "label": "How to document",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "Documentation Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how to document",
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L16"
+    },
+    {
+      "id": "cursor_skills_documentation_skill_what_to_document",
+      "label": "What to document",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "Documentation Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what to document",
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L9"
+    },
+    {
       "id": "spec_architecture",
       "label": "architecture.md",
       "_origin": "ast",
       "community": 21,
-      "community_name": "architecture.md",
+      "community_name": "Architecture (Detailed)",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "architecture.md",
       "source_file": "spec/architecture.md",
       "source_location": "L1"
+    },
+    {
+      "id": "spec_architecture_1_1_architecture_goals_mvp",
+      "label": "1.1 Architecture goals (MVP)",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.1 architecture goals (mvp)",
+      "source_file": "spec/architecture.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "spec_architecture_1_2_non_goals_mvp",
+      "label": "1.2 Non-goals (MVP)",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.2 non-goals (mvp)",
+      "source_file": "spec/architecture.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "spec_architecture_1_goals_and_non_goals",
+      "label": "1. Goals and non-goals",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. goals and non-goals",
+      "source_file": "spec/architecture.md",
+      "source_location": "L14"
+    },
+    {
+      "id": "spec_architecture_2_1_actors",
+      "label": "2.1 Actors",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2.1 actors",
+      "source_file": "spec/architecture.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "spec_architecture_2_2_context_diagram",
+      "label": "2.2 Context diagram",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2.2 context diagram",
+      "source_file": "spec/architecture.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "spec_architecture_2_system_context",
+      "label": "2. System context",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. system context",
+      "source_file": "spec/architecture.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "spec_architecture_architecture_detailed",
+      "label": "Architecture (Detailed)",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "architecture (detailed)",
+      "source_file": "spec/architecture.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "spec_architecture_purpose_of_this_document",
+      "label": "Purpose of this document",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "Architecture (Detailed)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "purpose of this document",
+      "source_file": "spec/architecture.md",
+      "source_location": "L2"
     },
     {
       "id": "spec_data_model",
@@ -1880,19 +2069,31 @@
       "node_kind": "heading",
       "norm_label": "10. er diagram",
       "source_file": "spec/data-model.md",
-      "source_location": "L321"
+      "source_location": "L324"
     },
     {
-      "id": "spec_data_model_11_out_of_model_for_mvp",
-      "label": "11. Out of model for MVP",
+      "id": "spec_data_model_11_persistence_notes",
+      "label": "11. Persistence notes",
       "_origin": "ast",
       "community": 22,
       "community_name": "Data Model",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "11. out of model for mvp",
+      "norm_label": "11. persistence notes",
       "source_file": "spec/data-model.md",
-      "source_location": "L349"
+      "source_location": "L352"
+    },
+    {
+      "id": "spec_data_model_12_out_of_model_for_mvp",
+      "label": "12. Out of model for MVP",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "12. out of model for mvp",
+      "source_file": "spec/data-model.md",
+      "source_location": "L360"
     },
     {
       "id": "spec_data_model_1_overview",
@@ -1928,7 +2129,7 @@
       "node_kind": "heading",
       "norm_label": "3.1 ticketstatus",
       "source_file": "spec/data-model.md",
-      "source_location": "L44"
+      "source_location": "L47"
     },
     {
       "id": "spec_data_model_3_2_ticketpriority",
@@ -1940,7 +2141,7 @@
       "node_kind": "heading",
       "norm_label": "3.2 ticketpriority",
       "source_file": "spec/data-model.md",
-      "source_location": "L60"
+      "source_location": "L63"
     },
     {
       "id": "spec_data_model_3_enumerations",
@@ -1952,7 +2153,7 @@
       "node_kind": "heading",
       "norm_label": "3. enumerations",
       "source_file": "spec/data-model.md",
-      "source_location": "L42"
+      "source_location": "L45"
     },
     {
       "id": "spec_data_model_5_1_fields",
@@ -1964,7 +2165,7 @@
       "node_kind": "heading",
       "norm_label": "5.1 fields",
       "source_file": "spec/data-model.md",
-      "source_location": "L181"
+      "source_location": "L184"
     },
     {
       "id": "spec_data_model_5_2_field_rules",
@@ -1976,7 +2177,7 @@
       "node_kind": "heading",
       "norm_label": "5.2 field rules",
       "source_file": "spec/data-model.md",
-      "source_location": "L190"
+      "source_location": "L193"
     },
     {
       "id": "spec_data_model_5_3_comment_constraints",
@@ -1988,7 +2189,7 @@
       "node_kind": "heading",
       "norm_label": "5.3 comment constraints",
       "source_file": "spec/data-model.md",
-      "source_location": "L211"
+      "source_location": "L214"
     },
     {
       "id": "spec_data_model_5_4_referential_action",
@@ -2000,7 +2201,7 @@
       "node_kind": "heading",
       "norm_label": "5.4 referential action",
       "source_file": "spec/data-model.md",
-      "source_location": "L219"
+      "source_location": "L222"
     },
     {
       "id": "spec_data_model_5_5_indexes_comment",
@@ -2012,7 +2213,7 @@
       "node_kind": "heading",
       "norm_label": "5.5 indexes (comment)",
       "source_file": "spec/data-model.md",
-      "source_location": "L227"
+      "source_location": "L230"
     },
     {
       "id": "spec_data_model_5_6_table_definition_logical_sql",
@@ -2024,7 +2225,7 @@
       "node_kind": "heading",
       "norm_label": "5.6 table definition (logical sql)",
       "source_file": "spec/data-model.md",
-      "source_location": "L234"
+      "source_location": "L237"
     },
     {
       "id": "spec_data_model_5_entity_comment",
@@ -2036,7 +2237,7 @@
       "node_kind": "heading",
       "norm_label": "5. entity: comment",
       "source_file": "spec/data-model.md",
-      "source_location": "L179"
+      "source_location": "L182"
     },
     {
       "id": "spec_data_model_6_relationships",
@@ -2048,7 +2249,7 @@
       "node_kind": "heading",
       "norm_label": "6. relationships",
       "source_file": "spec/data-model.md",
-      "source_location": "L250"
+      "source_location": "L253"
     },
     {
       "id": "spec_data_model_7_data_lifecycle_by_operation",
@@ -2060,7 +2261,7 @@
       "node_kind": "heading",
       "norm_label": "7. data lifecycle by operation",
       "source_file": "spec/data-model.md",
-      "source_location": "L260"
+      "source_location": "L263"
     },
     {
       "id": "spec_data_model_8_validation_rules_tied_to_data",
@@ -2072,7 +2273,7 @@
       "node_kind": "heading",
       "norm_label": "8. validation rules tied to data",
       "source_file": "spec/data-model.md",
-      "source_location": "L271"
+      "source_location": "L274"
     },
     {
       "id": "spec_data_model_9_example_records",
@@ -2084,7 +2285,7 @@
       "node_kind": "heading",
       "norm_label": "9. example records",
       "source_file": "spec/data-model.md",
-      "source_location": "L293"
+      "source_location": "L296"
     },
     {
       "id": "spec_data_model_comment",
@@ -2096,7 +2297,7 @@
       "node_kind": "heading",
       "norm_label": "comment",
       "source_file": "spec/data-model.md",
-      "source_location": "L310"
+      "source_location": "L313"
     },
     {
       "id": "spec_data_model_comment_create",
@@ -2108,7 +2309,7 @@
       "node_kind": "heading",
       "norm_label": "comment create",
       "source_file": "spec/data-model.md",
-      "source_location": "L289"
+      "source_location": "L292"
     },
     {
       "id": "spec_data_model_data_model",
@@ -2144,7 +2345,7 @@
       "node_kind": "heading",
       "norm_label": "status change",
       "source_file": "spec/data-model.md",
-      "source_location": "L285"
+      "source_location": "L288"
     },
     {
       "id": "spec_data_model_ticket",
@@ -2156,7 +2357,7 @@
       "node_kind": "heading",
       "norm_label": "ticket",
       "source_file": "spec/data-model.md",
-      "source_location": "L295"
+      "source_location": "L298"
     },
     {
       "id": "spec_data_model_ticket_create",
@@ -2168,7 +2369,7 @@
       "node_kind": "heading",
       "norm_label": "ticket create",
       "source_file": "spec/data-model.md",
-      "source_location": "L273"
+      "source_location": "L276"
     },
     {
       "id": "spec_data_model_ticket_field_update",
@@ -2180,17 +2381,305 @@
       "node_kind": "heading",
       "norm_label": "ticket field update",
       "source_file": "spec/data-model.md",
-      "source_location": "L280"
+      "source_location": "L283"
     },
     {
       "id": "spec_requirements",
       "label": "requirements.md",
       "_origin": "ast",
       "community": 23,
-      "community_name": "requirements.md",
+      "community_name": "3. Functional requirements",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "requirements.md",
+      "source_file": "spec/requirements.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "spec_requirements_1_purpose",
+      "label": "1. Purpose",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. purpose",
+      "source_file": "spec/requirements.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "spec_requirements_2_scope",
+      "label": "2. Scope",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. scope",
+      "source_file": "spec/requirements.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "spec_requirements_3_10_backend_validation",
+      "label": "3.10 Backend validation",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.10 backend validation",
+      "source_file": "spec/requirements.md",
+      "source_location": "L88"
+    },
+    {
+      "id": "spec_requirements_3_11_ui_error_display",
+      "label": "3.11 UI error display",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.11 ui error display",
+      "source_file": "spec/requirements.md",
+      "source_location": "L93"
+    },
+    {
+      "id": "spec_requirements_3_1_create_ticket",
+      "label": "3.1 Create ticket",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.1 create ticket",
+      "source_file": "spec/requirements.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "spec_requirements_3_2_list_tickets",
+      "label": "3.2 List tickets",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.2 list tickets",
+      "source_file": "spec/requirements.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "spec_requirements_3_3_view_ticket_details",
+      "label": "3.3 View ticket details",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.3 view ticket details",
+      "source_file": "spec/requirements.md",
+      "source_location": "L44"
+    },
+    {
+      "id": "spec_requirements_3_4_update_ticket_fields",
+      "label": "3.4 Update ticket fields",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.4 update ticket fields",
+      "source_file": "spec/requirements.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "spec_requirements_3_5_change_ticket_status",
+      "label": "3.5 Change ticket status",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.5 change ticket status",
+      "source_file": "spec/requirements.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "spec_requirements_3_6_add_comments",
+      "label": "3.6 Add comments",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.6 add comments",
+      "source_file": "spec/requirements.md",
+      "source_location": "L65"
+    },
+    {
+      "id": "spec_requirements_3_7_search_tickets",
+      "label": "3.7 Search tickets",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.7 search tickets",
+      "source_file": "spec/requirements.md",
+      "source_location": "L71"
+    },
+    {
+      "id": "spec_requirements_3_8_filter_tickets_by_status",
+      "label": "3.8 Filter tickets by status",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.8 filter tickets by status",
+      "source_file": "spec/requirements.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "spec_requirements_3_9_persist_data",
+      "label": "3.9 Persist data",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3.9 persist data",
+      "source_file": "spec/requirements.md",
+      "source_location": "L81"
+    },
+    {
+      "id": "spec_requirements_3_functional_requirements",
+      "label": "3. Functional requirements",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. functional requirements",
+      "source_file": "spec/requirements.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "spec_requirements_4_status_state_machine_backend_enforced",
+      "label": "4. Status state machine (backend-enforced)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. status state machine (backend-enforced)",
+      "source_file": "spec/requirements.md",
+      "source_location": "L97"
+    },
+    {
+      "id": "spec_requirements_5_quality_process_requirements",
+      "label": "5. Quality / process requirements",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. quality / process requirements",
+      "source_file": "spec/requirements.md",
+      "source_location": "L127"
+    },
+    {
+      "id": "spec_requirements_6_acceptance_criteria",
+      "label": "6. Acceptance criteria",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. acceptance criteria",
+      "source_file": "spec/requirements.md",
+      "source_location": "L132"
+    },
+    {
+      "id": "spec_requirements_7_implementation_rule",
+      "label": "7. Implementation rule",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. implementation rule",
+      "source_file": "spec/requirements.md",
+      "source_location": "L151"
+    },
+    {
+      "id": "spec_requirements_allowed_statuses",
+      "label": "Allowed statuses",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "allowed statuses",
+      "source_file": "spec/requirements.md",
+      "source_location": "L99"
+    },
+    {
+      "id": "spec_requirements_allowed_transitions",
+      "label": "Allowed transitions",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "allowed transitions",
+      "source_file": "spec/requirements.md",
+      "source_location": "L103"
+    },
+    {
+      "id": "spec_requirements_disallowed_transitions_examples_not_exhaustive",
+      "label": "Disallowed transitions (examples; not exhaustive)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "disallowed transitions (examples; not exhaustive)",
+      "source_file": "spec/requirements.md",
+      "source_location": "L115"
+    },
+    {
+      "id": "spec_requirements_in_scope_mvp",
+      "label": "In scope (MVP)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "in scope (mvp)",
+      "source_file": "spec/requirements.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "spec_requirements_out_of_scope_until_mvp_is_done",
+      "label": "Out of scope (until MVP is done)",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "out of scope (until mvp is done)",
+      "source_file": "spec/requirements.md",
+      "source_location": "L16"
+    },
+    {
+      "id": "spec_requirements_ticket_management_system_mvp_requirements",
+      "label": "Ticket Management System \u2014 MVP Requirements",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "3. Functional requirements",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "ticket management system \u2014 mvp requirements",
       "source_file": "spec/requirements.md",
       "source_location": "L1"
     },
@@ -2432,7 +2921,7 @@
       "node_kind": "heading",
       "norm_label": "10. out of scope for mvp testing",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L201"
+      "source_location": "L213"
     },
     {
       "id": "spec_test_strategy_1_goals",
@@ -2576,7 +3065,7 @@
       "node_kind": "heading",
       "norm_label": "5. frontend / ui verification (mvp minimum = manual)",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L136"
+      "source_location": "L148"
     },
     {
       "id": "spec_test_strategy_6_process_security_checks",
@@ -2588,7 +3077,7 @@
       "node_kind": "heading",
       "norm_label": "6. process / security checks",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L157"
+      "source_location": "L169"
     },
     {
       "id": "spec_test_strategy_7_acceptance_criteria_test_map",
@@ -2600,7 +3089,7 @@
       "node_kind": "heading",
       "norm_label": "7. acceptance criteria \u2192 test map",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L164"
+      "source_location": "L176"
     },
     {
       "id": "spec_test_strategy_8_test_data_guidelines",
@@ -2612,7 +3101,7 @@
       "node_kind": "heading",
       "norm_label": "8. test data guidelines",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L185"
+      "source_location": "L197"
     },
     {
       "id": "spec_test_strategy_9_definition_of_done_testing",
@@ -2624,7 +3113,7 @@
       "node_kind": "heading",
       "norm_label": "9. definition of done (testing)",
       "source_file": "spec/test-strategy.md",
-      "source_location": "L192"
+      "source_location": "L204"
     },
     {
       "id": "spec_test_strategy_invalid_transitions",
@@ -2687,184 +3176,203 @@
       "source_location": "L106"
     },
     {
-      "id": "spec_ui_flow",
-      "label": "ui-flow.md",
+      "id": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "label": "CommentRepository.java",
       "_origin": "ast",
       "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "ui-flow.md",
-      "source_file": "spec/ui-flow.md",
+      "community_name": "TicketRepository.java",
+      "file_type": "code",
+      "norm_label": "commentrepository.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
       "source_location": "L1"
     },
     {
-      "id": "spec_ui_flow_1_screens_mvp",
-      "label": "1. Screens (MVP)",
+      "id": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "label": "TicketRepository.java",
       "_origin": "ast",
       "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. screens (mvp)",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L16"
-    },
-    {
-      "id": "spec_ui_flow_2_global_ui_behavior",
-      "label": "2. Global UI behavior",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. global ui behavior",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L26"
-    },
-    {
-      "id": "spec_ui_flow_4_end_to_end_user_journeys",
-      "label": "4. End-to-end user journeys",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. end-to-end user journeys",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L179"
-    },
-    {
-      "id": "spec_ui_flow_5_screen_api_map",
-      "label": "5. Screen \u2192 API map",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. screen \u2192 api map",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L224"
-    },
-    {
-      "id": "spec_ui_flow_6_out_of_scope_for_mvp_ui",
-      "label": "6. Out of scope for MVP UI",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6. out of scope for mvp ui",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L235"
-    },
-    {
-      "id": "spec_ui_flow_error_display_rules",
-      "label": "Error display rules",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "error display rules",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L33"
-    },
-    {
-      "id": "spec_ui_flow_journey_a_create_and_view",
-      "label": "Journey A \u2014 Create and view",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey a \u2014 create and view",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L181"
-    },
-    {
-      "id": "spec_ui_flow_journey_b_search_and_filter",
-      "label": "Journey B \u2014 Search and filter",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey b \u2014 search and filter",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L188"
-    },
-    {
-      "id": "spec_ui_flow_journey_c_update_and_comment",
-      "label": "Journey C \u2014 Update and comment",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey c \u2014 update and comment",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L195"
-    },
-    {
-      "id": "spec_ui_flow_journey_d_valid_status_path",
-      "label": "Journey D \u2014 Valid status path",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey d \u2014 valid status path",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L202"
-    },
-    {
-      "id": "spec_ui_flow_journey_e_invalid_status_rejected",
-      "label": "Journey E \u2014 Invalid status rejected",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey e \u2014 invalid status rejected",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L210"
-    },
-    {
-      "id": "spec_ui_flow_journey_f_cancel_ticket",
-      "label": "Journey F \u2014 Cancel ticket",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "journey f \u2014 cancel ticket",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L217"
-    },
-    {
-      "id": "spec_ui_flow_purpose_of_this_document",
-      "label": "Purpose of this document",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "purpose of this document",
-      "source_file": "spec/ui-flow.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "spec_ui_flow_ui_flow",
-      "label": "UI Flow",
-      "_origin": "ast",
-      "community": 26,
-      "community_name": "UI Flow",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "ui flow",
-      "source_file": "spec/ui-flow.md",
+      "community_name": "TicketRepository.java",
+      "file_type": "code",
+      "norm_label": "ticketrepository.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
       "source_location": "L1"
+    },
+    {
+      "id": "org_springframework_data_jpa_repository_jparepository",
+      "label": "org.springframework.data.jpa.repository.JpaRepository",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "file_type": "code",
+      "norm_label": "org.springframework.data.jpa.repository.jparepository",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "spec_data_model_4_1_fields",
+      "label": "4.1 Fields",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 fields",
+      "source_file": "spec/data-model.md",
+      "source_location": "L78"
+    },
+    {
+      "id": "spec_data_model_4_2_field_rules",
+      "label": "4.2 Field rules",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 field rules",
+      "source_file": "spec/data-model.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "spec_data_model_4_3_ticket_constraints",
+      "label": "4.3 Ticket constraints",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 ticket constraints",
+      "source_file": "spec/data-model.md",
+      "source_location": "L136"
+    },
+    {
+      "id": "spec_data_model_4_4_indexes_ticket",
+      "label": "4.4 Indexes (Ticket)",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.4 indexes (ticket)",
+      "source_file": "spec/data-model.md",
+      "source_location": "L146"
+    },
+    {
+      "id": "spec_data_model_4_5_table_definition_logical_sql",
+      "label": "4.5 Table definition (logical SQL)",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.5 table definition (logical sql)",
+      "source_file": "spec/data-model.md",
+      "source_location": "L160"
+    },
+    {
+      "id": "spec_data_model_4_entity_ticket",
+      "label": "4. Entity: Ticket",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. entity: ticket",
+      "source_file": "spec/data-model.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_1_fields",
+      "label": "4.1 Fields",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 fields",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3068"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_2_field_rules",
+      "label": "4.2 Field rules",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 field rules",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3081"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_3_ticket_constraints",
+      "label": "4.3 Ticket constraints",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 ticket constraints",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3126"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_4_suggested_indexes_ticket",
+      "label": "4.4 Suggested indexes (Ticket)",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.4 suggested indexes (ticket)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3136"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_5_suggested_table_definition_logical_sql",
+      "label": "4.5 Suggested table definition (logical SQL)",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.5 suggested table definition (logical sql)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3151"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_entity_ticket",
+      "label": "4. Entity: Ticket",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "4. Entity: Ticket",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. entity: ticket",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3066"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
+      "label": "TicketManagementApplication.java",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
+      "file_type": "code",
+      "norm_label": "ticketmanagementapplication.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "org_springframework_boot_autoconfigure_springbootapplication",
+      "label": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
+      "file_type": "code",
+      "norm_label": "org.springframework.boot.autoconfigure.springbootapplication",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_1_cursor_commands_review_code_md",
@@ -3153,6 +3661,18 @@
       "norm_label": "in requirements but only implied in acceptance",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L1550"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_not_in_part_1_next_parts",
+      "label": "Not in Part 1 (next parts)",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "not in part 1 (next parts)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L6160"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_ownership_map_no_overlap",
@@ -3707,6 +4227,18 @@
       "source_location": "L3471"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_1_general_conventions_3902",
+      "label": "1. General conventions",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. general conventions",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3902"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_1_overview",
       "label": "1. Overview",
       "_origin": "ast",
@@ -3719,6 +4251,18 @@
       "source_location": "L2952"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_2_api_list",
+      "label": "2. API list",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. api list",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3934"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_2_shared_schemas",
       "label": "2. Shared schemas",
       "_origin": "ast",
@@ -3729,6 +4273,18 @@
       "norm_label": "2. shared schemas",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L3516"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_dummy_data_reference_shared_sample_ids",
+      "label": "4. Dummy data reference (shared sample IDs)",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. dummy data reference (shared sample ids)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L4324"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_endpoint_map_summary",
@@ -3779,6 +4335,18 @@
       "source_location": "L3456"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_api_contract_3896",
+      "label": "API Contract",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "api contract",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3896"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_commentresponse",
       "label": "CommentResponse",
       "_origin": "ast",
@@ -3827,6 +4395,18 @@
       "source_location": "L3487"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_error_response_shape",
+      "label": "Error response shape",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "error response shape",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3913"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_purpose_of_this_document",
       "label": "Purpose of this document",
       "_origin": "ast",
@@ -3849,6 +4429,18 @@
       "norm_label": "purpose of this document",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L3458"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_purpose_of_this_document_3898",
+      "label": "Purpose of this document",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "API Contract",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "purpose of this document",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3898"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_standard_error_codes",
@@ -3887,42 +4479,6 @@
       "source_location": "L3518"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_1_general_conventions_3902",
-      "label": "1. General conventions",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "5. Out of scope for MVP API",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. general conventions",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3902"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_2_api_list",
-      "label": "2. API list",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "5. Out of scope for MVP API",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. api list",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3934"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_dummy_data_reference_shared_sample_ids",
-      "label": "4. Dummy data reference (shared sample IDs)",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "5. Out of scope for MVP API",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. dummy data reference (shared sample ids)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L4324"
-    },
-    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
       "label": "5. Out of scope for MVP API",
       "_origin": "ast",
@@ -3935,18 +4491,6 @@
       "source_location": "L4333"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_api_contract_3896",
-      "label": "API Contract",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "5. Out of scope for MVP API",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "api contract",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3896"
-    },
-    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_build_order_from_your_architecture_mvp",
       "label": "Build order (from your architecture / MVP)",
       "_origin": "ast",
@@ -3957,6 +4501,18 @@
       "norm_label": "build order (from your architecture / mvp)",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L5401"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_change",
+      "label": "Change",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "change",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7473"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_commit_these_part_1",
@@ -3995,16 +4551,28 @@
       "source_location": "L6502"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_error_response_shape",
-      "label": "Error response shape",
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_flow_locally",
+      "label": "Flow locally",
       "_origin": "ast",
       "community": 6,
       "community_name": "5. Out of scope for MVP API",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "error response shape",
+      "norm_label": "flow locally",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3913"
+      "source_location": "L7222"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_data_can_survive_restart",
+      "label": "How data *can* survive restart",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how data *can* survive restart",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7364"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_it_connects_to_other_specs",
@@ -4019,6 +4587,18 @@
       "source_location": "L5130"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_it_works_now",
+      "label": "How it works now",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how it works now",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7483"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_the_app_uses_this",
       "label": "How the app uses this",
       "_origin": "ast",
@@ -4029,6 +4609,18 @@
       "norm_label": "how the app uses this",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L5016"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_this_fits_your_requirements",
+      "label": "How this fits your requirements",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "how this fits your requirements",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7384"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_to_use_it_5240",
@@ -4043,6 +4635,30 @@
       "source_location": "L5240"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_if_you_add_a_new_feature_later",
+      "label": "If you add a new feature later",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "if you add a new feature later",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8052"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_later_with_postgresql",
+      "label": "Later with PostgreSQL",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "later with postgresql",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7308"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_mental_model",
       "label": "Mental model",
       "_origin": "ast",
@@ -4055,16 +4671,64 @@
       "source_location": "L5122"
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_purpose_of_this_document_3898",
-      "label": "Purpose of this document",
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_not_in_part_2_next",
+      "label": "Not in Part 2 (next)",
       "_origin": "ast",
       "community": 6,
       "community_name": "5. Out of scope for MVP API",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "purpose of this document",
+      "norm_label": "not in part 2 (next)",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3898"
+      "source_location": "L7081"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_note",
+      "label": "Note",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "note",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7489"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_line",
+      "label": "One line",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "one line",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8062"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_line_version",
+      "label": "One-line version",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "one-line version",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7248"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_sentence",
+      "label": "One sentence",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "one sentence",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7320"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_quick_add_once_git_is_initialized",
@@ -4079,6 +4743,18 @@
       "source_location": "L6516"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_rules_skill",
+      "label": "Rules / skill",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "rules / skill",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8000"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_run_locally",
       "label": "Run locally",
       "_origin": "ast",
@@ -4089,6 +4765,42 @@
       "norm_label": "run locally",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L6154"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_short_answer",
+      "label": "Short answer",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "short answer",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7396"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_simple_picture",
+      "label": "Simple picture",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "simple picture",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7273"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_spec_files",
+      "label": "Spec files",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "spec files",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7992"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_spec_set_status",
@@ -4103,6 +4815,18 @@
       "source_location": "L5245"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_step_by_step_when_you_run_the_app",
+      "label": "Step by step when you run the app",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step by step when you run the app",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7284"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_the_5_statuses",
       "label": "The 5 statuses",
       "_origin": "ast",
@@ -4113,6 +4837,18 @@
       "norm_label": "the 5 statuses",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L4992"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_timestamp_with_time_zone_vs_timestamptz",
+      "label": "`TIMESTAMP WITH TIME ZONE` vs `TIMESTAMPTZ`",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "`timestamp with time zone` vs `timestamptz`",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7172"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_verified",
@@ -4127,6 +4863,18 @@
       "source_location": "L6149"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_verified_7077",
+      "label": "Verified",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "verified",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7077"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_a_state_machine_is_here",
       "label": "What a state machine is here",
       "_origin": "ast",
@@ -4139,6 +4887,18 @@
       "source_location": "L4989"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_happens_on_each_start",
+      "label": "What happens on each start",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what happens on each start",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8034"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_is_allowed",
       "label": "What is allowed",
       "_origin": "ast",
@@ -4149,6 +4909,18 @@
       "norm_label": "what is allowed",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L5001"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_is_flyway",
+      "label": "What is Flyway?",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what is flyway?",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7113"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_is_not_allowed_examples",
@@ -4211,6 +4983,18 @@
       "source_location": "L5205"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_v1_create_tickets_and_comments_sql_is",
+      "label": "What `V1__create_tickets_and_comments.sql` is",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what `v1__create_tickets_and_comments.sql` is",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7148"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_was_added",
       "label": "What was added",
       "_origin": "ast",
@@ -4235,6 +5019,54 @@
       "source_location": "L5363"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_you_see_when_the_app_starts",
+      "label": "What you see when the app starts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what you see when the app starts",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7181"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why",
+      "label": "Why",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7344"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_both",
+      "label": "Why both?",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why both?",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7298"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_not_only_h2",
+      "label": "Why not \u201conly H2\u201d?",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why not \u201conly h2\u201d?",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7241"
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_this_file_exists_separately",
       "label": "Why this file exists separately",
       "_origin": "ast",
@@ -4247,11 +5079,23 @@
       "source_location": "L5025"
     },
     {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_we_use_it_here",
+      "label": "Why we use it here",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "5. Out of scope for MVP API",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why we use it here",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7136"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_comment",
       "label": "Comment.java",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "comment.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Comment.java",
@@ -4262,7 +5106,7 @@
       "label": "Ticket.java",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "ticket.java",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
@@ -4273,7 +5117,7 @@
       "label": "jakarta.persistence.Entity",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "jakarta.persistence.entity",
       "source_file": "",
@@ -4284,7 +5128,7 @@
       "label": "jakarta.persistence.PrePersist",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "jakarta.persistence.prepersist",
       "source_file": "",
@@ -4295,7 +5139,7 @@
       "label": "jakarta.persistence.PreUpdate",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "jakarta.persistence.preupdate",
       "source_file": "",
@@ -4306,53 +5150,28 @@
       "label": "jakarta.persistence.Table",
       "_origin": "ast",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "file_type": "code",
       "norm_label": "jakarta.persistence.table",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_1_ticket_comment_one_to_many",
-      "label": "6.1 Ticket \u2192 Comment (one-to-many)",
+      "id": "org_springframework_data_jpa_repository_query",
+      "label": "org.springframework.data.jpa.repository.Query",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6.1 ticket \u2192 comment (one-to-many)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3246"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_2_ownership",
-      "label": "6.2 Ownership",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6.2 ownership",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3254"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_relationships_detailed",
-      "label": "6. Relationships (detailed)",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6. relationships (detailed)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3244"
+      "file_type": "code",
+      "norm_label": "org.springframework.data.jpa.repository.query",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_backend_parts_in_order",
       "label": "Backend parts (in order)",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "community_name": "Ticket",
       "file_type": "document",
       "node_kind": "heading",
@@ -4361,107 +5180,47 @@
       "source_location": "L5437"
     },
     {
-      "id": "spec_api_contract",
-      "label": "api-contract.md",
+      "id": "spec_ui_flow",
+      "label": "ui-flow.md",
       "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
+      "community": 9,
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "page",
-      "norm_label": "api-contract.md",
-      "source_file": "spec/api-contract.md",
+      "norm_label": "ui-flow.md",
+      "source_file": "spec/ui-flow.md",
       "source_location": "L1"
     },
     {
-      "id": "spec_api_contract_1_general_conventions",
-      "label": "1. General conventions",
+      "id": "spec_ui_flow_1_screens_mvp",
+      "label": "1. Screens (MVP)",
       "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
+      "community": 9,
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "1. general conventions",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L7"
+      "norm_label": "1. screens (mvp)",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L16"
     },
     {
-      "id": "spec_api_contract_2_api_list",
-      "label": "2. API list",
+      "id": "spec_ui_flow_2_global_ui_behavior",
+      "label": "2. Global UI behavior",
       "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
+      "community": 9,
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "2. api list",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "spec_api_contract_4_dummy_data_reference_shared_sample_ids",
-      "label": "4. Dummy data reference (shared sample IDs)",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. dummy data reference (shared sample ids)",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L429"
-    },
-    {
-      "id": "spec_api_contract_5_out_of_scope_for_mvp_api",
-      "label": "5. Out of scope for MVP API",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. out of scope for mvp api",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L436"
-    },
-    {
-      "id": "spec_api_contract_api_contract",
-      "label": "API Contract",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "api contract",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "spec_api_contract_error_response_shape",
-      "label": "Error response shape",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "error response shape",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L18"
-    },
-    {
-      "id": "spec_api_contract_purpose_of_this_document",
-      "label": "Purpose of this document",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "API Contract",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "purpose of this document",
-      "source_file": "spec/api-contract.md",
-      "source_location": "L3"
+      "norm_label": "2. global ui behavior",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L26"
     },
     {
       "id": "spec_ui_flow_3_1_ticket_list",
       "label": "3.1 Ticket List",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3.1 ticket list",
@@ -4473,7 +5232,7 @@
       "label": "3.2 Create Ticket",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3.2 create ticket",
@@ -4485,7 +5244,7 @@
       "label": "3.3 Ticket Detail",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3.3 ticket detail",
@@ -4497,7 +5256,7 @@
       "label": "3. Screen flows",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3. screen flows",
@@ -4505,11 +5264,47 @@
       "source_location": "L42"
     },
     {
+      "id": "spec_ui_flow_4_end_to_end_user_journeys",
+      "label": "4. End-to-end user journeys",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. end-to-end user journeys",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L179"
+    },
+    {
+      "id": "spec_ui_flow_5_screen_api_map",
+      "label": "5. Screen \u2192 API map",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. screen \u2192 api map",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L224"
+    },
+    {
+      "id": "spec_ui_flow_6_out_of_scope_for_mvp_ui",
+      "label": "6. Out of scope for MVP UI",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. out of scope for mvp ui",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L235"
+    },
+    {
       "id": "spec_ui_flow_empty_error_states",
       "label": "Empty / error states",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "empty / error states",
@@ -4517,11 +5312,23 @@
       "source_location": "L66"
     },
     {
+      "id": "spec_ui_flow_error_display_rules",
+      "label": "Error display rules",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "error display rules",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L33"
+    },
+    {
       "id": "spec_ui_flow_flow_diagram",
       "label": "Flow diagram",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "flow diagram",
@@ -4533,7 +5340,7 @@
       "label": "Flow diagram",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "flow diagram",
@@ -4545,7 +5352,7 @@
       "label": "Flow diagram",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "flow diagram",
@@ -4553,11 +5360,95 @@
       "source_location": "L166"
     },
     {
+      "id": "spec_ui_flow_journey_a_create_and_view",
+      "label": "Journey A \u2014 Create and view",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey a \u2014 create and view",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L181"
+    },
+    {
+      "id": "spec_ui_flow_journey_b_search_and_filter",
+      "label": "Journey B \u2014 Search and filter",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey b \u2014 search and filter",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L188"
+    },
+    {
+      "id": "spec_ui_flow_journey_c_update_and_comment",
+      "label": "Journey C \u2014 Update and comment",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey c \u2014 update and comment",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L195"
+    },
+    {
+      "id": "spec_ui_flow_journey_d_valid_status_path",
+      "label": "Journey D \u2014 Valid status path",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey d \u2014 valid status path",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L202"
+    },
+    {
+      "id": "spec_ui_flow_journey_e_invalid_status_rejected",
+      "label": "Journey E \u2014 Invalid status rejected",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey e \u2014 invalid status rejected",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L210"
+    },
+    {
+      "id": "spec_ui_flow_journey_f_cancel_ticket",
+      "label": "Journey F \u2014 Cancel ticket",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "journey f \u2014 cancel ticket",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L217"
+    },
+    {
+      "id": "spec_ui_flow_purpose_of_this_document",
+      "label": "Purpose of this document",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "purpose of this document",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L3"
+    },
+    {
       "id": "spec_ui_flow_recommended_success_path",
       "label": "Recommended success path",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "recommended success path",
@@ -4569,7 +5460,7 @@
       "label": "Status control UX rule",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "status control ux rule",
@@ -4577,11 +5468,23 @@
       "source_location": "L161"
     },
     {
+      "id": "spec_ui_flow_ui_flow",
+      "label": "UI Flow",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "UI Flow",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "ui flow",
+      "source_file": "spec/ui-flow.md",
+      "source_location": "L1"
+    },
+    {
       "id": "spec_ui_flow_user_actions",
       "label": "User actions",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "user actions",
@@ -4593,7 +5496,7 @@
       "label": "User actions",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "user actions",
@@ -4605,7 +5508,7 @@
       "label": "User actions",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "user actions",
@@ -4617,7 +5520,7 @@
       "label": "What user sees",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what user sees",
@@ -4629,7 +5532,7 @@
       "label": "What user sees",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what user sees",
@@ -4641,7 +5544,7 @@
       "label": "What user sees",
       "_origin": "ast",
       "community": 9,
-      "community_name": "3.1 Ticket List",
+      "community_name": "UI Flow",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what user sees",
@@ -4649,11 +5552,23 @@
       "source_location": "L85"
     },
     {
+      "id": "uuid",
+      "label": "uuid",
+      "_origin": "semantic",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "uuid",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "springapplication",
       "label": "springapplication",
       "_origin": "semantic",
-      "community": 14,
-      "community_name": "TicketManagementApplication",
+      "community": 3,
+      "community_name": "2026-09-22 19:37:04Z",
       "external": true,
       "file_type": "concept",
       "norm_label": "springapplication",
@@ -4663,8 +5578,9 @@
     {
       "id": "column",
       "label": "column",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "column",
@@ -4674,8 +5590,9 @@
     {
       "id": "enumerated",
       "label": "enumerated",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "enumerated",
@@ -4685,8 +5602,9 @@
     {
       "id": "enumtype",
       "label": "enumtype",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "enumtype",
@@ -4696,8 +5614,9 @@
     {
       "id": "fetchtype",
       "label": "fetchtype",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "fetchtype",
@@ -4707,8 +5626,9 @@
     {
       "id": "generatedvalue",
       "label": "generatedvalue",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "generatedvalue",
@@ -4718,8 +5638,9 @@
     {
       "id": "generationtype",
       "label": "generationtype",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "generationtype",
@@ -4729,8 +5650,9 @@
     {
       "id": "id",
       "label": "id",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "id",
@@ -4740,8 +5662,9 @@
     {
       "id": "instant",
       "label": "instant",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "instant",
@@ -4751,8 +5674,9 @@
     {
       "id": "joincolumn",
       "label": "joincolumn",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "joincolumn",
@@ -4762,8 +5686,9 @@
     {
       "id": "manytoone",
       "label": "manytoone",
+      "_origin": "semantic",
       "community": 7,
-      "community_name": "Ticket",
+      "community_name": "Comment.java",
       "external": true,
       "file_type": "concept",
       "norm_label": "manytoone",
@@ -4771,13 +5696,24 @@
       "type": "external"
     },
     {
-      "id": "uuid",
-      "label": "uuid",
-      "community": 7,
-      "community_name": "Ticket",
+      "id": "list",
+      "label": "list",
+      "community": 26,
+      "community_name": "TicketRepository.java",
       "external": true,
       "file_type": "concept",
-      "norm_label": "uuid",
+      "norm_label": "list",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "param",
+      "label": "param",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "param",
       "source_file": "",
       "type": "external"
     }
@@ -4868,6 +5804,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_search",
+      "target": "org_springframework_data_jpa_repository_query",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "target": "org_springframework_boot_autoconfigure_springbootapplication",
       "relation": "references",
@@ -4937,6 +5885,78 @@
       "context": "field",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository_findbyticket_idorderbycreatedatasc",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findallbyorderbycreatedatdesc",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findbystatusorderbycreatedatdesc",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_search",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5228,6 +6248,138 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "target": "list",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "target": "uuid",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "list",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "uuid",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "org_springframework_data_jpa_repository_query",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "param",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
       "target": "springapplication",
       "relation": "imports",
@@ -5285,6 +6437,30 @@
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findbystatusorderbycreatedatdesc",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_search",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5467,6 +6643,28 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
       "target": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "relation": "contains",
@@ -5475,6 +6673,50 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "cursor_skills_documentation_skill",
+      "target": "cursor_skills_documentation_skill_documentation_skills",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "cursor_skills_documentation_skill_documentation_skills",
+      "target": "cursor_skills_documentation_skill_how_to_document",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "cursor_skills_documentation_skill_documentation_skills",
+      "target": "cursor_skills_documentation_skill_agent_behavior",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "cursor_skills_documentation_skill_documentation_skills",
+      "target": "cursor_skills_documentation_skill_what_to_document",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/skills/documentation/SKILL.md",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -5918,6 +7160,94 @@
       "weight": 1.0
     },
     {
+      "source": "spec_architecture",
+      "target": "spec_architecture_architecture_detailed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_1_goals_and_non_goals",
+      "target": "spec_architecture_1_1_architecture_goals_mvp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_1_goals_and_non_goals",
+      "target": "spec_architecture_1_2_non_goals_mvp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_2_system_context",
+      "target": "spec_architecture_2_1_actors",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_2_system_context",
+      "target": "spec_architecture_2_2_context_diagram",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_architecture_detailed",
+      "target": "spec_architecture_1_goals_and_non_goals",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_architecture_detailed",
+      "target": "spec_architecture_purpose_of_this_document",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_architecture_architecture_detailed",
+      "target": "spec_architecture_2_system_context",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/architecture.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
       "source": "spec_data_model",
       "target": "spec_data_model_data_model",
       "relation": "contains",
@@ -5936,7 +7266,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -5947,7 +7277,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L60",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -5958,7 +7288,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L133",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -5969,7 +7299,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L143",
+      "source_location": "L146",
       "weight": 1.0
     },
     {
@@ -5980,7 +7310,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L157",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -5991,7 +7321,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L75",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -6002,7 +7332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L88",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -6013,7 +7343,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L181",
+      "source_location": "L184",
       "weight": 1.0
     },
     {
@@ -6024,7 +7354,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L190",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -6035,7 +7365,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L211",
+      "source_location": "L214",
       "weight": 1.0
     },
     {
@@ -6046,7 +7376,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L219",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -6057,7 +7387,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L227",
+      "source_location": "L230",
       "weight": 1.0
     },
     {
@@ -6068,7 +7398,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L234",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -6079,7 +7409,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L273",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
@@ -6090,7 +7420,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L280",
+      "source_location": "L283",
       "weight": 1.0
     },
     {
@@ -6101,7 +7431,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L285",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -6112,7 +7442,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L289",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
@@ -6123,7 +7453,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L295",
+      "source_location": "L298",
       "weight": 1.0
     },
     {
@@ -6134,7 +7464,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L310",
+      "source_location": "L313",
       "weight": 1.0
     },
     {
@@ -6156,7 +7486,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L179",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -6167,7 +7497,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L250",
+      "source_location": "L253",
       "weight": 1.0
     },
     {
@@ -6178,7 +7508,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L260",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -6189,7 +7519,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L271",
+      "source_location": "L274",
       "weight": 1.0
     },
     {
@@ -6200,7 +7530,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L293",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -6233,18 +7563,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L321",
+      "source_location": "L324",
       "weight": 1.0
     },
     {
       "source": "spec_data_model_data_model",
-      "target": "spec_data_model_11_out_of_model_for_mvp",
+      "target": "spec_data_model_11_persistence_notes",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L349",
+      "source_location": "L352",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_data_model_data_model",
+      "target": "spec_data_model_12_out_of_model_for_mvp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/data-model.md",
+      "source_location": "L360",
       "weight": 1.0
     },
     {
@@ -6255,7 +7596,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L42",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -6266,7 +7607,271 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/data-model.md",
-      "source_location": "L73",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements",
+      "target": "spec_requirements_ticket_management_system_mvp_requirements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_2_scope",
+      "target": "spec_requirements_in_scope_mvp",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_2_scope",
+      "target": "spec_requirements_out_of_scope_until_mvp_is_done",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_1_create_ticket",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_2_list_tickets",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_3_view_ticket_details",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_4_update_ticket_fields",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_5_change_ticket_status",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_6_add_comments",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_7_search_tickets",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_8_filter_tickets_by_status",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_9_persist_data",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_10_backend_validation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_3_functional_requirements",
+      "target": "spec_requirements_3_11_ui_error_display",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_4_status_state_machine_backend_enforced",
+      "target": "spec_requirements_allowed_transitions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_4_status_state_machine_backend_enforced",
+      "target": "spec_requirements_disallowed_transitions_examples_not_exhaustive",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_4_status_state_machine_backend_enforced",
+      "target": "spec_requirements_allowed_statuses",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_5_quality_process_requirements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_6_acceptance_criteria",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_7_implementation_rule",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_3_functional_requirements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_1_purpose",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_2_scope",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "spec_requirements_ticket_management_system_mvp_requirements",
+      "target": "spec_requirements_4_status_state_machine_backend_enforced",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "spec/requirements.md",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -6585,7 +8190,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L136",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -6607,7 +8212,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L157",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -6618,7 +8223,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L164",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -6629,7 +8234,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L185",
+      "source_location": "L197",
       "weight": 1.0
     },
     {
@@ -6640,7 +8245,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L192",
+      "source_location": "L204",
       "weight": 1.0
     },
     {
@@ -6651,7 +8256,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "spec/test-strategy.md",
-      "source_location": "L201",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
@@ -8437,6 +10042,314 @@
       "weight": 1.0
     },
     {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7055",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_verified_7077",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7077",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_not_in_part_2_next",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7081",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_is_flyway",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7113",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_we_use_it_here",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7136",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_v1_create_tickets_and_comments_sql_is",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7148",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_timestamp_with_time_zone_vs_timestamptz",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7172",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_you_see_when_the_app_starts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7181",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_flow_locally",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7222",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_not_only_h2",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7241",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_line_version",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7248",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_simple_picture",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7273",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_step_by_step_when_you_run_the_app",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7284",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why_both",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7298",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_later_with_postgresql",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7308",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_sentence",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7320",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_why",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7344",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_data_can_survive_restart",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7364",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_this_fits_your_requirements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7384",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_short_answer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7396",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_change",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7473",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_how_it_works_now",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7483",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_note",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7489",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_spec_files",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7992",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_rules_skill",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8000",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_happens_on_each_start",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8034",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_if_you_add_a_new_feature_later",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8052",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_out_of_scope_for_mvp_api",
+      "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_one_line",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L8062",
+      "weight": 1.0
+    },
+    {
       "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_relationships_detailed",
       "target": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_1_ticket_comment_one_to_many",
       "relation": "contains",
@@ -8987,6 +10900,28 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "target": "org_springframework_data_jpa_repository_jparepository",
+      "relation": "inherits",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
       "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_oncreate",
       "relation": "method",
@@ -9251,6 +11186,50 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository_findbyticket_idorderbycreatedatasc",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/CommentRepository.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findallbyorderbycreatedatdesc",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findbystatusorderbycreatedatdesc",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_search",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "target": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication_main",
       "relation": "method",
@@ -9298,6 +11277,30 @@
       "weight": 1.0
     },
     {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "Comment",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7063",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_backend_parts_in_order",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "CommentRepository",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L5443",
+      "weight": 1.0
+    },
+    {
       "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_2_design_choices_mvp",
       "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
       "relation": "references",
@@ -9334,6 +11337,18 @@
       "weight": 1.0
     },
     {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "Ticket",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7062",
+      "weight": 1.0
+    },
+    {
       "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_2026_09_22_19_37_04z",
       "target": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "relation": "references",
@@ -9354,7 +11369,7 @@
       "confidence_score": 0.95,
       "context": "TicketPriority",
       "source_file": "spec/data-model.md",
-      "source_location": "L116",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -9370,6 +11385,18 @@
       "weight": 1.0
     },
     {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "TicketPriority",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7059",
+      "weight": 1.0
+    },
+    {
       "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_s_in_the_new_file",
       "target": "backend_src_main_java_com_ticketmanagement_domain_ticketpriority_ticketpriority",
       "relation": "references",
@@ -9382,6 +11409,18 @@
       "weight": 1.0
     },
     {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_backend_parts_in_order",
+      "target": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "TicketRepository",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L5443",
+      "weight": 1.0
+    },
+    {
       "source": "spec_data_model_4_2_field_rules",
       "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
       "relation": "references",
@@ -9390,7 +11429,7 @@
       "confidence_score": 0.95,
       "context": "TicketStatus",
       "source_file": "spec/data-model.md",
-      "source_location": "L110",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -9402,7 +11441,7 @@
       "confidence_score": 0.95,
       "context": "TicketStatus",
       "source_file": "spec/data-model.md",
-      "source_location": "L286",
+      "source_location": "L289",
       "weight": 1.0
     },
     {
@@ -9427,6 +11466,18 @@
       "context": "TicketStatus",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L3770",
+      "weight": 1.0
+    },
+    {
+      "source": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_what_changed",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "TicketStatus",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L7058",
       "weight": 1.0
     },
     {
@@ -9455,5 +11506,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1c75b53fe034381c1b4b4a90df600d430eb38c23"
+  "built_at_commit": "537afbff2db5f88a03d64f6bf8ca57e6108daec5"
 }

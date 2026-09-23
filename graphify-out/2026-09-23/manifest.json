@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md": {
-    "mtime": 1790150344.2060483,
-    "seen": 1790150698.966077,
-    "ast_hash": "c4d916d39c934519cfbeae31faa530a7",
+    "mtime": 1790154495.269948,
+    "seen": 1790154673.5783422,
+    "ast_hash": "4bdb7c683ede901d8017f71a7d736b18",
     "semantic_hash": ""
   },
   "spec/api-contract.md": {
@@ -114,21 +114,45 @@
     "semantic_hash": ""
   },
   "backend/src/main/resources/application-local.yml": {
-    "mtime": 1790150472.8826706,
-    "seen": 1790150698.9660788,
-    "ast_hash": "75497bc36c05b83842a4306c4d7ba499",
+    "mtime": 1790154531.2118666,
+    "seen": 1790154673.5783436,
+    "ast_hash": "5529e7c71502f89d4d02695c7e5f7342",
     "semantic_hash": ""
   },
   "backend/src/main/resources/application-prod.yml": {
-    "mtime": 1790150473.5997007,
-    "seen": 1790150698.9660802,
-    "ast_hash": "4f547d7d83e407f7754986a254bb3640",
+    "mtime": 1790154532.33985,
+    "seen": 1790154673.5783448,
+    "ast_hash": "69458c46bf652764fb57732d2b9c209c",
     "semantic_hash": ""
   },
   "backend/src/main/resources/application.yml": {
-    "mtime": 1790150470.9747744,
-    "seen": 1790150698.9660819,
-    "ast_hash": "edbad71fa7a83c969d6b54aee0ac5029",
+    "mtime": 1790154531.0798686,
+    "seen": 1790154673.578346,
+    "ast_hash": "e19a2e1e854231a788bce8e80622c982",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/domain/Comment.java": {
+    "mtime": 1790154526.4479363,
+    "seen": 1790154673.5780494,
+    "ast_hash": "73970e3ae5737bb1f3f8d7995f24b95e",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/domain/Ticket.java": {
+    "mtime": 1790154523.4818237,
+    "seen": 1790154673.5780528,
+    "ast_hash": "4bce84a5aa02434e68b560a12f45802e",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java": {
+    "mtime": 1790154519.939679,
+    "seen": 1790154673.578055,
+    "ast_hash": "5229634765234cd39f7d37b0e426ff38",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/domain/TicketStatus.java": {
+    "mtime": 1790154514.2897437,
+    "seen": 1790154673.5780582,
+    "ast_hash": "96cf5c52c70fb7e29a2f12fd2698697d",
     "semantic_hash": ""
   }
 }
