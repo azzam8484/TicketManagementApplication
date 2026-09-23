@@ -1,0 +1,33 @@
+a
+Adjust folder names only if the repo already uses different ones; then follow the existing layout.
+
+## Naming
+
+- Backend packages/modules: lowercase, domain-based (`ticket`, `user`, `auth`)
+- Frontend folders/components: match existing frontend conventions once the app exists
+- Branches: `cursor/<ticket-or-topic>-<short-summary>` or `feature/<short-summary>`
+- Do not commit secrets, `.env` with credentials, or private keys
+
+## Change discipline
+
+- Prefer the smallest change that completes the request
+- Do not refactor unrelated code
+- Do not add dependencies unless required for the task
+- Do not introduce new frameworks or patterns when an existing one fits
+- Keep backend and frontend contracts aligned when both change
+
+## Rule ownership
+
+- Java/Spring implementation → `java-springboot` rule
+- REST contracts → `api-standards` rule
+- Tests → `testing` rule
+- Documentation → documentation skill
+- Review / spec / test workflows → `.cursor/commands/`
+
+Do not duplicate those instructions here.
+
+## Agent behavior
+
+- Follow existing code style in the touched area
+- Ask before large structural changes
+- Never hardcode credentials or disable security controls
