@@ -166,5 +166,23 @@
     "seen": 1790155655.7472138,
     "ast_hash": "f11f2151fc67539608ddb791f2c1963e",
     "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java": {
+    "mtime": 1790155909.5385687,
+    "seen": 1790155955.3186998,
+    "ast_hash": "0a846a2ae42675ffb8fe0729838b9000",
+    "semantic_hash": ""
+  },
+  "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java": {
+    "mtime": 1790155917.3458388,
+    "seen": 1790155955.3188758,
+    "ast_hash": "30b458e8358fa017f70c64c796d7eaad",
+    "semantic_hash": ""
+  },
+  "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java": {
+    "mtime": 1790155919.3923364,
+    "seen": 1790155955.318878,
+    "ast_hash": "8c9d197177e35157f0f2f65975c1daf9",
+    "semantic_hash": ""
   }
 }
