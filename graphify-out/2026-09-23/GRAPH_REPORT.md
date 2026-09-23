@@ -1,34 +1,34 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 44 files · ~44,427 words
+- 45 files · ~45,191 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 13 file(s) not represented in the graph (top: .mdc 5, (none) 3, .properties 2)
 
 ## Summary
-- 608 nodes · 900 edges · 28 communities (22 shown, 6 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 77 edges (avg confidence: 0.86)
+- 648 nodes · 986 edges · 28 communities (22 shown, 6 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 77 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6c531a25`
+- Built from commit: `a2a3406f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- 3. Endpoints
+- API Contract
 - 3.2 List tickets (search + filter)
 - Data Model
 - 2026-09-22 19:37:04Z
 - 3.2 List tickets (search + filter)
-- API Contract
+- TicketApiIntegrationTest
 - 5. Out of scope for MVP API
 - GlobalExceptionHandler.java
 - Ticket
 - UI Flow
 - gradlew
 - TicketStatus
-- TicketController.java
+- Comment.java
 - TicketPriority
 - 2026-09-22_19-37-04Z-hi-is-the-spec.md
 - Documentation Skills
@@ -42,15 +42,15 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `5. Out of scope for MVP API` - 55 edges
-2. `TicketStatus` - 42 edges
+2. `TicketStatus` - 44 edges
 3. `Ticket` - 38 edges
-4. `Comment` - 24 edges
-5. `2026-09-22 19:37:04Z` - 23 edges
-6. `TicketPriority` - 19 edges
-7. `TicketService` - 19 edges
-8. `TicketResponse` - 18 edges
-9. `Data Model` - 14 edges
-10. `Data Model` - 13 edges
+4. `TicketApiIntegrationTest` - 27 edges
+5. `Comment` - 24 edges
+6. `2026-09-22 19:37:04Z` - 23 edges
+7. `TicketPriority` - 19 edges
+8. `TicketService` - 19 edges
+9. `TicketResponse` - 18 edges
+10. `Data Model` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Status change` --references--> `TicketStatus`  [INFERRED]
@@ -69,17 +69,17 @@
 
 ## Communities (28 total, 6 thin omitted)
 
-### Community 0 - "3. Endpoints"
-Cohesion: 0.08
-Nodes (24): 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment, 3. Endpoints, Example (+16 more)
+### Community 0 - "API Contract"
+Cohesion: 0.05
+Nodes (40): 1. General conventions, 1. Overview, 2. Shared schemas, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status (+32 more)
 
 ### Community 1 - "3.2 List tickets (search + filter)"
 Cohesion: 0.05
 Nodes (40): 1. General conventions, 2. API list, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment (+32 more)
 
 ### Community 2 - "Data Model"
-Cohesion: 0.08
-Nodes (25): 10. Out of model for MVP, 11. ER diagram, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations, 5.1 Fields (+17 more)
+Cohesion: 0.07
+Nodes (28): 10. Out of model for MVP, 11. ER diagram, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations, 5.1 Fields (+20 more)
 
 ### Community 3 - "2026-09-22 19:37:04Z"
 Cohesion: 0.05
@@ -89,9 +89,9 @@ Nodes (39): TicketManagementApplication, org.springframework.boot.autoconfigure.
 Cohesion: 0.06
 Nodes (33): 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment, 3. Endpoints with dummy responses, Dummy error response — `400 Bad Request` (+25 more)
 
-### Community 5 - "API Contract"
-Cohesion: 0.12
-Nodes (16): 1. General conventions, 1. Overview, 2. Shared schemas, 4. Endpoint map (summary), 5. Frontend usage mapping, 6. Out of scope for MVP API, API Contract, CommentResponse (+8 more)
+### Community 5 - "TicketApiIntegrationTest"
+Cohesion: 0.10
+Nodes (20): autowired, TicketApiIntegrationTest, com.fasterxml.jackson.databind.ObjectMapper, containsstring, get, hassize, header, is (+12 more)
 
 ### Community 6 - "5. Out of scope for MVP API"
 Cohesion: 0.04
@@ -102,8 +102,8 @@ Cohesion: 0.16
 Nodes (17): ErrorResponse, GlobalExceptionHandler, ResourceNotFoundException, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror, httpstatus, linkedhashmap (+9 more)
 
 ### Community 8 - "Ticket"
-Cohesion: 0.07
-Nodes (31): Comment, Ticket, CommentResponse, CreateCommentRequest, TicketDetailResponse, TicketMapper, CommentRepository, TicketRepository (+23 more)
+Cohesion: 0.06
+Nodes (33): TicketController, Comment, Ticket, ChangeStatusRequest, CommentResponse, CreateTicketRequest, TicketDetailResponse, TicketListResponse (+25 more)
 
 ### Community 9 - "UI Flow"
 Cohesion: 0.06
@@ -115,15 +115,15 @@ Nodes (3): gradlew script, die(), warn()
 
 ### Community 13 - "TicketStatus"
 Cohesion: 0.09
-Nodes (24): assertequals, assertfalse, assertthrows, asserttrue, TicketStatus, CANCELLED, CLOSED, IN_PROGRESS (+16 more)
+Nodes (23): assertequals, assertfalse, assertthrows, asserttrue, TicketStatus, CANCELLED, CLOSED, IN_PROGRESS (+15 more)
 
-### Community 14 - "TicketController.java"
-Cohesion: 0.10
-Nodes (21): TicketController, ChangeStatusRequest, CreateTicketRequest, TicketListResponse, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service (+13 more)
+### Community 14 - "Comment.java"
+Cohesion: 0.13
+Nodes (15): column, enumerated, enumtype, fetchtype, generatedvalue, generationtype, id, instant (+7 more)
 
 ### Community 15 - "TicketPriority"
-Cohesion: 0.11
-Nodes (15): TicketPriority, HIGH, LOW, MEDIUM, notblank, notnull, size, 4.1 Fields (+7 more)
+Cohesion: 0.10
+Nodes (16): TicketPriority, HIGH, LOW, MEDIUM, CreateCommentRequest, notblank, notnull, size (+8 more)
 
 ### Community 20 - "Documentation Skills"
 Cohesion: 0.40
@@ -159,18 +159,18 @@ Nodes (6): 1. General conventions, 2. API list, 4. Dummy data reference (shared 
 
 ## Knowledge Gaps
 - **303 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+298 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 353 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 366 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `TicketStatus` connect `TicketStatus` to `3. Endpoints`, `Ticket`, `TicketController.java`, `TicketPriority`, `Data Model`?**
-  _High betweenness centrality (0.201) - this node is a cross-community bridge._
+- **Why does `TicketStatus` connect `TicketStatus` to `API Contract`, `Ticket`, `Comment.java`, `TicketPriority`, `Data Model`?**
+  _High betweenness centrality (0.211) - this node is a cross-community bridge._
 - **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `Ticket`, `API Contract`, `2026-09-22 19:37:04Z`, `TicketPriority`?**
-  _High betweenness centrality (0.188) - this node is a cross-community bridge._
-- **Why does `API Contract` connect `API Contract` to `3.2 List tickets (search + filter)`, `API Contract`, `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.123) - this node is a cross-community bridge._
+  _High betweenness centrality (0.185) - this node is a cross-community bridge._
+- **Why does `API Contract` connect `API Contract` to `API Contract`, `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
+  _High betweenness centrality (0.117) - this node is a cross-community bridge._
 - **Are the 6 inferred relationships involving `TicketStatus` (e.g. with `4.2 Field rules` and `Status change`) actually correct?**
   _`TicketStatus` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 4 inferred relationships involving `Ticket` (e.g. with `2. Design choices (MVP)` and `6.1 Ticket → Comment (one-to-many)`) actually correct?**

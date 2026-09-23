@@ -1,5 +1,5 @@
 {
-  "0": "API Contract",
+  "0": "3. Endpoints",
   "1": "3.2 List tickets (search + filter)",
   "2": "Data Model",
   "3": "2026-09-22 19:37:04Z",
@@ -26,5 +26,10 @@
   "24": "State Machine",
   "25": "Test Strategy",
   "26": "CorsConfig.java",
-  "27": "API Contract"
+  "27": "API Contract",
+  "28": "package.json",
+  "29": "compilerOptions",
+  "30": "layout.tsx",
+  "31": "tickets/page.tsx",
+  "32": "README.md"
 }
