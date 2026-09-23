@@ -1,0 +1,39 @@
+---
+description: REST API contract standards
+globs: "**/controller/**/*.java,**/dto/**/*.java,**/exception/**/*.java"
+alwaysApply: false
+---
+
+# API Standards
+
+## URL and versioning
+
+- Base path: `/api/v1`
+- Resource paths: nouns and plurals (e.g. `/api/v1/tickets`, `/api/v1/tickets/{id}`)
+- Use HTTP methods by intent: `GET` read, `POST` create, `PUT`/`PATCH` update, `DELETE` remove
+
+## Status codes
+
+- `200` OK — successful read/update
+- `201` Created — successful create; include `Location` when applicable
+- `204` No Content — successful delete with no body
+- `400` Bad Request — validation or malformed input
+- `401` Unauthorized — unauthenticated
+- `403` Forbidden — authenticated but not allowed
+- `404` Not Found — resource missing
+- `409` Conflict — state conflict or duplicate
+- `500` Internal Server Error — unexpected failure
+
+## Response shape
+
+- Success: return the resource DTO or agreed envelope; keep one envelope shape if an envelope is used
+- Errors: stable JSON with `code`, `message`, and `fields` (for validation); no stack traces or internal details
+- Collections: support pagination via `Pageable`; response includes `content`, `totalElements`, `totalPages`, `number`, `size`
+- Filtering and sorting via query parameters; use consistent param names across resources
+
+## Contract rules
+
+- Request and response bodies use DTOs only
+- Breaking changes require a new API version (`/api/v2`)
+- Field names: JSON camelCase
+- Dates/times: ISO-8601
