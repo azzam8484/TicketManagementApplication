@@ -318,8 +318,8 @@
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/page.tsx": {
-    "mtime": 1790165848.6784713,
-    "seen": 1790165947.1279764,
+    "mtime": 1790166258.9784074,
+    "seen": 1790166391.6152434,
     "ast_hash": "d7b685e04921cc7bfe4b4715daaef4f8",
     "semantic_hash": ""
   },
@@ -456,21 +456,45 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListControls.tsx": {
-    "mtime": 1790165834.5350873,
-    "seen": 1790165947.129137,
+    "mtime": 1790166259.0238285,
+    "seen": 1790166391.6163578,
     "ast_hash": "7514ae10712e94792ce15eaa03ec62fa",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListPage.tsx": {
-    "mtime": 1790165846.9345531,
-    "seen": 1790165947.1291409,
+    "mtime": 1790166259.20641,
+    "seen": 1790166391.616361,
     "ast_hash": "5c38e4aaca86462bc70b61cf735c1194",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListTable.tsx": {
-    "mtime": 1790165836.6204295,
-    "seen": 1790165947.129145,
+    "mtime": 1790166259.108409,
+    "seen": 1790166391.6163638,
     "ast_hash": "3170e5f2e0a0d582e5f237d002f4a8fd",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/tickets/[id]/page.tsx": {
+    "mtime": 1790166324.7662003,
+    "seen": 1790166391.6152227,
+    "ast_hash": "550bda333694c5c10a61b2d33ff2c471",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/tickets/new/page.tsx": {
+    "mtime": 1790166318.0136235,
+    "seen": 1790166391.6152284,
+    "ast_hash": "a981a34d123f977b64abea4122393610",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/tickets/CreateTicketPage.tsx": {
+    "mtime": 1790166311.3809636,
+    "seen": 1790166391.6163511,
+    "ast_hash": "17254698e8a9518646e0e1c2da6c4ec4",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/tickets/TicketDetailPlaceholder.tsx": {
+    "mtime": 1790166324.2191937,
+    "seen": 1790166391.6163545,
+    "ast_hash": "1dfed60840b63c774e497fdf88124f19",
     "semantic_hash": ""
   }
 }

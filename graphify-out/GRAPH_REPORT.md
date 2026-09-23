@@ -1,17 +1,17 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 71 files · ~48,033 words
+- 75 files · ~48,728 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 30 file(s) not represented in the graph (top: .css 11, (none) 6, .mdc 5)
+- Unclassified: 32 file(s) not represented in the graph (top: .css 13, (none) 6, .mdc 5)
 
 ## Summary
-- 806 nodes · 1182 edges · 42 communities (35 shown, 7 thin omitted)
+- 823 nodes · 1229 edges · 43 communities (35 shown, 8 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0a89ce32`
+- Built from commit: `fa2d5084`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -48,11 +48,12 @@
 - TicketListPage.tsx
 - TicketService.java
 - common/index.ts
-- TicketListControls.tsx
+- TicketDetailPlaceholder.tsx
 - ticket.ts
 - labels.ts
-- API Contract
+- CreateTicketPage.tsx
 - frontend_src_app_tickets_page_module
+- next
 
 ## God Nodes (most connected - your core abstractions)
 1. `5. Out of scope for MVP API` - 55 edges
@@ -81,11 +82,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (42 total, 7 thin omitted)
+## Communities (43 total, 8 thin omitted)
 
 ### Community 0 - "API Contract"
 Cohesion: 0.05
-Nodes (40): 1. General conventions, 1. Overview, 2. Shared schemas, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status (+32 more)
+Nodes (37): 1. General conventions, 2. Shared schemas, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment (+29 more)
 
 ### Community 1 - "3.2 List tickets (search + filter)"
 Cohesion: 0.05
@@ -100,8 +101,8 @@ Cohesion: 0.05
 Nodes (39): TicketManagementApplication, org.springframework.boot.autoconfigure.SpringBootApplication, 1. `.cursor/commands/review-code.md`, 1. `.cursor/rules/java-springboot.mdc`, 2026-09-22 19:37:04Z, 2. `.cursor/commands/review-spec.md`, 2. `.cursor/rules/testing.mdc`, 3. `.cursor/commands/generate-tests.md` (+31 more)
 
 ### Community 4 - "3.2 List tickets (search + filter)"
-Cohesion: 0.06
-Nodes (33): 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment, 3. Endpoints with dummy responses, Dummy error response — `400 Bad Request` (+25 more)
+Cohesion: 0.05
+Nodes (42): 1. General conventions, 1. Overview, 2. API list, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status (+34 more)
 
 ### Community 5 - "TicketApiIntegrationTest"
 Cohesion: 0.10
@@ -172,8 +173,8 @@ Cohesion: 0.16
 Nodes (7): TicketPriority, HIGH, LOW, MEDIUM, notblank, notnull, size
 
 ### Community 28 - "package.json"
-Cohesion: 0.05
-Nodes (35): compat, __dirname, eslintConfig, __filename, dependencies, next, react, react-dom (+27 more)
+Cohesion: 0.06
+Nodes (34): compat, __dirname, eslintConfig, __filename, dependencies, next, react, react-dom (+26 more)
 
 ### Community 29 - "compilerOptions"
 Cohesion: 0.11
@@ -184,8 +185,8 @@ Cohesion: 0.22
 Nodes (7): frontend_src_app_globals, bodyFont, displayFont, metadata, AppShell(), AppShellProps, frontend_src_components_appshell_module
 
 ### Community 31 - "api/index.ts"
-Cohesion: 0.16
-Nodes (13): apiRequest(), RequestOptions, ApiError, toApiError(), addComment(), changeTicketStatus(), createTicket(), getTicket() (+5 more)
+Cohesion: 0.21
+Nodes (9): apiRequest(), RequestOptions, ApiError, toApiError(), addComment(), changeTicketStatus(), createTicket(), updateTicket() (+1 more)
 
 ### Community 32 - "README.md"
 Cohesion: 0.50
@@ -196,8 +197,8 @@ Cohesion: 0.26
 Nodes (5): ChangeStatusRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.transaction.annotation.Transactional
 
 ### Community 34 - "TicketListPage.tsx"
-Cohesion: 0.16
-Nodes (9): nextConfig, EMPTY_FILTERS, frontend_src_components_tickets_ticketlistpage_module, TicketListPage(), frontend_src_components_tickets_ticketlisttable_module, TicketListTable(), TicketListTableProps, Ticket (+1 more)
+Cohesion: 0.13
+Nodes (17): formatStatusLabel(), frontend_src_components_common_statusbadge_module, STATUS_CLASS, StatusBadge(), StatusBadgeProps, frontend_src_components_tickets_ticketlistcontrols_module, TicketListControls(), TicketListControlsProps (+9 more)
 
 ### Community 35 - "TicketService.java"
 Cohesion: 0.21
@@ -207,40 +208,40 @@ Nodes (7): CommentResponse, TicketDetailResponse, TicketListResponse, ResourceNo
 Cohesion: 0.21
 Nodes (11): ErrorBanner(), ErrorBannerProps, frontend_src_components_common_errorbanner_module, resolveErrorFields(), resolveErrorMessage(), FieldErrors(), FieldErrorsProps, frontend_src_components_common_fielderrors_module (+3 more)
 
-### Community 37 - "TicketListControls.tsx"
-Cohesion: 0.20
-Nodes (10): formatStatusLabel(), frontend_src_components_common_statusbadge_module, STATUS_CLASS, StatusBadge(), StatusBadgeProps, frontend_src_components_tickets_ticketlistcontrols_module, TicketListControls(), TicketListControlsProps (+2 more)
+### Community 37 - "TicketDetailPlaceholder.tsx"
+Cohesion: 0.24
+Nodes (8): TicketDetailRouteProps, frontend_src_components_tickets_ticketdetailplaceholder_module, TicketDetailPlaceholder(), load(), TicketDetailPlaceholderProps, getTicket(), TicketDetail, react
 
 ### Community 38 - "ticket.ts"
-Cohesion: 0.30
-Nodes (10): ChangeStatusRequest, Comment, CreateCommentRequest, CreateTicketRequest, ListTicketsParams, TICKET_PRIORITIES, TicketDetail, TicketListResponse (+2 more)
+Cohesion: 0.27
+Nodes (10): listTickets(), ticketsPath(), ApiErrorBody, ChangeStatusRequest, Comment, CreateCommentRequest, ListTicketsParams, TICKET_STATUSES (+2 more)
 
 ### Community 39 - "labels.ts"
 Cohesion: 0.27
 Nodes (8): formatPriorityLabel(), PRIORITY_LABELS, STATUS_LABELS, frontend_src_components_common_prioritybadge_module, PRIORITY_CLASS, PriorityBadge(), PriorityBadgeProps, TicketPriority
 
-### Community 40 - "API Contract"
-Cohesion: 0.33
-Nodes (6): 1. General conventions, 2. API list, 4. Dummy data reference (shared sample IDs), API Contract, Error response shape, Purpose of this document
+### Community 40 - "CreateTicketPage.tsx"
+Cohesion: 0.22
+Nodes (8): clientValidate(), CreateTicketPage(), handleSubmit(), FormState, INITIAL, frontend_src_components_tickets_createticketpage_module, CreateTicketRequest, TICKET_PRIORITIES
 
 ## Knowledge Gaps
-- **378 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+373 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 474 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **381 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+376 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 481 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `API Contract`, `2026-09-22 19:37:04Z`, `Ticket`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+- **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `2026-09-22 19:37:04Z`, `3.2 List tickets (search + filter)`, `Ticket`?**
+  _High betweenness centrality (0.117) - this node is a cross-community bridge._
 - **Why does `Backend parts (in order)` connect `Ticket` to `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.094) - this node is a cross-community bridge._
-- **Why does `API Contract` connect `API Contract` to `API Contract`, `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.087) - this node is a cross-community bridge._
+  _High betweenness centrality (0.090) - this node is a cross-community bridge._
+- **Why does `API Contract` connect `3.2 List tickets (search + filter)` to `5. Out of scope for MVP API`?**
+  _High betweenness centrality (0.083) - this node is a cross-community bridge._
 - **What connects `LOW`, `MEDIUM`, `HIGH` to the rest of the system?**
-  _378 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _381 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `API Contract` be split into smaller, more focused modules?**
-  _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
 - **Should `3.2 List tickets (search + filter)` be split into smaller, more focused modules?**
   _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
 - **Should `Data Model` be split into smaller, more focused modules?**
