@@ -119,6 +119,8 @@ public class TicketService {
         comment.setText(request.text().trim());
 
         Comment saved = commentRepository.save(comment);
+        ticket.touch();
+        ticketRepository.save(ticket);
         return TicketMapper.toCommentResponse(saved);
     }
 

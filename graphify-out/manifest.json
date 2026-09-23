@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "spec/data-model.md": {
-    "mtime": 1790155445.5214796,
-    "seen": 1790155655.7475598,
-    "ast_hash": "a4d07494c65c2b1806b4be075c2ec44e",
+    "mtime": 1790172497.8048956,
+    "seen": 1790172515.8230264,
+    "ast_hash": "f94f040efe2ed117bbec95eb793d3d44",
     "semantic_hash": ""
   },
   "spec/requirements.md": {
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/domain/Ticket.java": {
-    "mtime": 1790154523.4818237,
-    "seen": 1790154673.5780528,
-    "ast_hash": "4bce84a5aa02434e68b560a12f45802e",
+    "mtime": 1790172479.8172526,
+    "seen": 1790172515.819796,
+    "ast_hash": "dedd6ec5d18c919a28e10088d75403c8",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/domain/TicketPriority.java": {
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/service/TicketService.java": {
-    "mtime": 1790159124.6139593,
-    "seen": 1790159188.1951303,
-    "ast_hash": "c08c45edadaed78e5f0cf1aa8319032f",
+    "mtime": 1790172480.1172564,
+    "seen": 1790172515.8208783,
+    "ast_hash": "c7839c4bf6afc71fc1e1b6b8c93c40ff",
     "semantic_hash": ""
   },
   "backend/src/main/java/com/ticketmanagement/config/CorsConfig.java": {
@@ -276,9 +276,9 @@
     "semantic_hash": ""
   },
   "backend/src/test/java/com/ticketmanagement/TicketApiIntegrationTest.java": {
-    "mtime": 1790159159.2417986,
-    "seen": 1790159188.1952424,
-    "ast_hash": "e35e4eed6e2450175df903e594eecdb2",
+    "mtime": 1790172491.996399,
+    "seen": 1790172515.820931,
+    "ast_hash": "6fa790c87e88c7bd6fc0e29525270a67",
     "semantic_hash": ""
   },
   "backend/src/test/resources/application-test.yml": {
@@ -306,9 +306,9 @@
     "semantic_hash": ""
   },
   "frontend/src/app/layout.tsx": {
-    "mtime": 1790162370.5745716,
-    "seen": 1790162411.830666,
-    "ast_hash": "90beb32806f7b1d01954153df84b1d1b",
+    "mtime": 1790169750.041256,
+    "seen": 1790170378.7068124,
+    "ast_hash": "fb26c3a218360b8962dab77568aeaf92",
     "semantic_hash": ""
   },
   "frontend/src/app/page.tsx": {
@@ -318,15 +318,15 @@
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/page.tsx": {
-    "mtime": 1790166258.9784074,
-    "seen": 1790166391.6152434,
-    "ast_hash": "d7b685e04921cc7bfe4b4715daaef4f8",
+    "mtime": 1790169776.8080242,
+    "seen": 1790170378.7069468,
+    "ast_hash": "40c6bfda15dcc6daeab4428c22e16a8f",
     "semantic_hash": ""
   },
   "frontend/src/components/AppShell.tsx": {
-    "mtime": 1790162365.597429,
-    "seen": 1790162411.8306684,
-    "ast_hash": "7687ad5bf39dd64740e20a8f3d99a819",
+    "mtime": 1790171186.0066657,
+    "seen": 1790172189.0412757,
+    "ast_hash": "4d47e30c5f662cdeefa6fb3ceda733f5",
     "semantic_hash": ""
   },
   "frontend/src/lib/config.ts": {
@@ -444,9 +444,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/common/index.ts": {
-    "mtime": 1790167334.1799922,
-    "seen": 1790167447.9983196,
-    "ast_hash": "99da861c5d056b5bd0b2dbfe86b7c733",
+    "mtime": 1790170732.9325187,
+    "seen": 1790170831.542255,
+    "ast_hash": "c1ec2aae31cb8860c25ef9e533c513b6",
     "semantic_hash": ""
   },
   "frontend/src/components/common/labels.ts": {
@@ -462,15 +462,15 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListPage.tsx": {
-    "mtime": 1790167360.0144126,
-    "seen": 1790167447.9985082,
-    "ast_hash": "77f21dfc7a28c292cb866708bfbbc638",
+    "mtime": 1790172185.2203975,
+    "seen": 1790172189.0421064,
+    "ast_hash": "55d3add7d43e680a4b7b7eea6f81a000",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListTable.tsx": {
-    "mtime": 1790167350.3013804,
-    "seen": 1790167447.9985094,
-    "ast_hash": "096ba359df0bd53ef97f72737d82cfd0",
+    "mtime": 1790169772.671635,
+    "seen": 1790170378.7073512,
+    "ast_hash": "03e857c097d2ee017280125ba77e255a",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/[id]/page.tsx": {
@@ -486,15 +486,15 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/CreateTicketPage.tsx": {
-    "mtime": 1790166311.3809636,
-    "seen": 1790166391.6163511,
-    "ast_hash": "17254698e8a9518646e0e1c2da6c4ec4",
+    "mtime": 1790170757.5258904,
+    "seen": 1790170831.5423183,
+    "ast_hash": "c8d63f0d33915d2d4512a5c79586bfb2",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketDetailPage.tsx": {
-    "mtime": 1790167014.7436547,
-    "seen": 1790167080.8688643,
-    "ast_hash": "903efeb5629317e7cdfa0e9c23dc6ef9",
+    "mtime": 1790172480.256319,
+    "seen": 1790172515.8218946,
+    "ast_hash": "5a9ab9fdd7b2df1d8dfb1a90cfce58c4",
     "semantic_hash": ""
   },
   "frontend/src/components/comments/CommentsSection.tsx": {
@@ -528,9 +528,21 @@
     "semantic_hash": ""
   },
   "frontend/MANUAL_CHECKLIST.md": {
-    "mtime": 1790167380.969959,
-    "seen": 1790167447.9992843,
-    "ast_hash": "a1e341d16f08b68558f962273dba4b5d",
+    "mtime": 1790168088.6087692,
+    "seen": 1790168094.2679195,
+    "ast_hash": "acaa6700bb454bfd4f926ec5dc83b1d0",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/common/FormWorkspace.tsx": {
+    "mtime": 1790170728.4695086,
+    "seen": 1790170831.5420284,
+    "ast_hash": "0d0cecaa59f0f4463c98377407a835d4",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/tickets/StatIcons.tsx": {
+    "mtime": 1790171673.0476153,
+    "seen": 1790172189.0419567,
+    "ast_hash": "84c4b55be3599743d019fbf2d3d8bb76",
     "semantic_hash": ""
   }
 }

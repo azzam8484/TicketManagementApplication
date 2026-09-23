@@ -1,0 +1,169 @@
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1.4rem 1.35rem;
+  box-shadow: 0 8px 24px rgba(15, 28, 51, 0.05);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.3rem;
+  color: #121a2b;
+}
+
+.lead {
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 0.92rem;
+}
+
+.back {
+  color: #2563eb;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.form {
+  display: grid;
+  gap: 1.05rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7b8798;
+  font-weight: 600;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border: 1px solid #d7DEE8;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--foreground);
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.8rem;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 7rem;
+  line-height: 1.5;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.2);
+  outline-offset: 1px;
+  border-color: #93b4f5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+
+.primary,
+.secondary {
+  appearance: none;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.05rem;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px solid #1e3a5f;
+  background: #1e3a5f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.primary:hover:not(:disabled) {
+  background: #162c48;
+}
+
+.primary:disabled {
+  background: #c5cdd8;
+  border-color: #c5cdd8;
+  cursor: not-allowed;
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d7DEE8;
+  background: #fff;
+  color: #243447;
+  text-decoration: none;
+}
+
+.secondary:hover {
+  background: #f5f7fa;
+}
+
+.input:disabled,
+.select:disabled,
+.textarea:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #f8fafc;
+}
+
+.metaCard {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 6px 18px rgba(15, 28, 51, 0.04);
+}
+
+.timestamps {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.timestamps dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7b8798;
+  margin-bottom: 0.2rem;
+}
+
+.timestamps dd code {
+  font-size: 0.82rem;
+  background: #eef3f9;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}

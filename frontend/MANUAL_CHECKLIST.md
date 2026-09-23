@@ -23,14 +23,15 @@ Use with backend on `http://localhost:8080` and frontend on `http://localhost:30
 ## Create ticket (`/tickets/new`)
 
 - [ ] Blank submit shows field errors
-- [ ] Valid submit creates ticket and opens detail
+- [ ] Valid submit creates ticket and returns to list
 - [ ] Cancel returns to list without creating
 - [ ] New ticket appears on list afterward
+- [ ] Open a ticket from the list to edit
 
 ## Ticket detail (`/tickets/{id}`)
 
 - [ ] Shows title, description, priority, status, assignee, timestamps
-- [ ] Save updates title / description / priority / assignee
+- [ ] Save updates fields and returns to list
 - [ ] Reset restores last saved field values
 - [ ] Validation errors show near fields
 - [ ] Unknown id → not-found message + back to list

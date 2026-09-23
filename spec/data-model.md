@@ -130,8 +130,7 @@ Rules:
 
 **`updatedAt`**
 - Set on insert
-- Updated when ticket fields or status change
-- **Not** updated when only a comment is added
+- Updated when ticket fields, status, or comments change
 
 ### 4.3 Ticket constraints
 
@@ -269,7 +268,7 @@ CREATE INDEX idx_comment_ticket_id_created_at
 | View ticket details | Read ticket | Read comments for `ticket_id` |
 | Update fields | Update title/description/priority/assignee; bump `updated_at` | none |
 | Change status | Update `status` if allowed; bump `updated_at` | none |
-| Add comment | none | Insert comment row |
+| Add comment | Update `updatedAt` | Insert comment row |
 
 ## 8. Validation rules tied to data
 

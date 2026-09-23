@@ -11,18 +11,18 @@
 }
 
 .open {
-  background: #e8f1fb;
-  color: #1f4e79;
+  background: #e8f0fe;
+  color: #1d4ed8;
 }
 
 .inProgress {
-  background: #eef6e8;
-  color: #3b6d11;
+  background: #fff4e5;
+  color: #b45309;
 }
 
 .resolved {
-  background: #e8f7f2;
-  color: #0f6b52;
+  background: #e7f8ef;
+  color: #15803d;
 }
 
 .closed {

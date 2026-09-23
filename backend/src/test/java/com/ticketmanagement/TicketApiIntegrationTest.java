@@ -147,6 +147,38 @@ class TicketApiIntegrationTest {
     }
 
     @Test
+    void addComment_updatesTicketUpdatedAt() throws Exception {
+        String id = createTicket("Comment bumps updatedAt", "Desc", "MEDIUM");
+
+        MvcResult before = mockMvc.perform(get("/api/v1/tickets/" + id))
+                .andExpect(status().isOk())
+                .andReturn();
+        String updatedBefore = objectMapper.readTree(before.getResponse().getContentAsString())
+                .get("updatedAt")
+                .asText();
+
+        Thread.sleep(15);
+
+        mockMvc.perform(post("/api/v1/tickets/" + id + "/comments")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                { "text": "Activity comment" }
+                                """))
+                .andExpect(status().isCreated());
+
+        MvcResult after = mockMvc.perform(get("/api/v1/tickets/" + id))
+                .andExpect(status().isOk())
+                .andReturn();
+        String updatedAfter = objectMapper.readTree(after.getResponse().getContentAsString())
+                .get("updatedAt")
+                .asText();
+
+        org.junit.jupiter.api.Assertions.assertTrue(
+                java.time.Instant.parse(updatedAfter).isAfter(java.time.Instant.parse(updatedBefore)),
+                "expected updatedAt to advance after comment");
+    }
+
+    @Test
     void addComment_blankText_returns400() throws Exception {
         String id = createTicket("Title", "Desc", "LOW");
 

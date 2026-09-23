@@ -7,6 +7,7 @@ import { ApiError, createTicket } from "@/lib/api";
 import {
   ErrorBanner,
   FieldErrors,
+  FormWorkspace,
   formatPriorityLabel,
 } from "@/components/common";
 import {
@@ -14,7 +15,7 @@ import {
   type CreateTicketRequest,
   type TicketPriority,
 } from "@/types/ticket";
-import styles from "./CreateTicketPage.module.css";
+import styles from "./TicketForm.module.css";
 
 type FormState = {
   title: string;
@@ -29,6 +30,8 @@ const INITIAL: FormState = {
   priority: "MEDIUM",
   assignee: "",
 };
+
+const FORM_ID = "create-ticket-form";
 
 function clientValidate(form: FormState): Record<string, string> {
   const fields: Record<string, string> = {};
@@ -47,6 +50,9 @@ export function CreateTicketPage() {
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [error, setError] = useState<unknown>(null);
   const [submitting, setSubmitting] = useState(false);
+
+  const canSubmit =
+    form.title.trim().length > 0 && form.description.trim().length > 0;
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -69,8 +75,8 @@ export function CreateTicketPage() {
     };
 
     try {
-      const created = await createTicket(payload);
-      router.push(`/tickets/${created.id}`);
+      await createTicket(payload);
+      router.push("/tickets");
     } catch (err) {
       setError(err);
       if (err instanceof ApiError && err.fields) {
@@ -82,109 +88,128 @@ export function CreateTicketPage() {
   }
 
   return (
-    <section className={styles.page}>
-      <header className={styles.header}>
-        <div>
-          <h1>Create ticket</h1>
-          <p className={styles.lead}>
-            New tickets start in Open status after they are saved.
-          </p>
-        </div>
-        <Link href="/tickets" className={styles.back}>
-          Back to list
-        </Link>
-      </header>
-
+    <FormWorkspace
+      title="New Ticket"
+      actionLabel={submitting ? "Creating…" : "+ Create Ticket"}
+      actionFormId={FORM_ID}
+      actionDisabled={submitting || !canSubmit}
+    >
       {error ? <ErrorBanner error={error} showFields={false} /> : null}
 
-      <form className={styles.form} onSubmit={handleSubmit} noValidate>
-        <label className={styles.field}>
-          <span className={styles.label}>Title</span>
-          <input
-            className={styles.input}
-            name="title"
-            value={form.title}
-            disabled={submitting}
-            maxLength={200}
-            onChange={(event) =>
-              setForm((prev) => ({ ...prev, title: event.target.value }))
-            }
-          />
-          <FieldErrors name="title" fields={fieldErrors} />
-        </label>
-
-        <label className={styles.field}>
-          <span className={styles.label}>Description</span>
-          <textarea
-            className={styles.textarea}
-            name="description"
-            rows={6}
-            value={form.description}
-            disabled={submitting}
-            maxLength={10_000}
-            onChange={(event) =>
-              setForm((prev) => ({ ...prev, description: event.target.value }))
-            }
-          />
-          <FieldErrors name="description" fields={fieldErrors} />
-        </label>
-
-        <label className={styles.field}>
-          <span className={styles.label}>Priority</span>
-          <select
-            className={styles.select}
-            name="priority"
-            value={form.priority}
-            disabled={submitting}
-            onChange={(event) =>
-              setForm((prev) => ({
-                ...prev,
-                priority: event.target.value as TicketPriority,
-              }))
-            }
-          >
-            {TICKET_PRIORITIES.map((priority) => (
-              <option key={priority} value={priority}>
-                {formatPriorityLabel(priority)}
-              </option>
-            ))}
-          </select>
-          <FieldErrors name="priority" fields={fieldErrors} />
-        </label>
-
-        <label className={styles.field}>
-          <span className={styles.label}>Assignee (optional)</span>
-          <input
-            className={styles.input}
-            name="assignee"
-            value={form.assignee}
-            disabled={submitting}
-            maxLength={100}
-            onChange={(event) =>
-              setForm((prev) => ({ ...prev, assignee: event.target.value }))
-            }
-          />
-          <FieldErrors name="assignee" fields={fieldErrors} />
-        </label>
-
-        <div className={styles.actions}>
-          <button type="submit" className={styles.primary} disabled={submitting}>
-            {submitting ? "Creating…" : "Create"}
-          </button>
-          <Link
-            href="/tickets"
-            className={styles.secondary}
-            aria-disabled={submitting}
-            onClick={(event) => {
-              if (submitting) {
-                event.preventDefault();
-              }
-            }}
-          >
-            Cancel
+      <div className={styles.card}>
+        <div className={styles.cardHeader}>
+          <div>
+            <h2 className={styles.cardTitle}>Create ticket</h2>
+            <p className={styles.lead}>
+              New tickets start in Open status after they are saved.
+            </p>
+          </div>
+          <Link href="/tickets" className={styles.back}>
+            Back to list
           </Link>
         </div>
-      </form>
-    </section>
+
+        <form
+          id={FORM_ID}
+          className={styles.form}
+          onSubmit={handleSubmit}
+          noValidate
+        >
+          <label className={styles.field}>
+            <span className={styles.label}>Title</span>
+            <input
+              className={styles.input}
+              name="title"
+              value={form.title}
+              disabled={submitting}
+              maxLength={200}
+              onChange={(event) =>
+                setForm((prev) => ({ ...prev, title: event.target.value }))
+              }
+            />
+            <FieldErrors name="title" fields={fieldErrors} />
+          </label>
+
+          <label className={styles.field}>
+            <span className={styles.label}>Description</span>
+            <textarea
+              className={styles.textarea}
+              name="description"
+              rows={5}
+              value={form.description}
+              disabled={submitting}
+              maxLength={10_000}
+              onChange={(event) =>
+                setForm((prev) => ({
+                  ...prev,
+                  description: event.target.value,
+                }))
+              }
+            />
+            <FieldErrors name="description" fields={fieldErrors} />
+          </label>
+
+          <label className={styles.field}>
+            <span className={styles.label}>Priority</span>
+            <select
+              className={styles.select}
+              name="priority"
+              value={form.priority}
+              disabled={submitting}
+              onChange={(event) =>
+                setForm((prev) => ({
+                  ...prev,
+                  priority: event.target.value as TicketPriority,
+                }))
+              }
+            >
+              {TICKET_PRIORITIES.map((priority) => (
+                <option key={priority} value={priority}>
+                  {formatPriorityLabel(priority)}
+                </option>
+              ))}
+            </select>
+            <FieldErrors name="priority" fields={fieldErrors} />
+          </label>
+
+          <label className={styles.field}>
+            <span className={styles.label}>Assignee (optional)</span>
+            <input
+              className={styles.input}
+              name="assignee"
+              value={form.assignee}
+              disabled={submitting}
+              maxLength={100}
+              onChange={(event) =>
+                setForm((prev) => ({ ...prev, assignee: event.target.value }))
+              }
+            />
+            <FieldErrors name="assignee" fields={fieldErrors} />
+          </label>
+
+          <div className={styles.actions}>
+            <button
+              type="submit"
+              className={styles.primary}
+              disabled={submitting || !canSubmit}
+            >
+              {submitting ? "Creating…" : "Create"}
+            </button>
+            <Link
+              href="/tickets"
+              className={styles.secondary}
+              aria-disabled={submitting}
+              onClick={(event) => {
+                if (submitting) {
+                  event.preventDefault();
+                }
+              }}
+            >
+              Cancel
+            </Link>
+          </div>
+        </form>
+      </div>
+    </FormWorkspace>
   );
 }

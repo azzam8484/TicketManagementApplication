@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Libre_Franklin, Fraunces } from "next/font/google";
 import { AppShell } from "@/components/AppShell";
 import "./globals.css";
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bodyFont.variable} ${displayFont.variable}`}>
-        <AppShell>{children}</AppShell>
+        <Suspense fallback={<div style={{ padding: "1.5rem" }}>Loading…</div>}>
+          <AppShell>{children}</AppShell>
+        </Suspense>
       </body>
     </html>
   );

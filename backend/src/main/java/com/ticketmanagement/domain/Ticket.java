@@ -59,6 +59,11 @@ public class Ticket {
         updatedAt = Instant.now();
     }
 
+    /** Marks the ticket as modified so {@code updatedAt} refreshes on save. */
+    public void touch() {
+        updatedAt = Instant.now();
+    }
+
     public UUID getId() {
         return id;
     }

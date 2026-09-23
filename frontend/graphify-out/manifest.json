@@ -1,0 +1,248 @@
+{
+  "eslint.config.mjs": {
+    "mtime": 1790162283.4103456,
+    "seen": 1790169830.6675851,
+    "ast_hash": "b43f470c5df5e9ff4c2f5e0bd917a881",
+    "semantic_hash": ""
+  },
+  "next.config.ts": {
+    "mtime": 1790162283.4104042,
+    "seen": 1790169830.667589,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1790162283.4128733,
+    "seen": 1790169830.6675904,
+    "ast_hash": "043eb3bdc363d40c5ad5b94ea23c17ec",
+    "semantic_hash": ""
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1790169750.041256,
+    "seen": 1790169830.6675913,
+    "ast_hash": "fb26c3a218360b8962dab77568aeaf92",
+    "semantic_hash": ""
+  },
+  "src/app/not-found.tsx": {
+    "mtime": 1790167380.046944,
+    "seen": 1790169830.6675923,
+    "ast_hash": "24ab514c3b9a1b6c6f41f49d9ca0eab4",
+    "semantic_hash": ""
+  },
+  "src/app/page.tsx": {
+    "mtime": 1790162373.3906798,
+    "seen": 1790169830.667593,
+    "ast_hash": "93bae7efe7ea58e8da98744661276f57",
+    "semantic_hash": ""
+  },
+  "src/app/tickets/[id]/page.tsx": {
+    "mtime": 1790166665.435351,
+    "seen": 1790169830.6675937,
+    "ast_hash": "69ea82dd192bffc9b101144ccac10e96",
+    "semantic_hash": ""
+  },
+  "src/app/tickets/new/page.tsx": {
+    "mtime": 1790166318.0136235,
+    "seen": 1790169830.6675947,
+    "ast_hash": "a981a34d123f977b64abea4122393610",
+    "semantic_hash": ""
+  },
+  "src/app/tickets/page.tsx": {
+    "mtime": 1790169776.8080242,
+    "seen": 1790169830.6675951,
+    "ast_hash": "40c6bfda15dcc6daeab4428c22e16a8f",
+    "semantic_hash": ""
+  },
+  "src/components/AppShell.tsx": {
+    "mtime": 1790169723.4517424,
+    "seen": 1790169830.6675963,
+    "ast_hash": "7195f5301461e4109e199e6a3e849ca9",
+    "semantic_hash": ""
+  },
+  "src/components/comments/CommentsSection.tsx": {
+    "mtime": 1790167002.4180014,
+    "seen": 1790169830.667597,
+    "ast_hash": "6ec2b78b4b74d524e716ea7997bb9cba",
+    "semantic_hash": ""
+  },
+  "src/components/common/EmptyState.tsx": {
+    "mtime": 1790167330.8338952,
+    "seen": 1790169830.667598,
+    "ast_hash": "63ccde00cf5843488899a993e31fe7c9",
+    "semantic_hash": ""
+  },
+  "src/components/common/ErrorBanner.tsx": {
+    "mtime": 1790165549.6472363,
+    "seen": 1790169830.667599,
+    "ast_hash": "78721c4c68cd3b2b3ac493bb85493357",
+    "semantic_hash": ""
+  },
+  "src/components/common/FieldErrors.tsx": {
+    "mtime": 1790165553.6380498,
+    "seen": 1790169830.6675994,
+    "ast_hash": "9262ce1260b6e07fe57dddaf04953d06",
+    "semantic_hash": ""
+  },
+  "src/components/common/LoadingState.tsx": {
+    "mtime": 1790165539.1951246,
+    "seen": 1790169830.6676009,
+    "ast_hash": "d3ccccbab0d366e5eee8e3d1ced5c869",
+    "semantic_hash": ""
+  },
+  "src/components/common/PriorityBadge.tsx": {
+    "mtime": 1790165562.1203704,
+    "seen": 1790169830.667602,
+    "ast_hash": "31d2613431c7bdbf672084b22c876a09",
+    "semantic_hash": ""
+  },
+  "src/components/common/StatusBadge.tsx": {
+    "mtime": 1790165559.0658176,
+    "seen": 1790169830.6676037,
+    "ast_hash": "0aa34cfff8b9b8672a6bcb594dbe427b",
+    "semantic_hash": ""
+  },
+  "src/components/common/errorMessage.ts": {
+    "mtime": 1790165545.5089624,
+    "seen": 1790169830.6676052,
+    "ast_hash": "65f79379f7f2e9b7cff938f510cde19a",
+    "semantic_hash": ""
+  },
+  "src/components/common/index.ts": {
+    "mtime": 1790167334.1799922,
+    "seen": 1790169830.6676068,
+    "ast_hash": "99da861c5d056b5bd0b2dbfe86b7c733",
+    "semantic_hash": ""
+  },
+  "src/components/common/labels.ts": {
+    "mtime": 1790165557.1483169,
+    "seen": 1790169830.6676078,
+    "ast_hash": "80e30933e38319436ff03a4ee5b873a7",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/CreateTicketPage.tsx": {
+    "mtime": 1790167956.145661,
+    "seen": 1790169830.6676085,
+    "ast_hash": "4f6cf3920809587244c6a15223d73d96",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/StatusControl.tsx": {
+    "mtime": 1790166988.9202816,
+    "seen": 1790169830.6676095,
+    "ast_hash": "647b6fbb161a5c7436f2e5e8ab085b90",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/TicketDetailPage.tsx": {
+    "mtime": 1790168115.8472025,
+    "seen": 1790169830.6676104,
+    "ast_hash": "65057d66e0761f2f29d2bbdb8d8947c8",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/TicketListControls.tsx": {
+    "mtime": 1790167348.4515655,
+    "seen": 1790169830.6676111,
+    "ast_hash": "c44b5902b228bf18a4198f4e8af19f51",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/TicketListPage.tsx": {
+    "mtime": 1790169759.8688183,
+    "seen": 1790169830.6676118,
+    "ast_hash": "520e25c2dbc24a25be073673801403bf",
+    "semantic_hash": ""
+  },
+  "src/components/tickets/TicketListTable.tsx": {
+    "mtime": 1790169772.671635,
+    "seen": 1790169830.6676128,
+    "ast_hash": "03e857c097d2ee017280125ba77e255a",
+    "semantic_hash": ""
+  },
+  "src/lib/api/client.ts": {
+    "mtime": 1790165098.8029103,
+    "seen": 1790169830.6676135,
+    "ast_hash": "877967d4933bb77dfb89b15acf0cd601",
+    "semantic_hash": ""
+  },
+  "src/lib/api/errors.ts": {
+    "mtime": 1790165093.464837,
+    "seen": 1790169830.6676142,
+    "ast_hash": "3e2ba99d37cbb8bb1fdb9da2b9e82c46",
+    "semantic_hash": ""
+  },
+  "src/lib/api/index.ts": {
+    "mtime": 1790165100.0778913,
+    "seen": 1790169830.667615,
+    "ast_hash": "83639be87333699c39b2eb6e8f3a93f5",
+    "semantic_hash": ""
+  },
+  "src/lib/api/tickets.ts": {
+    "mtime": 1790165099.5188868,
+    "seen": 1790169830.6676157,
+    "ast_hash": "827d18ebadb5349324498172d717cd84",
+    "semantic_hash": ""
+  },
+  "src/lib/config.ts": {
+    "mtime": 1790165102.6279125,
+    "seen": 1790169830.6676166,
+    "ast_hash": "5f9f1089283a1ad40b12aad9b3cd3547",
+    "semantic_hash": ""
+  },
+  "src/lib/ticketStatusTransitions.ts": {
+    "mtime": 1790166984.1855247,
+    "seen": 1790169830.6676173,
+    "ast_hash": "eb48df2d508be1e24d0feb1efaad9586",
+    "semantic_hash": ""
+  },
+  "src/types/ticket.ts": {
+    "mtime": 1790165090.8668158,
+    "seen": 1790169830.6676183,
+    "ast_hash": "ab498b1c18d148814a95c0d5ae0597c5",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1790162283.4114122,
+    "seen": 1790169830.667619,
+    "ast_hash": "0cf97a81150d3b8904f285780896980d",
+    "semantic_hash": ""
+  },
+  "MANUAL_CHECKLIST.md": {
+    "mtime": 1790168088.6087692,
+    "seen": 1790169830.66762,
+    "ast_hash": "acaa6700bb454bfd4f926ec5dc83b1d0",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790162283.4103088,
+    "seen": 1790169830.6676207,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": ""
+  },
+  "public/file.svg": {
+    "mtime": 1790162283.410239,
+    "seen": 1790169830.6676214,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "public/globe.svg": {
+    "mtime": 1790162283.410455,
+    "seen": 1790169830.667622,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "public/next.svg": {
+    "mtime": 1790162283.410455,
+    "seen": 1790169830.6676233,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "public/vercel.svg": {
+    "mtime": 1790162283.4104862,
+    "seen": 1790169830.667624,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "public/window.svg": {
+    "mtime": 1790162283.4104862,
+    "seen": 1790169830.6676247,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
+  }
+}
