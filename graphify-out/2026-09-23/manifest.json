@@ -286,5 +286,95 @@
     "seen": 1790159188.1976576,
     "ast_hash": "020725c98f0624cb59e0d04b03ad1da8",
     "semantic_hash": ""
+  },
+  "frontend/eslint.config.mjs": {
+    "mtime": 1790162283.4103456,
+    "seen": 1790162411.8306625,
+    "ast_hash": "b43f470c5df5e9ff4c2f5e0bd917a881",
+    "semantic_hash": ""
+  },
+  "frontend/next.config.ts": {
+    "mtime": 1790162283.4104042,
+    "seen": 1790162411.8306642,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": ""
+  },
+  "frontend/package.json": {
+    "mtime": 1790162283.4128733,
+    "seen": 1790162411.830665,
+    "ast_hash": "043eb3bdc363d40c5ad5b94ea23c17ec",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/layout.tsx": {
+    "mtime": 1790162370.5745716,
+    "seen": 1790162411.830666,
+    "ast_hash": "90beb32806f7b1d01954153df84b1d1b",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/page.tsx": {
+    "mtime": 1790162373.3906798,
+    "seen": 1790162411.830667,
+    "ast_hash": "93bae7efe7ea58e8da98744661276f57",
+    "semantic_hash": ""
+  },
+  "frontend/src/app/tickets/page.tsx": {
+    "mtime": 1790162376.2083313,
+    "seen": 1790162411.8306677,
+    "ast_hash": "58951c02863c7be7fd59c40fe7f08d06",
+    "semantic_hash": ""
+  },
+  "frontend/src/components/AppShell.tsx": {
+    "mtime": 1790162365.597429,
+    "seen": 1790162411.8306684,
+    "ast_hash": "7687ad5bf39dd64740e20a8f3d99a819",
+    "semantic_hash": ""
+  },
+  "frontend/src/lib/config.ts": {
+    "mtime": 1790162360.7416542,
+    "seen": 1790162411.8306696,
+    "ast_hash": "bd53ccd7acaecc56f3246a6be5e2ca13",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1790162283.4114122,
+    "seen": 1790162411.8306704,
+    "ast_hash": "0cf97a81150d3b8904f285780896980d",
+    "semantic_hash": ""
+  },
+  "frontend/README.md": {
+    "mtime": 1790162283.4103088,
+    "seen": 1790162411.8310912,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": ""
+  },
+  "frontend/public/file.svg": {
+    "mtime": 1790162283.410239,
+    "seen": 1790162411.8312964,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "frontend/public/globe.svg": {
+    "mtime": 1790162283.410455,
+    "seen": 1790162411.8312979,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "frontend/public/next.svg": {
+    "mtime": 1790162283.410455,
+    "seen": 1790162411.8312986,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "frontend/public/vercel.svg": {
+    "mtime": 1790162283.4104862,
+    "seen": 1790162411.8312993,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "frontend/public/window.svg": {
+    "mtime": 1790162283.4104862,
+    "seen": 1790162411.8313,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
   }
 }
