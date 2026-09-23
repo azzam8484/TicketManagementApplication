@@ -1,17 +1,17 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 26 files · ~42,924 words
+- 29 files · ~43,267 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 21 file(s) not represented in the graph (top: (none) 11, .mdc 5, .properties 2)
+- Unclassified: 18 file(s) not represented in the graph (top: (none) 8, .mdc 5, .properties 2)
 
 ## Summary
-- 473 nodes · 518 edges · 29 communities (23 shown, 6 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.95)
+- 509 nodes · 588 edges · 28 communities (21 shown, 7 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 28 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `537afbff`
+- Built from commit: `7ef79b81`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,15 +38,14 @@
 - State Machine
 - Test Strategy
 - TicketRepository.java
-- 4. Entity: Ticket
-- 4. Entity: Ticket
+- .onUpdate
 
 ## God Nodes (most connected - your core abstractions)
 1. `5. Out of scope for MVP API` - 55 edges
 2. `Ticket` - 33 edges
-3. `2026-09-22 19:37:04Z` - 23 edges
-4. `Comment` - 19 edges
-5. `TicketStatus` - 18 edges
+3. `TicketStatus` - 32 edges
+4. `2026-09-22 19:37:04Z` - 23 edges
+5. `Comment` - 19 edges
 6. `Data Model` - 14 edges
 7. `Data Model` - 13 edges
 8. `3. Functional requirements` - 12 edges
@@ -68,7 +67,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (29 total, 6 thin omitted)
+## Communities (28 total, 7 thin omitted)
 
 ### Community 0 - "3. Endpoints"
 Cohesion: 0.08
@@ -79,8 +78,8 @@ Cohesion: 0.05
 Nodes (40): 1. General conventions, 2. API list, 3.1 Create ticket, 3.2 List tickets (search + filter), 3.3 Get ticket details, 3.4 Update ticket fields, 3.5 Change ticket status, 3.6 Add comment (+32 more)
 
 ### Community 2 - "Data Model"
-Cohesion: 0.08
-Nodes (25): 10. Out of model for MVP, 11. ER diagram, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations, 5.1 Fields (+17 more)
+Cohesion: 0.06
+Nodes (31): 10. Out of model for MVP, 11. ER diagram, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations, 4.1 Fields (+23 more)
 
 ### Community 3 - "2026-09-22 19:37:04Z"
 Cohesion: 0.05
@@ -99,11 +98,11 @@ Cohesion: 0.04
 Nodes (51): 5. Out of scope for MVP API, Build order (from your architecture / MVP), Change, Commit these (Part 1), Constraints we’ll keep, Do **not** commit, Flow locally, How data *can* survive restart (+43 more)
 
 ### Community 7 - "Comment.java"
-Cohesion: 0.15
-Nodes (14): column, enumerated, enumtype, fetchtype, generatedvalue, generationtype, id, instant (+6 more)
+Cohesion: 0.17
+Nodes (13): column, enumerated, enumtype, fetchtype, generatedvalue, generationtype, id, instant (+5 more)
 
 ### Community 8 - "Ticket"
-Cohesion: 0.15
+Cohesion: 0.13
 Nodes (4): Ticket, TicketRepository, org.springframework.data.jpa.repository.Query, Backend parts (in order)
 
 ### Community 9 - "UI Flow"
@@ -115,8 +114,8 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 13 - "TicketStatus"
-Cohesion: 0.22
-Nodes (6): TicketStatus, CANCELLED, CLOSED, IN_PROGRESS, OPEN, RESOLVED
+Cohesion: 0.08
+Nodes (25): assertequals, assertfalse, assertthrows, asserttrue, TicketStatus, CANCELLED, CLOSED, IN_PROGRESS (+17 more)
 
 ### Community 14 - "Comment"
 Cohesion: 0.18
@@ -135,8 +134,8 @@ Cohesion: 0.22
 Nodes (8): 1.1 Architecture goals (MVP), 1.2 Non-goals (MVP), 1. Goals and non-goals, 2.1 Actors, 2.2 Context diagram, 2. System context, Architecture (Detailed), Purpose of this document
 
 ### Community 22 - "Data Model"
-Cohesion: 0.07
-Nodes (27): 10. ER diagram, 11. Persistence notes, 12. Out of model for MVP, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations (+19 more)
+Cohesion: 0.06
+Nodes (33): 10. ER diagram, 11. Persistence notes, 12. Out of model for MVP, 1. Overview, 2. Design choices (MVP), 3.1 TicketStatus, 3.2 TicketPriority, 3. Enumerations (+25 more)
 
 ### Community 23 - "3. Functional requirements"
 Cohesion: 0.08
@@ -154,33 +153,25 @@ Nodes (22): 10. Out of scope for MVP testing, 1. Goals, 2. Test levels, 3.1 Stat
 Cohesion: 0.36
 Nodes (5): CommentRepository, list, org.springframework.data.jpa.repository.JpaRepository, param, uuid
 
-### Community 27 - "4. Entity: Ticket"
-Cohesion: 0.33
-Nodes (6): 4.1 Fields, 4.2 Field rules, 4.3 Ticket constraints, 4.4 Indexes (Ticket), 4.5 Table definition (logical SQL), 4. Entity: Ticket
-
-### Community 28 - "4. Entity: Ticket"
-Cohesion: 0.33
-Nodes (6): 4.1 Fields, 4.2 Field rules, 4.3 Ticket constraints, 4.4 Suggested indexes (Ticket), 4.5 Suggested table definition (logical SQL), 4. Entity: Ticket
-
 ## Knowledge Gaps
 - **309 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+304 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 347 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 356 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `Ticket`, `2026-09-22 19:37:04Z`, `API Contract`, `TicketPriority`?**
-  _High betweenness centrality (0.182) - this node is a cross-community bridge._
+  _High betweenness centrality (0.189) - this node is a cross-community bridge._
+- **Why does `TicketStatus` connect `TicketStatus` to `3. Endpoints`, `Data Model`, `Ticket`, `TicketPriority`, `Data Model`, `TicketRepository.java`?**
+  _High betweenness centrality (0.174) - this node is a cross-community bridge._
 - **Why does `API Contract` connect `API Contract` to `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
-  _High betweenness centrality (0.150) - this node is a cross-community bridge._
-- **Why does `Data Model` connect `Data Model` to `4. Entity: Ticket`, `API Contract`, `Comment`?**
-  _High betweenness centrality (0.107) - this node is a cross-community bridge._
+  _High betweenness centrality (0.145) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `Ticket` (e.g. with `2. Design choices (MVP)` and `6.1 Ticket → Comment (one-to-many)`) actually correct?**
   _`Ticket` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 4 inferred relationships involving `Comment` (e.g. with `2. Design choices (MVP)` and `6.1 Ticket → Comment (one-to-many)`) actually correct?**
-  _`Comment` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `TicketStatus` (e.g. with `4.2 Field rules` and `Status change`) actually correct?**
   _`TicketStatus` has 6 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `Comment` (e.g. with `2. Design choices (MVP)` and `6.1 Ticket → Comment (one-to-many)`) actually correct?**
+  _`Comment` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `LOW`, `MEDIUM`, `HIGH` to the rest of the system?**
   _309 weakly-connected nodes found - possible documentation gaps or missing edges._

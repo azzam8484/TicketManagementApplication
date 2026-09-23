@@ -17,6 +17,45 @@
       "source_location": "L3"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "label": "InvalidStatusTransitionException",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "invalidstatustransitionexception",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "label": "TicketStatusTransitionPolicy",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "ticketstatustransitionpolicy",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L16"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "label": "TicketStatusTransitionPolicyTest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "ticketstatustransitionpolicytest",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L18"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
       "label": "Comment",
       "_callable": true,
@@ -95,28 +134,274 @@
       "source_location": "L11"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getstatus",
-      "label": ".getStatus()",
+      "id": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getfrom",
+      "label": ".getFrom()",
       "_callable": true,
       "_origin": "ast",
       "community": 13,
       "community_name": "TicketStatus",
       "file_type": "code",
-      "norm_label": ".getstatus()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L86"
+      "norm_label": ".getfrom()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L16"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setstatus",
-      "label": ".setStatus()",
+      "id": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getto",
+      "label": ".getTo()",
       "_callable": true,
       "_origin": "ast",
       "community": 13,
       "community_name": "TicketStatus",
       "file_type": "code",
-      "norm_label": ".setstatus()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L90"
+      "norm_label": ".getto()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L20"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "label": ".InvalidStatusTransitionException()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".invalidstatustransitionexception()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L10"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_allowednextstatuses",
+      "label": ".allowedNextStatuses()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "Set",
+            "lang": "java",
+            "line": "L46"
+          },
+          {
+            "callee": "unmodifiableSet",
+            "receiver_type": "Collections",
+            "lang": "java",
+            "line": "L48"
+          },
+          {
+            "callee": "getOrDefault",
+            "receiver_type": "ALLOWED",
+            "lang": "java",
+            "line": "L48"
+          }
+        ]
+      },
+      "norm_label": ".allowednextstatuses()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L44"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "label": ".assertCanTransition()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".assertcantransition()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L38"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_buildallowedtransitions",
+      "label": ".buildAllowedTransitions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "EnumSet",
+            "lang": "java",
+            "line": "L23"
+          },
+          {
+            "callee": "noneOf",
+            "receiver_type": "EnumSet",
+            "lang": "java",
+            "line": "L26"
+          },
+          {
+            "callee": "copyOf",
+            "receiver_type": "Map",
+            "lang": "java",
+            "line": "L28"
+          }
+        ]
+      },
+      "norm_label": ".buildallowedtransitions()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L21"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "label": ".canTransition()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getOrDefault",
+            "receiver_type": "ALLOWED",
+            "lang": "java",
+            "line": "L35"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Set",
+            "lang": "java",
+            "line": "L35"
+          }
+        ]
+      },
+      "norm_label": ".cantransition()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L31"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowednextstatuses_matchesstatemachinehelper",
+      "label": ".allowedNextStatuses_matchesStateMachineHelper()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "Set",
+            "lang": "java",
+            "line": "L43"
+          }
+        ]
+      },
+      "norm_label": ".allowednextstatuses_matchesstatemachinehelper()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L41"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowedtransitions",
+      "label": ".allowedTransitions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "Stream",
+            "lang": "java",
+            "line": "L56"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Arguments",
+            "lang": "java",
+            "line": "L57"
+          }
+        ]
+      },
+      "norm_label": ".allowedtransitions()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L55"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "label": ".canTransition_allowed_returnsTrue()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".cantransition_allowed_returnstrue()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L27"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "label": ".canTransition_rejected_returnsFalse()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".cantransition_rejected_returnsfalse()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L34"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_samestatus_rejected",
+      "label": ".canTransition_sameStatus_rejected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".cantransition_samestatus_rejected()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L50"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_rejectedtransitions",
+      "label": ".rejectedTransitions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "of",
+            "receiver_type": "Stream",
+            "lang": "java",
+            "line": "L65"
+          },
+          {
+            "callee": "of",
+            "receiver_type": "Arguments",
+            "lang": "java",
+            "line": "L66"
+          }
+        ]
+      },
+      "norm_label": ".rejectedtransitions()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L64"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_setup",
+      "label": ".setUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": ".setup()",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L22"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_comment_comment_getcreatedat",
@@ -239,6 +524,28 @@
       "source_location": "L10"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_onupdate",
+      "label": ".onUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": ".onUpdate",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "now",
+            "receiver_type": "Instant",
+            "lang": "java",
+            "line": "L59"
+          }
+        ]
+      },
+      "norm_label": ".onupdate()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L57"
+    },
+    {
       "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication_main",
       "label": ".main()",
       "_callable": true,
@@ -305,28 +612,6 @@
       "source_location": "L47"
     },
     {
-      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_onupdate",
-      "label": ".onUpdate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Comment.java",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "now",
-            "receiver_type": "Instant",
-            "lang": "java",
-            "line": "L59"
-          }
-        ]
-      },
-      "norm_label": ".onupdate()",
-      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
-      "source_location": "L57"
-    },
-    {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getassignee",
       "label": ".getAssignee()",
       "_callable": true,
@@ -373,6 +658,18 @@
       "norm_label": ".getid()",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L62"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_getstatus",
+      "label": ".getStatus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".getstatus()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L86"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_gettitle",
@@ -433,6 +730,18 @@
       "norm_label": ".setid()",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L66"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_setstatus",
+      "label": ".setStatus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Ticket",
+      "file_type": "code",
+      "norm_label": ".setstatus()",
+      "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
+      "source_location": "L90"
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_domain_ticket_ticket_settitle",
@@ -1411,6 +1720,105 @@
       "source_location": "L6"
     },
     {
+      "id": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception",
+      "label": "InvalidStatusTransitionException.java",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "invalidstatustransitionexception.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "label": "TicketStatusTransitionPolicy.java",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "ticketstatustransitionpolicy.java",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "label": "TicketStatusTransitionPolicyTest.java",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "ticketstatustransitionpolicytest.java",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "org_junit_jupiter_api_beforeeach",
+      "label": "org.junit.jupiter.api.BeforeEach",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.junit.jupiter.api.beforeeach",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_jupiter_api_test",
+      "label": "org.junit.jupiter.api.Test",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.junit.jupiter.api.test",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_jupiter_params_parameterizedtest",
+      "label": "org.junit.jupiter.params.ParameterizedTest",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.junit.jupiter.params.parameterizedtest",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_jupiter_params_provider_arguments",
+      "label": "org.junit.jupiter.params.provider.Arguments",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.junit.jupiter.params.provider.arguments",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_junit_jupiter_params_provider_methodsource",
+      "label": "org.junit.jupiter.params.provider.MethodSource",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.junit.jupiter.params.provider.methodsource",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "org_springframework_stereotype_component",
+      "label": "org.springframework.stereotype.Component",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "file_type": "code",
+      "norm_label": "org.springframework.stereotype.component",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_6_1_ticket_comment_one_to_many",
       "label": "6.1 Ticket \u2192 Comment (one-to-many)",
       "_origin": "ast",
@@ -1657,6 +2065,78 @@
       "norm_label": "3. enumerations",
       "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
       "source_location": "L3035"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_1_fields",
+      "label": "4.1 Fields",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 fields",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3068"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_2_field_rules",
+      "label": "4.2 Field rules",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 field rules",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3081"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_3_ticket_constraints",
+      "label": "4.3 Ticket constraints",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 ticket constraints",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3126"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_4_suggested_indexes_ticket",
+      "label": "4.4 Suggested indexes (Ticket)",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.4 suggested indexes (ticket)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3136"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_5_suggested_table_definition_logical_sql",
+      "label": "4.5 Suggested table definition (logical SQL)",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.5 suggested table definition (logical sql)",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3151"
+    },
+    {
+      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_entity_ticket",
+      "label": "4. Entity: Ticket",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. entity: ticket",
+      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
+      "source_location": "L3066"
     },
     {
       "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_5_1_fields",
@@ -2154,6 +2634,78 @@
       "norm_label": "3. enumerations",
       "source_file": "spec/data-model.md",
       "source_location": "L45"
+    },
+    {
+      "id": "spec_data_model_4_1_fields",
+      "label": "4.1 Fields",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 fields",
+      "source_file": "spec/data-model.md",
+      "source_location": "L78"
+    },
+    {
+      "id": "spec_data_model_4_2_field_rules",
+      "label": "4.2 Field rules",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 field rules",
+      "source_file": "spec/data-model.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "spec_data_model_4_3_ticket_constraints",
+      "label": "4.3 Ticket constraints",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 ticket constraints",
+      "source_file": "spec/data-model.md",
+      "source_location": "L136"
+    },
+    {
+      "id": "spec_data_model_4_4_indexes_ticket",
+      "label": "4.4 Indexes (Ticket)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.4 indexes (ticket)",
+      "source_file": "spec/data-model.md",
+      "source_location": "L146"
+    },
+    {
+      "id": "spec_data_model_4_5_table_definition_logical_sql",
+      "label": "4.5 Table definition (logical SQL)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.5 table definition (logical sql)",
+      "source_file": "spec/data-model.md",
+      "source_location": "L160"
+    },
+    {
+      "id": "spec_data_model_4_entity_ticket",
+      "label": "4. Entity: Ticket",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Data Model",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. entity: ticket",
+      "source_file": "spec/data-model.md",
+      "source_location": "L76"
     },
     {
       "id": "spec_data_model_5_1_fields",
@@ -3209,148 +3761,15 @@
       "source_location": ""
     },
     {
-      "id": "spec_data_model_4_1_fields",
-      "label": "4.1 Fields",
+      "id": "jakarta_persistence_preupdate",
+      "label": "jakarta.persistence.PreUpdate",
       "_origin": "ast",
       "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.1 fields",
-      "source_file": "spec/data-model.md",
-      "source_location": "L78"
-    },
-    {
-      "id": "spec_data_model_4_2_field_rules",
-      "label": "4.2 Field rules",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.2 field rules",
-      "source_file": "spec/data-model.md",
-      "source_location": "L91"
-    },
-    {
-      "id": "spec_data_model_4_3_ticket_constraints",
-      "label": "4.3 Ticket constraints",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.3 ticket constraints",
-      "source_file": "spec/data-model.md",
-      "source_location": "L136"
-    },
-    {
-      "id": "spec_data_model_4_4_indexes_ticket",
-      "label": "4.4 Indexes (Ticket)",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.4 indexes (ticket)",
-      "source_file": "spec/data-model.md",
-      "source_location": "L146"
-    },
-    {
-      "id": "spec_data_model_4_5_table_definition_logical_sql",
-      "label": "4.5 Table definition (logical SQL)",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.5 table definition (logical sql)",
-      "source_file": "spec/data-model.md",
-      "source_location": "L160"
-    },
-    {
-      "id": "spec_data_model_4_entity_ticket",
-      "label": "4. Entity: Ticket",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. entity: ticket",
-      "source_file": "spec/data-model.md",
-      "source_location": "L76"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_1_fields",
-      "label": "4.1 Fields",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.1 fields",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3068"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_2_field_rules",
-      "label": "4.2 Field rules",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.2 field rules",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3081"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_3_ticket_constraints",
-      "label": "4.3 Ticket constraints",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.3 ticket constraints",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3126"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_4_suggested_indexes_ticket",
-      "label": "4.4 Suggested indexes (Ticket)",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.4 suggested indexes (ticket)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3136"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_5_suggested_table_definition_logical_sql",
-      "label": "4.5 Suggested table definition (logical SQL)",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4.5 suggested table definition (logical sql)",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3151"
-    },
-    {
-      "id": "specstory_history_2026_09_22_19_37_04z_spec_story_configuration_status_4_entity_ticket",
-      "label": "4. Entity: Ticket",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "4. Entity: Ticket",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. entity: ticket",
-      "source_file": ".specstory/history/2026-09-22_19-37-04Z-spec-story-configuration-status.md",
-      "source_location": "L3066"
+      "community_name": ".onUpdate",
+      "file_type": "code",
+      "norm_label": "jakarta.persistence.preupdate",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
@@ -5135,17 +5554,6 @@
       "source_location": ""
     },
     {
-      "id": "jakarta_persistence_preupdate",
-      "label": "jakarta.persistence.PreUpdate",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Comment.java",
-      "file_type": "code",
-      "norm_label": "jakarta.persistence.preupdate",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "jakarta_persistence_table",
       "label": "jakarta.persistence.Table",
       "_origin": "ast",
@@ -5552,6 +5960,30 @@
       "source_location": "L85"
     },
     {
+      "id": "list",
+      "label": "list",
+      "_origin": "semantic",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "list",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "param",
+      "label": "param",
+      "_origin": "semantic",
+      "community": 26,
+      "community_name": "TicketRepository.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "param",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "uuid",
       "label": "uuid",
       "_origin": "semantic",
@@ -5696,24 +6128,112 @@
       "type": "external"
     },
     {
-      "id": "list",
-      "label": "list",
-      "community": 26,
-      "community_name": "TicketRepository.java",
+      "id": "assertequals",
+      "label": "assertequals",
+      "community": 13,
+      "community_name": "TicketStatus",
       "external": true,
       "file_type": "concept",
-      "norm_label": "list",
+      "norm_label": "assertequals",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "param",
-      "label": "param",
-      "community": 26,
-      "community_name": "TicketRepository.java",
+      "id": "assertfalse",
+      "label": "assertfalse",
+      "community": 13,
+      "community_name": "TicketStatus",
       "external": true,
       "file_type": "concept",
-      "norm_label": "param",
+      "norm_label": "assertfalse",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "assertthrows",
+      "label": "assertthrows",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "assertthrows",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "asserttrue",
+      "label": "asserttrue",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "asserttrue",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "collections",
+      "label": "collections",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "collections",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "enummap",
+      "label": "enummap",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "enummap",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "enumset",
+      "label": "enumset",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "enumset",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "map",
+      "label": "map",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "map",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "set",
+      "label": "set",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "set",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "stream",
+      "label": "stream",
+      "community": 13,
+      "community_name": "TicketStatus",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "stream",
       "source_file": "",
       "type": "external"
     }
@@ -5816,6 +6336,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "org_springframework_stereotype_component",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "target": "org_springframework_boot_autoconfigure_springbootapplication",
       "relation": "references",
@@ -5825,6 +6357,90 @@
       "context": "attribute",
       "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowednextstatuses_matchesstatemachinehelper",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "target": "org_junit_jupiter_params_parameterizedtest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "target": "org_junit_jupiter_params_provider_methodsource",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "target": "org_junit_jupiter_params_parameterizedtest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "target": "org_junit_jupiter_params_provider_methodsource",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_samestatus_rejected",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_setup",
+      "target": "org_junit_jupiter_api_beforeeach",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -5849,6 +6465,18 @@
       "context": "call",
       "source_file": "backend/gradlew",
       "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5885,6 +6513,30 @@
       "context": "field",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -5957,6 +6609,66 @@
       "context": "generic_arg",
       "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_allowednextstatuses",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_buildallowedtransitions",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowedtransitions",
+      "target": "org_junit_jupiter_params_provider_arguments",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_rejectedtransitions",
+      "target": "org_junit_jupiter_params_provider_arguments",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "generic_arg",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -6248,6 +6960,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
       "target": "backend_src_main_java_com_ticketmanagement_domain_comment_comment",
       "relation": "imports",
@@ -6380,6 +7104,102 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "org_springframework_stereotype_component",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "collections",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "enummap",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "enumset",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "map",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "set",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
       "target": "springapplication",
       "relation": "imports",
@@ -6401,6 +7221,162 @@
       "context": "import",
       "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "set",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "stream",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "org_junit_jupiter_api_beforeeach",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "org_junit_jupiter_api_test",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "org_junit_jupiter_params_parameterizedtest",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "org_junit_jupiter_params_provider_arguments",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "org_junit_jupiter_params_provider_methodsource",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "assertequals",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "assertfalse",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "assertthrows",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "asserttrue",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -6440,6 +7416,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_repository_ticketrepository_ticketrepository_findbystatusorderbycreatedatdesc",
       "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
       "relation": "references",
@@ -6461,6 +7449,54 @@
       "context": "parameter_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/repository/TicketRepository.java",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -6497,6 +7533,30 @@
       "context": "return_type",
       "source_file": "backend/src/main/java/com/ticketmanagement/domain/Ticket.java",
       "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getfrom",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getto",
+      "target": "backend_src_main_java_com_ticketmanagement_domain_ticketstatus_ticketstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6643,6 +7703,17 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository",
       "target": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
       "relation": "contains",
@@ -6665,6 +7736,17 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication",
       "target": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "relation": "contains",
@@ -6673,6 +7755,17 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -10900,6 +11993,28 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
       "target": "org_springframework_data_jpa_repository_jparepository",
       "relation": "inherits",
@@ -11186,6 +12301,39 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getfrom",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception",
+      "target": "backend_src_main_java_com_ticketmanagement_exception_invalidstatustransitionexception_invalidstatustransitionexception_getto",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/exception/InvalidStatusTransitionException.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository",
       "target": "backend_src_main_java_com_ticketmanagement_repository_commentrepository_commentrepository_findbyticket_idorderbycreatedatasc",
       "relation": "method",
@@ -11230,6 +12378,50 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_buildallowedtransitions",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_allowednextstatuses",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/main/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicy.java",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication",
       "target": "backend_src_main_java_com_ticketmanagement_ticketmanagementapplication_ticketmanagementapplication_main",
       "relation": "method",
@@ -11238,6 +12430,155 @@
       "confidence_score": 1.0,
       "source_file": "backend/src/main/java/com/ticketmanagement/TicketManagementApplication.java",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_setup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowednextstatuses_matchesstatemachinehelper",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_samestatus_rejected",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowedtransitions",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest",
+      "target": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_rejectedtransitions",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_allowednextstatuses_matchesstatemachinehelper",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_allowednextstatuses",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_allowed_returnstrue",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_rejected_returnsfalse",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_assertcantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_test_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicytest_ticketstatustransitionpolicytest_cantransition_samestatus_rejected",
+      "target": "backend_src_main_java_com_ticketmanagement_statemachine_ticketstatustransitionpolicy_ticketstatustransitionpolicy_cantransition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "context": "call",
+      "source_file": "backend/src/test/java/com/ticketmanagement/statemachine/TicketStatusTransitionPolicyTest.java",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -11506,5 +12847,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "537afbff2db5f88a03d64f6bf8ca57e6108daec5"
+  "built_at_commit": "7ef79b81045b834dc36bde7926257007916b6045"
 }
