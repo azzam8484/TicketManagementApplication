@@ -1,17 +1,17 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 83 files · ~51,372 words
+- 83 files · ~51,643 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 36 file(s) not represented in the graph (top: .css 16, (none) 6, .mdc 5)
 
 ## Summary
-- 878 nodes · 1352 edges · 48 communities (38 shown, 10 thin omitted)
+- 881 nodes · 1359 edges · 49 communities (39 shown, 10 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9d2b64ae`
+- Built from commit: `01452da8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,20 +51,21 @@
 - Comment.java
 - CreateTicketPage.tsx
 - ticket.ts
-- TicketService
+- TicketResponse
 - frontend_src_app_tickets_page_module
 - TicketPriority
 - TicketService.java
 - Frontend MVP — manual acceptance checklist (F8)
 - frontend_src_components_tickets_createticketpage_module
 - frontend_src_components_tickets_ticketdetailpage_module
-- TicketListTable.tsx
+- api/index.ts
+- Comment
 
 ## God Nodes (most connected - your core abstractions)
 1. `5. Out of scope for MVP API` - 55 edges
 2. `TicketStatus` - 38 edges
-3. `Ticket` - 34 edges
-4. `TicketApiIntegrationTest` - 27 edges
+3. `Ticket` - 35 edges
+4. `TicketApiIntegrationTest` - 28 edges
 5. `2026-09-22 19:37:04Z` - 23 edges
 6. `Comment` - 20 edges
 7. `TicketService` - 19 edges
@@ -87,7 +88,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (48 total, 10 thin omitted)
+## Communities (49 total, 10 thin omitted)
 
 ### Community 0 - "API Contract"
 Cohesion: 0.05
@@ -118,12 +119,12 @@ Cohesion: 0.04
 Nodes (53): 5. Out of scope for MVP API, Build order (from your architecture / MVP), Change, Commit these (Part 1), Constraints we’ll keep, Do **not** commit, Flow locally, How data *can* survive restart (+45 more)
 
 ### Community 7 - "GlobalExceptionHandler.java"
-Cohesion: 0.16
-Nodes (17): ErrorResponse, GlobalExceptionHandler, ResourceNotFoundException, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror, httpstatus, linkedhashmap (+9 more)
+Cohesion: 0.18
+Nodes (16): ErrorResponse, GlobalExceptionHandler, collectors, com.fasterxml.jackson.annotation.JsonInclude, fielderror, httpstatus, linkedhashmap, loggerfactory (+8 more)
 
 ### Community 8 - "TicketController.java"
-Cohesion: 0.14
-Nodes (13): TicketController, TicketListResponse, org.springframework.web.bind.annotation.GetMapping, org.springframework.web.bind.annotation.PostMapping, org.springframework.web.bind.annotation.RequestMapping, org.springframework.web.bind.annotation.ResponseStatus, org.springframework.web.bind.annotation.RestController, pathvariable (+5 more)
+Cohesion: 0.15
+Nodes (15): TicketController, TicketListResponse, TicketService, org.springframework.stereotype.Service, org.springframework.web.bind.annotation.GetMapping, org.springframework.web.bind.annotation.PostMapping, org.springframework.web.bind.annotation.RequestMapping, org.springframework.web.bind.annotation.ResponseStatus (+7 more)
 
 ### Community 9 - "UI Flow"
 Cohesion: 0.06
@@ -134,16 +135,16 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 13 - "TicketStatus"
-Cohesion: 0.09
+Cohesion: 0.08
 Nodes (23): assertequals, assertfalse, assertthrows, asserttrue, TicketStatus, CANCELLED, CLOSED, IN_PROGRESS (+15 more)
 
 ### Community 14 - "Ticket"
-Cohesion: 0.08
-Nodes (8): Comment, Ticket, CommentRepository, TicketRepository, org.springframework.data.jpa.repository.JpaRepository, org.springframework.data.jpa.repository.Query, param, Backend parts (in order)
+Cohesion: 0.12
+Nodes (5): Ticket, TicketRepository, org.springframework.data.jpa.repository.Query, param, Backend parts (in order)
 
 ### Community 15 - "TicketDetailPage.tsx"
-Cohesion: 0.20
-Nodes (14): TicketDetailRouteProps, clientValidate(), formatTimestamp(), FormState, TicketDetailPage(), handleAddComment(), handleReset(), handleSave() (+6 more)
+Cohesion: 0.19
+Nodes (15): TicketDetailRouteProps, clientValidate(), formatTimestamp(), FormState, TicketDetailPage(), cancelEdit(), handleAddComment(), handleReset() (+7 more)
 
 ### Community 20 - "Documentation Skills"
 Cohesion: 0.40
@@ -186,8 +187,8 @@ Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 30 - "TicketListPage.tsx"
-Cohesion: 0.16
-Nodes (12): LoadingState(), LoadingStateProps, frontend_src_components_common_loadingstate_module, InProgressTicketsIcon(), OpenTicketsIcon(), ResolvedTicketsIcon(), StatIconProps, TotalTicketsIcon() (+4 more)
+Cohesion: 0.15
+Nodes (14): InProgressTicketsIcon(), OpenTicketsIcon(), ResolvedTicketsIcon(), StatIconProps, TotalTicketsIcon(), isTicketStatus(), frontend_src_components_tickets_ticketlistpage_module, TicketListPage() (+6 more)
 
 ### Community 31 - "common/index.ts"
 Cohesion: 0.16
@@ -202,48 +203,52 @@ Cohesion: 0.33
 Nodes (6): 1. General conventions, 2. API list, 4. Dummy data reference (shared sample IDs), API Contract, Error response shape, Purpose of this document
 
 ### Community 34 - "CommentsSection.tsx"
-Cohesion: 0.20
-Nodes (5): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_src_components_comments_commentssection_module, ApiError
+Cohesion: 0.22
+Nodes (7): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_src_components_comments_commentssection_module, FieldErrors(), FieldErrorsProps, frontend_src_components_common_fielderrors_module
 
 ### Community 36 - "AppShell.tsx"
 Cohesion: 0.12
 Nodes (12): nextConfig, frontend_src_app_globals, bodyFont, displayFont, metadata, AppShell(), AppShellProps, countByStatus() (+4 more)
 
 ### Community 37 - "Comment.java"
-Cohesion: 0.13
-Nodes (15): column, enumerated, enumtype, fetchtype, generatedvalue, generationtype, id, instant (+7 more)
+Cohesion: 0.12
+Nodes (16): column, enumerated, enumtype, fetchtype, generatedvalue, generationtype, id, instant (+8 more)
 
 ### Community 38 - "CreateTicketPage.tsx"
 Cohesion: 0.14
 Nodes (15): formatPriorityLabel(), PRIORITY_LABELS, STATUS_LABELS, frontend_src_components_common_prioritybadge_module, PRIORITY_CLASS, PriorityBadge(), PriorityBadgeProps, clientValidate() (+7 more)
 
 ### Community 39 - "ticket.ts"
-Cohesion: 0.18
-Nodes (18): apiRequest(), RequestOptions, toApiError(), createTicket(), getTicket(), listTickets(), ticketsPath(), API_BASE_URL (+10 more)
+Cohesion: 0.27
+Nodes (11): ticketsPath(), ApiErrorBody, ChangeStatusRequest, Comment, CreateCommentRequest, CreateTicketRequest, ListTicketsParams, Ticket (+3 more)
 
-### Community 40 - "TicketService"
-Cohesion: 0.25
-Nodes (7): ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, TicketService, org.springframework.stereotype.Service, org.springframework.web.bind.annotation.PatchMapping
+### Community 40 - "TicketResponse"
+Cohesion: 0.27
+Nodes (6): ChangeStatusRequest, CreateTicketRequest, TicketResponse, UpdateTicketRequest, org.springframework.transaction.annotation.Transactional, org.springframework.web.bind.annotation.PatchMapping
 
 ### Community 42 - "TicketPriority"
 Cohesion: 0.15
 Nodes (8): TicketPriority, HIGH, LOW, MEDIUM, CreateCommentRequest, notblank, notnull, size
 
 ### Community 43 - "TicketService.java"
-Cohesion: 0.31
-Nodes (5): CommentResponse, TicketDetailResponse, TicketMapper, list, org.springframework.transaction.annotation.Transactional
+Cohesion: 0.24
+Nodes (4): CommentResponse, TicketDetailResponse, ResourceNotFoundException, TicketMapper
 
 ### Community 44 - "Frontend MVP — manual acceptance checklist (F8)"
 Cohesion: 0.22
 Nodes (8): Create ticket (`/tickets/new`), Errors / durability (cross-check), Frontend MVP — manual acceptance checklist (F8), Screens / navigation, Spec mapping, Status + comments, Ticket detail (`/tickets/{id}`), Ticket list (`/tickets`)
 
-### Community 47 - "TicketListTable.tsx"
-Cohesion: 0.47
-Nodes (5): formatRelative(), initials(), frontend_src_components_tickets_ticketlisttable_module, TicketListTable(), TicketListTableProps
+### Community 47 - "api/index.ts"
+Cohesion: 0.22
+Nodes (8): apiRequest(), RequestOptions, ApiError, toApiError(), createTicket(), getTicket(), listTickets(), API_BASE_URL
+
+### Community 48 - "Comment"
+Cohesion: 0.21
+Nodes (3): Comment, CommentRepository, org.springframework.data.jpa.repository.JpaRepository
 
 ## Knowledge Gaps
 - **397 isolated node(s):** `LOW`, `MEDIUM`, `HIGH`, `OPEN`, `IN_PROGRESS` (+392 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 507 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 508 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -251,7 +256,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `5. Out of scope for MVP API` connect `5. Out of scope for MVP API` to `API Contract`, `2026-09-22 19:37:04Z`, `Ticket`?**
   _High betweenness centrality (0.103) - this node is a cross-community bridge._
-- **Why does `Backend parts (in order)` connect `Ticket` to `5. Out of scope for MVP API`?**
+- **Why does `Backend parts (in order)` connect `Ticket` to `Comment`, `5. Out of scope for MVP API`?**
   _High betweenness centrality (0.079) - this node is a cross-community bridge._
 - **Why does `API Contract` connect `API Contract` to `API Contract`, `3.2 List tickets (search + filter)`, `5. Out of scope for MVP API`?**
   _High betweenness centrality (0.073) - this node is a cross-community bridge._

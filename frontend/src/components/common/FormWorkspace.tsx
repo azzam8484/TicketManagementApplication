@@ -2,9 +2,10 @@ import styles from "./FormWorkspace.module.css";
 
 type FormWorkspaceProps = {
   title: string;
-  actionLabel: string;
-  actionFormId: string;
+  actionLabel?: string;
+  actionFormId?: string;
   actionDisabled?: boolean;
+  headerExtra?: React.ReactNode;
   children: React.ReactNode;
 };
 
@@ -16,20 +17,28 @@ export function FormWorkspace({
   actionLabel,
   actionFormId,
   actionDisabled = false,
+  headerExtra,
   children,
 }: FormWorkspaceProps) {
+  const showAction = Boolean(actionLabel && actionFormId);
+
   return (
     <div className={styles.workspace}>
       <header className={styles.topBar}>
         <h1 className={styles.topTitle}>{title}</h1>
-        <button
-          type="submit"
-          form={actionFormId}
-          className={styles.topAction}
-          disabled={actionDisabled}
-        >
-          {actionLabel}
-        </button>
+        <div className={styles.topActions}>
+          {headerExtra}
+          {showAction ? (
+            <button
+              type="submit"
+              form={actionFormId}
+              className={styles.topAction}
+              disabled={actionDisabled}
+            >
+              {actionLabel}
+            </button>
+          ) : null}
+        </div>
       </header>
       <div className={styles.body}>{children}</div>
     </div>

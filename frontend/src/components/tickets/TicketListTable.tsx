@@ -44,6 +44,9 @@ export function TicketListTable({ tickets }: TicketListTableProps) {
             <th scope="col">Priority</th>
             <th scope="col">Assignee</th>
             <th scope="col">Updated</th>
+            <th scope="col">
+              <span className={styles.srOnly}>Actions</span>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -83,6 +86,19 @@ export function TicketListTable({ tickets }: TicketListTableProps) {
               </td>
               <td className={styles.updated}>
                 {formatRelative(ticket.updatedAt)}
+              </td>
+              <td className={styles.actionsCell}>
+                <button
+                  type="button"
+                  className={styles.editButton}
+                  aria-label={`Edit ticket ${ticket.title}`}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    router.push(`/tickets/${ticket.id}?edit=1`);
+                  }}
+                >
+                  Edit
+                </button>
               </td>
             </tr>
           ))}

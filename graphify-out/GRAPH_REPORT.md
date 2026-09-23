@@ -1,17 +1,17 @@
 # Graph Report - TicketManagementApplication  (2026-09-23)
 
 ## Corpus Check
-- 83 files · ~51,457 words
+- 83 files · ~51,671 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 36 file(s) not represented in the graph (top: .css 16, (none) 6, .mdc 5)
 
 ## Summary
-- 880 nodes · 1356 edges · 49 communities (39 shown, 10 thin omitted)
+- 881 nodes · 1360 edges · 49 communities (39 shown, 10 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9d2b64ae`
+- Built from commit: `01452da8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -58,7 +58,7 @@
 - Frontend MVP — manual acceptance checklist (F8)
 - frontend_src_components_tickets_createticketpage_module
 - frontend_src_components_tickets_ticketdetailpage_module
-- TicketListTable.tsx
+- api/index.ts
 - Comment
 
 ## God Nodes (most connected - your core abstractions)
@@ -143,8 +143,8 @@ Cohesion: 0.12
 Nodes (5): Ticket, TicketRepository, org.springframework.data.jpa.repository.Query, param, Backend parts (in order)
 
 ### Community 15 - "TicketDetailPage.tsx"
-Cohesion: 0.20
-Nodes (14): TicketDetailRouteProps, clientValidate(), formatTimestamp(), FormState, TicketDetailPage(), handleAddComment(), handleReset(), handleSave() (+6 more)
+Cohesion: 0.19
+Nodes (15): TicketDetailRouteProps, clientValidate(), formatTimestamp(), FormState, TicketDetailPage(), cancelEdit(), handleAddComment(), handleReset() (+7 more)
 
 ### Community 20 - "Documentation Skills"
 Cohesion: 0.40
@@ -187,8 +187,8 @@ Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 30 - "TicketListPage.tsx"
-Cohesion: 0.16
-Nodes (12): LoadingState(), LoadingStateProps, frontend_src_components_common_loadingstate_module, InProgressTicketsIcon(), OpenTicketsIcon(), ResolvedTicketsIcon(), StatIconProps, TotalTicketsIcon() (+4 more)
+Cohesion: 0.15
+Nodes (14): InProgressTicketsIcon(), OpenTicketsIcon(), ResolvedTicketsIcon(), StatIconProps, TotalTicketsIcon(), isTicketStatus(), frontend_src_components_tickets_ticketlistpage_module, TicketListPage() (+6 more)
 
 ### Community 31 - "common/index.ts"
 Cohesion: 0.16
@@ -203,8 +203,8 @@ Cohesion: 0.33
 Nodes (6): 1. General conventions, 2. API list, 4. Dummy data reference (shared sample IDs), API Contract, Error response shape, Purpose of this document
 
 ### Community 34 - "CommentsSection.tsx"
-Cohesion: 0.20
-Nodes (5): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_src_components_comments_commentssection_module, ApiError
+Cohesion: 0.22
+Nodes (7): CommentsSection(), CommentsSectionProps, formatTimestamp(), frontend_src_components_comments_commentssection_module, FieldErrors(), FieldErrorsProps, frontend_src_components_common_fielderrors_module
 
 ### Community 36 - "AppShell.tsx"
 Cohesion: 0.12
@@ -219,8 +219,8 @@ Cohesion: 0.14
 Nodes (15): formatPriorityLabel(), PRIORITY_LABELS, STATUS_LABELS, frontend_src_components_common_prioritybadge_module, PRIORITY_CLASS, PriorityBadge(), PriorityBadgeProps, clientValidate() (+7 more)
 
 ### Community 39 - "ticket.ts"
-Cohesion: 0.18
-Nodes (18): apiRequest(), RequestOptions, toApiError(), createTicket(), getTicket(), listTickets(), ticketsPath(), API_BASE_URL (+10 more)
+Cohesion: 0.27
+Nodes (11): ticketsPath(), ApiErrorBody, ChangeStatusRequest, Comment, CreateCommentRequest, CreateTicketRequest, ListTicketsParams, Ticket (+3 more)
 
 ### Community 40 - "TicketResponse"
 Cohesion: 0.27
@@ -238,9 +238,9 @@ Nodes (4): CommentResponse, TicketDetailResponse, ResourceNotFoundException, Tic
 Cohesion: 0.22
 Nodes (8): Create ticket (`/tickets/new`), Errors / durability (cross-check), Frontend MVP — manual acceptance checklist (F8), Screens / navigation, Spec mapping, Status + comments, Ticket detail (`/tickets/{id}`), Ticket list (`/tickets`)
 
-### Community 47 - "TicketListTable.tsx"
-Cohesion: 0.47
-Nodes (5): formatRelative(), initials(), frontend_src_components_tickets_ticketlisttable_module, TicketListTable(), TicketListTableProps
+### Community 47 - "api/index.ts"
+Cohesion: 0.22
+Nodes (8): apiRequest(), RequestOptions, ApiError, toApiError(), createTicket(), getTicket(), listTickets(), API_BASE_URL
 
 ### Community 48 - "Comment"
 Cohesion: 0.21

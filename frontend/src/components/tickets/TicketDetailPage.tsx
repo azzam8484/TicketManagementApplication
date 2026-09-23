@@ -15,6 +15,8 @@ import {
   FieldErrors,
   FormWorkspace,
   LoadingState,
+  PriorityBadge,
+  StatusBadge,
   formatPriorityLabel,
 } from "@/components/common";
 import { CommentsSection } from "@/components/comments/CommentsSection";
@@ -37,6 +39,7 @@ type FormState = {
 
 type TicketDetailPageProps = {
   ticketId: string;
+  initialEditing?: boolean;
 };
 
 const FORM_ID = "edit-ticket-form";
@@ -69,10 +72,14 @@ function formatTimestamp(value: string): string {
   return date.toLocaleString();
 }
 
-export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
+export function TicketDetailPage({
+  ticketId,
+  initialEditing = false,
+}: TicketDetailPageProps) {
   const router = useRouter();
   const [ticket, setTicket] = useState<TicketDetail | null>(null);
   const [form, setForm] = useState<FormState | null>(null);
+  const [editing, setEditing] = useState(initialEditing);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [loadError, setLoadError] = useState<unknown>(null);
@@ -100,8 +107,23 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
     void load();
   }, [load]);
 
+  useEffect(() => {
+    setEditing(initialEditing);
+  }, [initialEditing]);
+
   const canSave =
     Boolean(form?.title.trim()) && Boolean(form?.description.trim());
+
+  function cancelEdit() {
+    if (!ticket) {
+      return;
+    }
+    setForm(toForm(ticket));
+    setFieldErrors({});
+    setSaveError(null);
+    setEditing(false);
+    router.replace(`/tickets/${ticketId}`);
+  }
 
   async function handleSave(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -195,15 +217,184 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
     return null;
   }
 
+  if (editing) {
+    return (
+      <FormWorkspace
+        title="Edit Ticket"
+        actionLabel={saving ? "Saving…" : "Save changes"}
+        actionFormId={FORM_ID}
+        actionDisabled={saving || !canSave}
+        headerExtra={
+          <button
+            type="button"
+            className={styles.topSecondary}
+            disabled={saving}
+            onClick={cancelEdit}
+          >
+            Cancel
+          </button>
+        }
+      >
+        {saveError ? <ErrorBanner error={saveError} showFields={false} /> : null}
+
+        <div className={styles.metaCard}>
+          <dl className={styles.timestamps}>
+            <div>
+              <dt>Created</dt>
+              <dd>{formatTimestamp(ticket.createdAt)}</dd>
+            </div>
+            <div>
+              <dt>Updated</dt>
+              <dd>{formatTimestamp(ticket.updatedAt)}</dd>
+            </div>
+            <div>
+              <dt>Id</dt>
+              <dd>
+                <code>{ticket.id}</code>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <StatusControl
+          currentStatus={ticket.status}
+          disabled={saving}
+          onChangeStatus={handleStatusChange}
+        />
+
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <div>
+              <h2 className={styles.cardTitle}>Edit ticket</h2>
+              <p className={styles.lead}>
+                Update ticket fields, then save to return to the list.
+              </p>
+            </div>
+          </div>
+
+          <form
+            id={FORM_ID}
+            className={styles.form}
+            onSubmit={handleSave}
+            noValidate
+          >
+            <label className={styles.field}>
+              <span className={styles.label}>Title</span>
+              <input
+                className={styles.input}
+                name="title"
+                value={form.title}
+                disabled={saving}
+                maxLength={200}
+                onChange={(event) =>
+                  setForm((prev) =>
+                    prev ? { ...prev, title: event.target.value } : prev,
+                  )
+                }
+              />
+              <FieldErrors name="title" fields={fieldErrors} />
+            </label>
+
+            <label className={styles.field}>
+              <span className={styles.label}>Description</span>
+              <textarea
+                className={styles.textarea}
+                name="description"
+                rows={5}
+                value={form.description}
+                disabled={saving}
+                maxLength={10_000}
+                onChange={(event) =>
+                  setForm((prev) =>
+                    prev ? { ...prev, description: event.target.value } : prev,
+                  )
+                }
+              />
+              <FieldErrors name="description" fields={fieldErrors} />
+            </label>
+
+            <label className={styles.field}>
+              <span className={styles.label}>Priority</span>
+              <select
+                className={styles.select}
+                name="priority"
+                value={form.priority}
+                disabled={saving}
+                onChange={(event) =>
+                  setForm((prev) =>
+                    prev
+                      ? {
+                          ...prev,
+                          priority: event.target.value as TicketPriority,
+                        }
+                      : prev,
+                  )
+                }
+              >
+                {TICKET_PRIORITIES.map((priority) => (
+                  <option key={priority} value={priority}>
+                    {formatPriorityLabel(priority)}
+                  </option>
+                ))}
+              </select>
+              <FieldErrors name="priority" fields={fieldErrors} />
+            </label>
+
+            <label className={styles.field}>
+              <span className={styles.label}>Assignee (optional)</span>
+              <input
+                className={styles.input}
+                name="assignee"
+                value={form.assignee}
+                disabled={saving}
+                maxLength={100}
+                onChange={(event) =>
+                  setForm((prev) =>
+                    prev ? { ...prev, assignee: event.target.value } : prev,
+                  )
+                }
+              />
+              <FieldErrors name="assignee" fields={fieldErrors} />
+            </label>
+
+            <div className={styles.actions}>
+              <button
+                type="submit"
+                className={styles.primary}
+                disabled={saving || !canSave}
+              >
+                {saving ? "Saving…" : "Save changes"}
+              </button>
+              <button
+                type="button"
+                className={styles.secondary}
+                disabled={saving}
+                onClick={handleReset}
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <CommentsSection
+          comments={ticket.comments}
+          disabled={saving}
+          onAddComment={handleAddComment}
+        />
+      </FormWorkspace>
+    );
+  }
+
   return (
     <FormWorkspace
-      title="Edit Ticket"
-      actionLabel={saving ? "Saving…" : "Save changes"}
-      actionFormId={FORM_ID}
-      actionDisabled={saving || !canSave}
+      title="Ticket details"
+      headerExtra={
+        <Link href="/tickets" className={styles.topSecondary}>
+          Back to list
+        </Link>
+      }
     >
-      {saveError ? <ErrorBanner error={saveError} showFields={false} /> : null}
-
       <div className={styles.metaCard}>
         <dl className={styles.timestamps}>
           <div>
@@ -223,133 +414,41 @@ export function TicketDetailPage({ ticketId }: TicketDetailPageProps) {
         </dl>
       </div>
 
-      <StatusControl
-        currentStatus={ticket.status}
-        onChangeStatus={handleStatusChange}
-      />
-
       <div className={styles.card}>
         <div className={styles.cardHeader}>
           <div>
-            <h2 className={styles.cardTitle}>Edit ticket</h2>
-            <p className={styles.lead}>
-              Update ticket fields, then save to return to the list.
-            </p>
+            <h2 className={styles.cardTitle}>{ticket.title}</h2>
+            <p className={styles.lead}>Ticket overview</p>
           </div>
-          <Link href="/tickets" className={styles.back}>
-            Back to list
-          </Link>
         </div>
 
-        <form
-          id={FORM_ID}
-          className={styles.form}
-          onSubmit={handleSave}
-          noValidate
-        >
-          <label className={styles.field}>
-            <span className={styles.label}>Title</span>
-            <input
-              className={styles.input}
-              name="title"
-              value={form.title}
-              disabled={saving}
-              maxLength={200}
-              onChange={(event) =>
-                setForm((prev) =>
-                  prev ? { ...prev, title: event.target.value } : prev,
-                )
-              }
-            />
-            <FieldErrors name="title" fields={fieldErrors} />
-          </label>
-
-          <label className={styles.field}>
-            <span className={styles.label}>Description</span>
-            <textarea
-              className={styles.textarea}
-              name="description"
-              rows={5}
-              value={form.description}
-              disabled={saving}
-              maxLength={10_000}
-              onChange={(event) =>
-                setForm((prev) =>
-                  prev ? { ...prev, description: event.target.value } : prev,
-                )
-              }
-            />
-            <FieldErrors name="description" fields={fieldErrors} />
-          </label>
-
-          <label className={styles.field}>
-            <span className={styles.label}>Priority</span>
-            <select
-              className={styles.select}
-              name="priority"
-              value={form.priority}
-              disabled={saving}
-              onChange={(event) =>
-                setForm((prev) =>
-                  prev
-                    ? {
-                        ...prev,
-                        priority: event.target.value as TicketPriority,
-                      }
-                    : prev,
-                )
-              }
-            >
-              {TICKET_PRIORITIES.map((priority) => (
-                <option key={priority} value={priority}>
-                  {formatPriorityLabel(priority)}
-                </option>
-              ))}
-            </select>
-            <FieldErrors name="priority" fields={fieldErrors} />
-          </label>
-
-          <label className={styles.field}>
-            <span className={styles.label}>Assignee (optional)</span>
-            <input
-              className={styles.input}
-              name="assignee"
-              value={form.assignee}
-              disabled={saving}
-              maxLength={100}
-              onChange={(event) =>
-                setForm((prev) =>
-                  prev ? { ...prev, assignee: event.target.value } : prev,
-                )
-              }
-            />
-            <FieldErrors name="assignee" fields={fieldErrors} />
-          </label>
-
-          <div className={styles.actions}>
-            <button
-              type="submit"
-              className={styles.primary}
-              disabled={saving || !canSave}
-            >
-              {saving ? "Saving…" : "Save changes"}
-            </button>
-            <button
-              type="button"
-              className={styles.secondary}
-              disabled={saving}
-              onClick={handleReset}
-            >
-              Reset
-            </button>
+        <dl className={styles.detailGrid}>
+          <div className={styles.detailBlock}>
+            <dt>Description</dt>
+            <dd className={styles.detailDescription}>{ticket.description}</dd>
           </div>
-        </form>
+          <div className={styles.detailRow}>
+            <div>
+              <dt>Status</dt>
+              <dd>
+                <StatusBadge status={ticket.status} />
+              </dd>
+            </div>
+            <div>
+              <dt>Priority</dt>
+              <dd>
+                <PriorityBadge priority={ticket.priority} />
+              </dd>
+            </div>
+            <div>
+              <dt>Assignee</dt>
+              <dd>{ticket.assignee?.trim() ? ticket.assignee : "—"}</dd>
+            </div>
+          </div>
+        </dl>
       </div>
 
-      <CommentsSection
-        comments={ticket.comments}
-        onAddComment={handleAddComment}
-      />
+      <CommentsSection comments={ticket.comments} readOnly />
     </FormWorkspace>
   );
 }

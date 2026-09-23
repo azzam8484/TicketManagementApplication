@@ -19,6 +19,13 @@
   font-size: 1.15rem;
 }
 
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
 .note {
   color: var(--muted);
   font-size: 0.92rem;

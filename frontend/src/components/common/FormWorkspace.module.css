@@ -25,6 +25,14 @@
   letter-spacing: -0.01em;
 }
 
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .topAction {
   appearance: none;
   border: 1px solid #1e3a5f;

@@ -39,12 +39,13 @@
   "37": "Comment.java",
   "38": "CreateTicketPage.tsx",
   "39": "ticket.ts",
-  "40": "TicketService",
+  "40": "TicketResponse",
   "41": "frontend_src_app_tickets_page_module",
   "42": "TicketPriority",
   "43": "TicketService.java",
   "44": "Frontend MVP — manual acceptance checklist (F8)",
   "45": "frontend_src_components_tickets_createticketpage_module",
   "46": "frontend_src_components_tickets_ticketdetailpage_module",
-  "47": "TicketListTable.tsx"
+  "47": "api/index.ts",
+  "48": "Comment"
 }

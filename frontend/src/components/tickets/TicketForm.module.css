@@ -167,3 +167,55 @@
   padding: 0.1rem 0.35rem;
   border-radius: 4px;
 }
+
+.topSecondary {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d7DEE8;
+  background: #fff;
+  color: #243447;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.topSecondary:hover {
+  background: #f5f7fa;
+}
+
+.detailGrid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.detailBlock dt,
+.detailRow dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7b8798;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.detailDescription {
+  color: #243447;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.detailRow {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.detailRow dd {
+  color: #15233a;
+  font-size: 0.95rem;
+}

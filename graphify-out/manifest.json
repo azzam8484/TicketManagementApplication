@@ -468,15 +468,15 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketListTable.tsx": {
-    "mtime": 1790169772.671635,
-    "seen": 1790170378.7073512,
-    "ast_hash": "03e857c097d2ee017280125ba77e255a",
+    "mtime": 1790173184.3858802,
+    "seen": 1790173218.2645462,
+    "ast_hash": "d854c63c6e2053853d33701ead125825",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/[id]/page.tsx": {
-    "mtime": 1790166665.435351,
-    "seen": 1790166751.047599,
-    "ast_hash": "69ea82dd192bffc9b101144ccac10e96",
+    "mtime": 1790173191.1674702,
+    "seen": 1790173218.2594006,
+    "ast_hash": "95434ee1085ef3e399b18d7373f86ca5",
     "semantic_hash": ""
   },
   "frontend/src/app/tickets/new/page.tsx": {
@@ -492,21 +492,21 @@
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/TicketDetailPage.tsx": {
-    "mtime": 1790172480.256319,
-    "seen": 1790172515.8218946,
-    "ast_hash": "5a9ab9fdd7b2df1d8dfb1a90cfce58c4",
+    "mtime": 1790173436.1043806,
+    "seen": 1790173441.6934786,
+    "ast_hash": "c4d1009ee219daa77e6315b8a5c7daf5",
     "semantic_hash": ""
   },
   "frontend/src/components/comments/CommentsSection.tsx": {
-    "mtime": 1790167002.4180014,
-    "seen": 1790167080.86773,
-    "ast_hash": "6ec2b78b4b74d524e716ea7997bb9cba",
+    "mtime": 1790173401.3906577,
+    "seen": 1790173441.6919715,
+    "ast_hash": "b668c28c54462ab49df3325707165d16",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/StatusControl.tsx": {
-    "mtime": 1790166988.9202816,
-    "seen": 1790167080.8688586,
-    "ast_hash": "647b6fbb161a5c7436f2e5e8ab085b90",
+    "mtime": 1790172909.6080196,
+    "seen": 1790172958.9506078,
+    "ast_hash": "fc027f4ce7f7b41880572838f338cb68",
     "semantic_hash": ""
   },
   "frontend/src/lib/ticketStatusTransitions.ts": {
@@ -534,9 +534,9 @@
     "semantic_hash": ""
   },
   "frontend/src/components/common/FormWorkspace.tsx": {
-    "mtime": 1790170728.4695086,
-    "seen": 1790170831.5420284,
-    "ast_hash": "0d0cecaa59f0f4463c98377407a835d4",
+    "mtime": 1790172906.1959841,
+    "seen": 1790172958.9498744,
+    "ast_hash": "696efec09f6b653958858c912733a7b1",
     "semantic_hash": ""
   },
   "frontend/src/components/tickets/StatIcons.tsx": {

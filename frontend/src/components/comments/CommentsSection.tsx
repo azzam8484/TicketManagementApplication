@@ -9,7 +9,8 @@ import styles from "./CommentsSection.module.css";
 type CommentsSectionProps = {
   comments: Comment[];
   disabled?: boolean;
-  onAddComment: (text: string) => Promise<void>;
+  readOnly?: boolean;
+  onAddComment?: (text: string) => Promise<void>;
 };
 
 function formatTimestamp(value: string): string {
@@ -23,6 +24,7 @@ function formatTimestamp(value: string): string {
 export function CommentsSection({
   comments,
   disabled = false,
+  readOnly = false,
   onAddComment,
 }: CommentsSectionProps) {
   const [text, setText] = useState("");
@@ -41,6 +43,9 @@ export function CommentsSection({
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (!onAddComment) {
+      return;
+    }
     setError(null);
 
     if (!text.trim()) {
@@ -82,30 +87,34 @@ export function CommentsSection({
         </ul>
       )}
 
-      {error ? <ErrorBanner error={error} showFields={false} /> : null}
+      {readOnly ? null : (
+        <>
+          {error ? <ErrorBanner error={error} showFields={false} /> : null}
 
-      <form className={styles.form} onSubmit={handleSubmit} noValidate>
-        <label className={styles.field}>
-          <span className={styles.label}>Add comment</span>
-          <textarea
-            className={styles.textarea}
-            name="text"
-            rows={3}
-            value={text}
-            disabled={disabled || busy}
-            maxLength={10_000}
-            onChange={(event) => setText(event.target.value)}
-          />
-          <FieldErrors name="text" fields={fieldErrors} />
-        </label>
-        <button
-          type="submit"
-          className={styles.button}
-          disabled={disabled || busy}
-        >
-          {busy ? "Adding…" : "Add comment"}
-        </button>
-      </form>
+          <form className={styles.form} onSubmit={handleSubmit} noValidate>
+            <label className={styles.field}>
+              <span className={styles.label}>Add comment</span>
+              <textarea
+                className={styles.textarea}
+                name="text"
+                rows={3}
+                value={text}
+                disabled={disabled || busy}
+                maxLength={10_000}
+                onChange={(event) => setText(event.target.value)}
+              />
+              <FieldErrors name="text" fields={fieldErrors} />
+            </label>
+            <button
+              type="submit"
+              className={styles.button}
+              disabled={disabled || busy}
+            >
+              {busy ? "Adding…" : "Add comment"}
+            </button>
+          </form>
+        </>
+      )}
     </section>
   );
 }

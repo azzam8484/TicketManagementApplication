@@ -16,12 +16,14 @@ import styles from "./StatusControl.module.css";
 type StatusControlProps = {
   currentStatus: TicketStatus;
   disabled?: boolean;
+  headerActions?: React.ReactNode;
   onChangeStatus: (next: TicketStatus) => Promise<void>;
 };
 
 export function StatusControl({
   currentStatus,
   disabled = false,
+  headerActions,
   onChangeStatus,
 }: StatusControlProps) {
   const nextOptions = allowedNextStatuses(currentStatus);
@@ -58,7 +60,10 @@ export function StatusControl({
     <section className={styles.panel} aria-labelledby="status-control-heading">
       <div className={styles.header}>
         <h2 id="status-control-heading">Status</h2>
-        <StatusBadge status={currentStatus} />
+        <div className={styles.headerRight}>
+          <StatusBadge status={currentStatus} />
+          {headerActions}
+        </div>
       </div>
 
       {isTerminalStatus(currentStatus) ? (
